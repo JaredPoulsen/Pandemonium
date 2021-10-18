@@ -23582,10 +23582,12 @@ MonoBehaviour:
   bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
   shootingPos: {fileID: 1534236315}
   target: {fileID: 1949757366}
-  moveSpeed: 3
+  moveSpeed: 4
   rotationSpeed: 5
   maxdistance: 30
   hp: 250
+  timeToWait: 0.5
+  done: 0
 --- !u!54 &1613230684
 Rigidbody:
   m_ObjectHideFlags: 0

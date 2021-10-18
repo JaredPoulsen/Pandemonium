@@ -46,14 +46,17 @@ public class enemy : MonoBehaviour
         // moving toward player
         myTransform.rotation = Quaternion.Slerp(myTransform.rotation, Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);
 
-        if (Vector3.Distance(target.position, myTransform.position) <= maxdistance)
+        if (Vector3.Distance(target.position, myTransform.position) <= maxdistance - 4f)
         {
             //Move towards target
             myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
-
-
-            // shoot while in distance
             Shoot();
+
+            if (Vector3.Distance(target.position, myTransform.position) <= 2f){
+                myTransform.position += myTransform.forward * 0 * Time.deltaTime;
+            }
+                // shoot while in distance
+                
 
         }
        
