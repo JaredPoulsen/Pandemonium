@@ -20,9 +20,6 @@ public class enemy : MonoBehaviour
     Renderer rend;
     //basic stat
     public int hp = 250;
-    public float timeToWait = 2f;
-    public float done = 0.0f;
-    bool shot = false ;
 
     void Awake()
     {
