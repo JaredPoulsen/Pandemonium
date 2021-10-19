@@ -12,6 +12,7 @@ TagManager:
   - Grass
   - Stone
   - Tiles
+  - Enemy
   layers:
   - Default
   - TransparentFX

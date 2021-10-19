@@ -38,7 +38,7 @@ public class enemy : MonoBehaviour
     void Update()
     {
         Debug.DrawLine(target.position, myTransform.position, Color.red);
-        Debug.Log(hp);
+        //Debug.Log(hp);
 
         // moving toward player
         myTransform.rotation = Quaternion.Slerp(myTransform.rotation, Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);
