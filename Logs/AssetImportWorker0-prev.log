@@ -15,11 +15,11 @@ E:/Unity/Projects/Pandemonium
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62175
+63658
 Successfully changed project path to: E:/Unity/Projects/Pandemonium
 E:/Unity/Projects/Pandemonium
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.90 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 41.12 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.16f1 (049d6eca3c44)
 [Subsystems] Discovering subsystems at path E:/Unity/Editor/Data/Resources/UnitySubsystems
@@ -35,81 +35,81 @@ Initialize mono
 Mono path[0] = 'E:/Unity/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56856
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: E:/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: E:/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: E:/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.001970 seconds.
+Registered in 0.001810 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 37.16 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 35.98 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.269 seconds
+- Completed reload, in  1.215 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1269ms)
-		BeginReloadAssembly (65ms)
+	ReloadAssembly (1216ms)
+		BeginReloadAssembly (60ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (398ms)
-			LoadAssemblies (66ms)
+		EndReloadAssembly (377ms)
+			LoadAssemblies (61ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (147ms)
+			SetupTypeCache (136ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (161ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (150ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (37ms)
+				RefreshPlugins (36ms)
 				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (77ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
+				ProcessInitializeOnLoadAttributes (70ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003946 seconds.
+Registered in 0.003432 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.020 seconds
+- Completed reload, in  1.004 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1021ms)
-		BeginReloadAssembly (148ms)
+	ReloadAssembly (1004ms)
+		BeginReloadAssembly (147ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (822ms)
-			LoadAssemblies (96ms)
+		EndReloadAssembly (806ms)
+			LoadAssemblies (95ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (253ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (356ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (343ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (264ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (260ms)
 				ProcessInitializeOnLoadMethodAttributes (3ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -118,15 +118,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1666 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.7 MB.
-System memory in use after: 151.8 MB.
+System memory in use before: 151.9 MB.
+System memory in use after: 152.0 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2108.
-Total: 2.970300 ms (FindLiveObjects: 0.172000 ms CreateObjectMapping: 0.055600 ms MarkObjects: 2.671400 ms  DeleteObjects: 0.069900 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2109.
+Total: 2.535400 ms (FindLiveObjects: 0.126700 ms CreateObjectMapping: 0.043000 ms MarkObjects: 2.299300 ms  DeleteObjects: 0.065700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -141,191 +141,1691 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/MVP/Enemy.mat
-  artifactKey: Guid(19bcb473e8595ba46a3570c3069fa2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MVP/Enemy.mat using Guid(19bcb473e8595ba46a3570c3069fa2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f2a1a4d2744d22491b8e286fa37a6d0') in 0.352935 seconds 
-  Import took 0.356033 seconds .
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_10.asset
+  artifactKey: Guid(0eca4c0772198894c844057cd073b6a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_10.asset using Guid(0eca4c0772198894c844057cd073b6a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc8de59d4fc0041cdb20cc7c7563693') in 0.141648 seconds 
+  Import took 0.144122 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/MVP/New Physic Material.physicMaterial
-  artifactKey: Guid(4ad98986e1548004fb4e5b899539b7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MVP/New Physic Material.physicMaterial using Guid(4ad98986e1548004fb4e5b899539b7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ae4cb4f4177948a9af6b5932fbb770') in 0.008509 seconds 
-  Import took 0.010788 seconds .
+  Time since last request: 0.000338 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_3.asset
+  artifactKey: Guid(0b523ef8d607803448557c68a31597df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_3.asset using Guid(0b523ef8d607803448557c68a31597df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54842602f0cc77facb02f35e07449550') in 0.048059 seconds 
+  Import took 0.050785 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/MVP
-  artifactKey: Guid(4b6870d83af899d4c949c861763791a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MVP using Guid(4b6870d83af899d4c949c861763791a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a56c333c440ee1614212f0948b0369d7') in 0.004893 seconds 
-  Import took 0.007062 seconds .
+  Time since last request: 0.000289 seconds.
+  path: Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/FrontGlass Fractured.prefab
+  artifactKey: Guid(6b2e403abcc072145afc0bad2ee016ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/FrontGlass Fractured.prefab using Guid(6b2e403abcc072145afc0bad2ee016ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1577a9088a2bc7d37e78682bb9f8f9c0') in 0.351591 seconds 
+  Import took 0.368916 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/MVP/Cube.prefab
-  artifactKey: Guid(d6acfa34aa08514478ba97d367a51ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MVP/Cube.prefab using Guid(d6acfa34aa08514478ba97d367a51ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '423cd5114fd6e3e193480824786e906c') in 0.033549 seconds 
-  Import took 0.035902 seconds .
+  Time since last request: 0.000333 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LefBacktGlass_meshes_fractures/LefBacktGlass_fracture_2.asset
+  artifactKey: Guid(b55c41dee2cf24b44b5c5de22227cd23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LefBacktGlass_meshes_fractures/LefBacktGlass_fracture_2.asset using Guid(b55c41dee2cf24b44b5c5de22227cd23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4907c868a97b7b36ec0793cada8cf99e') in 0.014887 seconds 
+  Import took 0.017184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LefBacktGlass_meshes_fractures/LefBacktGlass_fracture_4.asset
+  artifactKey: Guid(58d33b19547f7b44fb624fc7a98c6b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LefBacktGlass_meshes_fractures/LefBacktGlass_fracture_4.asset using Guid(58d33b19547f7b44fb624fc7a98c6b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1f376b3e5755b12e457ddcbfc8f5db') in 0.016115 seconds 
+  Import took 0.018863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_5.asset
+  artifactKey: Guid(a7b324bc5793d294597f0c66fe0d275b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_5.asset using Guid(a7b324bc5793d294597f0c66fe0d275b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2f3ee0dc971b68f7f434ed52249170') in 0.039729 seconds 
+  Import took 0.041961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_6.asset
+  artifactKey: Guid(db628338fb5a9af42ab22d571bea523a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_6.asset using Guid(db628338fb5a9af42ab22d571bea523a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc447b0ce0b9401ced4893845ac78b52') in 0.014150 seconds 
+  Import took 0.016806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_2.asset
+  artifactKey: Guid(1d857e443c58e5042b71daf74586417f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_2.asset using Guid(1d857e443c58e5042b71daf74586417f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c32f2390c65cb781436139ec6bb0f01') in 0.017284 seconds 
+  Import took 0.043563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_2.asset
+  artifactKey: Guid(1cb8c71398a61b54da6bd3110e651c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_2.asset using Guid(1cb8c71398a61b54da6bd3110e651c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b756550412e3084a7af4683829b093') in 0.017350 seconds 
+  Import took 0.019640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_6.asset
+  artifactKey: Guid(0b84c448d0eacb441872e3174ad3765f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_6.asset using Guid(0b84c448d0eacb441872e3174ad3765f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '898d18806000639fafbf30a3326f5b31') in 0.027600 seconds 
+  Import took 0.062012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass_meshes_fractures/RightBackGlass_fracture_4.asset
+  artifactKey: Guid(97394efd74e343140a4b09ff540bbe1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass_meshes_fractures/RightBackGlass_fracture_4.asset using Guid(97394efd74e343140a4b09ff540bbe1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9475be107212f66737c830e535a376c') in 0.038137 seconds 
+  Import took 0.040582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_6.asset
+  artifactKey: Guid(8ac6b70273f228544bbb10c38cb0e608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_6.asset using Guid(8ac6b70273f228544bbb10c38cb0e608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16577987497936ac1f9b4b6c9a8452f3') in 0.023406 seconds 
+  Import took 0.025743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_1.asset
+  artifactKey: Guid(bfada2fe91b00174686009cb617a85a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_1.asset using Guid(bfada2fe91b00174686009cb617a85a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '534558d9b4bc05913a318ab19e8bf95e') in 0.029102 seconds 
+  Import took 0.032188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/LefBacktGlass Fractured.prefab
+  artifactKey: Guid(984f5b52e868aed48b90dbdd362a23c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/LefBacktGlass Fractured.prefab using Guid(984f5b52e868aed48b90dbdd362a23c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185316b90d1568b092e939b6e94aedd1') in 0.034438 seconds 
+  Import took 0.037619 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000265 seconds.
-  path: Assets/MVP/Fracture.prefab
-  artifactKey: Guid(5a566b57339d2374391f854c0781f7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MVP/Fracture.prefab using Guid(5a566b57339d2374391f854c0781f7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17cad011f1067c94b1bf6b6b70525bd') in 0.012764 seconds 
-  Import took 0.015106 seconds .
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_7.asset
+  artifactKey: Guid(d5573b69e77d13346a60bac88e3c7d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_7.asset using Guid(d5573b69e77d13346a60bac88e3c7d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5d7ac5a55f726658ff072688a0f9cbc') in 0.019108 seconds 
+  Import took 0.022180 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001293 seconds.
-  path: Assets/MVP/Fracture.prefab
-  artifactKey: Guid(5a566b57339d2374391f854c0781f7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MVP/Fracture.prefab using Guid(5a566b57339d2374391f854c0781f7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17cad011f1067c94b1bf6b6b70525bd') in 0.009504 seconds 
-  Import took 0.013532 seconds .
+  Time since last request: 0.000421 seconds.
+  path: Assets/Julhiecio TPS Controller/Prefabs/Fractures/BottleFractured.prefab
+  artifactKey: Guid(d862fe5b4ea51a7469f5b8a5bbbdf36d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Prefabs/Fractures/BottleFractured.prefab using Guid(d862fe5b4ea51a7469f5b8a5bbbdf36d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd961b11d48b4bd24bd84e11c84f256b') in 0.272328 seconds 
+  Import took 0.275848 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.387946 seconds.
-  path: Assets/MVP/MVP.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MVP/MVP.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b266bc485f95a47765aadce730f510f') in 0.006445 seconds 
-  Import took 0.009692 seconds .
+  Time since last request: 0.000303 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_1.asset
+  artifactKey: Guid(339af5be51161624c840f8a93ee9b157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_1.asset using Guid(339af5be51161624c840f8a93ee9b157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc341369e4534508fd1fcc3af4270ccd') in 0.038047 seconds 
+  Import took 0.040456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_4.asset
+  artifactKey: Guid(0adfb964c0a12814ca3a15afa3eef23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_4.asset using Guid(0adfb964c0a12814ca3a15afa3eef23f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57aac14d54a6048161dedf1396e1955d') in 0.028407 seconds 
+  Import took 0.042178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_12.asset
+  artifactKey: Guid(269c31ddf4f22e544832f240698e6129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_12.asset using Guid(269c31ddf4f22e544832f240698e6129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185e3a4edfe0ba18d7fa896c196591d8') in 0.013324 seconds 
+  Import took 0.015986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LeftBackGlass2_meshes_fractures/LeftBackGlass2_fracture_1.asset
+  artifactKey: Guid(678ec5514c72d7547915bea376fb0524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LeftBackGlass2_meshes_fractures/LeftBackGlass2_fracture_1.asset using Guid(678ec5514c72d7547915bea376fb0524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b5acb4d52655842268399458b74018') in 0.021261 seconds 
+  Import took 0.024485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_1.asset
+  artifactKey: Guid(aa11d94cab6a19147beb1fc7082f1b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_1.asset using Guid(aa11d94cab6a19147beb1fc7082f1b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0017499b5874f222896f66f70fc335bd') in 0.013532 seconds 
+  Import took 0.016103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_0.asset
+  artifactKey: Guid(86dcc2d1cbf02e14bb24332d9ae20385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_0.asset using Guid(86dcc2d1cbf02e14bb24332d9ae20385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17feee0a8eda5db4beafa5f790d70cbf') in 0.018678 seconds 
+  Import took 0.022880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_11.asset
+  artifactKey: Guid(21b46810d3d9c6d4c9fba7449c4bb8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_11.asset using Guid(21b46810d3d9c6d4c9fba7449c4bb8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297f51f794576a5be61d6b64bd03b311') in 0.013399 seconds 
+  Import took 0.022255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_5.asset
+  artifactKey: Guid(febefaaca6ea72a4b8b0788f10157ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_5.asset using Guid(febefaaca6ea72a4b8b0788f10157ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63191df619489c5824131c7ea6ea3e9d') in 0.020868 seconds 
+  Import took 0.024087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_1.asset
+  artifactKey: Guid(d6646aeb5dcfb2b4fa60ea068e2c6f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_1.asset using Guid(d6646aeb5dcfb2b4fa60ea068e2c6f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1e8fcb27f16ad86a309463b37577b3') in 0.022129 seconds 
+  Import took 0.036682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Julhiecio TPS Controller/Prefabs/Fractures/FracturedShootingTarget.prefab
+  artifactKey: Guid(83f55593e353d20488e7e1395dd7c413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Prefabs/Fractures/FracturedShootingTarget.prefab using Guid(83f55593e353d20488e7e1395dd7c413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64226027793bc052a088fd26fbc86c44') in 0.148744 seconds 
+  Import took 0.151432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_5.asset
+  artifactKey: Guid(157880b57f369124b8aa311a09917cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_5.asset using Guid(157880b57f369124b8aa311a09917cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a820ff6f9ba1064ad144b2a2c72ce04') in 0.032716 seconds 
+  Import took 0.035853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/RightBackGlass Fractured.prefab
+  artifactKey: Guid(7aadb2b871020d143b56048da8a0af82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/RightBackGlass Fractured.prefab using Guid(7aadb2b871020d143b56048da8a0af82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '913c7ddafcfaaea4e0f4137ee48a4a66') in 0.047307 seconds 
+  Import took 0.061002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/LeftBackGlass2 Fractured.prefab
+  artifactKey: Guid(1a613a15757988844aef3ccf01278a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/LeftBackGlass2 Fractured.prefab using Guid(1a613a15757988844aef3ccf01278a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b8cd714f22ebf5e3a9accb8dd70f76') in 0.018003 seconds 
+  Import took 0.032584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000634 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_0.asset
+  artifactKey: Guid(ca42b0fb4328a594599cc1a18db9c58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_0.asset using Guid(ca42b0fb4328a594599cc1a18db9c58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0cb4aa8ded173751c5cd287da143fe6') in 0.019985 seconds 
+  Import took 0.022941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass_meshes_fractures/RightBackGlass_fracture_2.asset
+  artifactKey: Guid(af0bc83eb762d904cb6ae1a43335d836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass_meshes_fractures/RightBackGlass_fracture_2.asset using Guid(af0bc83eb762d904cb6ae1a43335d836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80bd22b5bb299c59e54ecec2c986cb15') in 0.015442 seconds 
+  Import took 0.019910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000484 seconds.
+  path: Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/RightGlass1 Fractured.prefab
+  artifactKey: Guid(3177bcc85b2b9da42879e10e2953834e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/RightGlass1 Fractured.prefab using Guid(3177bcc85b2b9da42879e10e2953834e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bff55c1a4626c3bc6feca8dddf5523c') in 0.061499 seconds 
+  Import took 0.065088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_4.asset
+  artifactKey: Guid(33c1b5f0fe2d0b842bf11958ca4d6d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_4.asset using Guid(33c1b5f0fe2d0b842bf11958ca4d6d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e562ad6d20d75892b4666b591f57cce0') in 0.017205 seconds 
+  Import took 0.020973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_1.asset
+  artifactKey: Guid(b52374594ee702c49a03ae14527c5326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_1.asset using Guid(b52374594ee702c49a03ae14527c5326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88eeaf4de63f9c8b6fbcbc524bae1c95') in 0.019315 seconds 
+  Import took 0.022624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_4.asset
+  artifactKey: Guid(285ed0f9e1d6d354fac897103f7ac513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_4.asset using Guid(285ed0f9e1d6d354fac897103f7ac513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e792b4223b545578bb3864105cf75cca') in 0.026444 seconds 
+  Import took 0.028966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_4.asset
+  artifactKey: Guid(8f3ab34908c4e7c40ad75045dd8d683a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_4.asset using Guid(8f3ab34908c4e7c40ad75045dd8d683a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a4a1c22866d66bdea939dd2538c4adc') in 0.014028 seconds 
+  Import took 0.017092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/LeftGlass1 Fractured.prefab
+  artifactKey: Guid(72e75c0621bfa184599cfa2551ca329e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/LeftGlass1 Fractured.prefab using Guid(72e75c0621bfa184599cfa2551ca329e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b0114814d59aedf4774f6597c5add4') in 0.035935 seconds 
+  Import took 0.054898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_9.asset
+  artifactKey: Guid(8b1b9133459a7a6499c77132e2428410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_9.asset using Guid(8b1b9133459a7a6499c77132e2428410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b6e24e80f347c29abc05df4011fe4c') in 0.012437 seconds 
+  Import took 0.014876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_3.asset
+  artifactKey: Guid(9d9373804864ff7409838693f8d4f3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_3.asset using Guid(9d9373804864ff7409838693f8d4f3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87517232e95154613feaa7e5e09aa55d') in 0.019237 seconds 
+  Import took 0.021859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass_meshes_fractures/RightBackGlass_fracture_3.asset
+  artifactKey: Guid(8410d3d962fcab747b220628aeac2a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass_meshes_fractures/RightBackGlass_fracture_3.asset using Guid(8410d3d962fcab747b220628aeac2a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d82ac86e3e73d4d3192316eea48b273') in 0.013955 seconds 
+  Import took 0.021930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_5.asset
+  artifactKey: Guid(bba3365039a8d264e9c1932d95dbef83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_5.asset using Guid(bba3365039a8d264e9c1932d95dbef83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b6f73b0161b1743e0edd8c8f4d6a02') in 0.020681 seconds 
+  Import took 0.023257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_0.asset
+  artifactKey: Guid(225b2ec3659f74b438fca2a9a670489c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_0.asset using Guid(225b2ec3659f74b438fca2a9a670489c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0632ca19fe71722b5b08ab64ac1b5661') in 0.011680 seconds 
+  Import took 0.013990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_5.asset
+  artifactKey: Guid(a18dd912f7598904caa8d3fa44155533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_5.asset using Guid(a18dd912f7598904caa8d3fa44155533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc889b48e0d92ec3f861aba803880a45') in 0.012445 seconds 
+  Import took 0.014943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_3.asset
+  artifactKey: Guid(74604c08da2c3864380549d5b3b2b84f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_3.asset using Guid(74604c08da2c3864380549d5b3b2b84f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '710290c40f4698dd39580e165ec4d004') in 0.014867 seconds 
+  Import took 0.017374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/BackGlass Fractured.prefab
+  artifactKey: Guid(7dbf096a4b257ec44a39422d621fed71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/BackGlass Fractured.prefab using Guid(7dbf096a4b257ec44a39422d621fed71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12799b64b1a72285a97eabac09f116f') in 0.028711 seconds 
+  Import took 0.032137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LefBacktGlass_meshes_fractures/LefBacktGlass_fracture_3.asset
+  artifactKey: Guid(3b75f406e0882074cab84f922fea9c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LefBacktGlass_meshes_fractures/LefBacktGlass_fracture_3.asset using Guid(3b75f406e0882074cab84f922fea9c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57df873396f359c5fdf43a992696b954') in 0.014152 seconds 
+  Import took 0.016997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_3.asset
+  artifactKey: Guid(ba52c0746db6aa34a9376c662e5767cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_3.asset using Guid(ba52c0746db6aa34a9376c662e5767cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f33ecca44b559171c4ff02ad4cc6560d') in 0.013553 seconds 
+  Import took 0.016569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_2.asset
+  artifactKey: Guid(9360a04333bac5f43bf39c69bcee72aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_2.asset using Guid(9360a04333bac5f43bf39c69bcee72aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '685704d3d96efe26346f1f0009830010') in 0.013354 seconds 
+  Import took 0.016079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_2.asset
+  artifactKey: Guid(bd27a7f01988dd147af890fac2c8fd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_2.asset using Guid(bd27a7f01988dd147af890fac2c8fd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ddaddb9a685533e88a19739ce73ba98') in 0.015823 seconds 
+  Import took 0.019061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass_meshes_fractures/RightBackGlass_fracture_0.asset
+  artifactKey: Guid(270b3b03148120f40a01165fec954342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass_meshes_fractures/RightBackGlass_fracture_0.asset using Guid(270b3b03148120f40a01165fec954342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6812a90ed85212a8e7ecb2ecefcf29') in 0.013832 seconds 
+  Import took 0.016204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/RightBackGlass2 Fractured.prefab
+  artifactKey: Guid(ed3ef12c870c3cc46a308901bd509f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Prefabs/Fractures/Car Fractures/RightBackGlass2 Fractured.prefab using Guid(ed3ef12c870c3cc46a308901bd509f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc5972e4f7158238a8c6adf4c9cb89e1') in 0.076577 seconds 
+  Import took 0.079022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LefBacktGlass_meshes_fractures/LefBacktGlass_fracture_0.asset
+  artifactKey: Guid(8731bed492d822a4c887fc7a35c91130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LefBacktGlass_meshes_fractures/LefBacktGlass_fracture_0.asset using Guid(8731bed492d822a4c887fc7a35c91130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1208b8a2b04d93edcc213e16ea6a7f71') in 0.011273 seconds 
+  Import took 0.013571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_4.asset
+  artifactKey: Guid(6a9bfaf677763524d892cd28a8833f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_4.asset using Guid(6a9bfaf677763524d892cd28a8833f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823560f60957fdcd45a32a1a9bc1f3a0') in 0.014294 seconds 
+  Import took 0.016945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Effect Models/Bottle/BottleFracturedModel.fbx
+  artifactKey: Guid(10f98fc0ea7a3a94f95ecb0a65747b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Effect Models/Bottle/BottleFracturedModel.fbx using Guid(10f98fc0ea7a3a94f95ecb0a65747b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd8aab5a7df1c525c4c1368ec4206f70') in 0.250413 seconds 
+  Import took 0.253235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_4.asset
+  artifactKey: Guid(2f9affaadc2a49c44afe0472cba4c1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_4.asset using Guid(2f9affaadc2a49c44afe0472cba4c1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d375e41e75108f60415ceb502939a8e') in 0.010129 seconds 
+  Import took 0.012413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_0.asset
+  artifactKey: Guid(448b22dbfe61bb64ea75b5ce60a7465a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/BackGlass_meshes_fractures/BackGlass_fracture_0.asset using Guid(448b22dbfe61bb64ea75b5ce60a7465a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280bce68a55c926e8209d3d67066fb4c') in 0.014605 seconds 
+  Import took 0.017364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass_meshes_fractures/RightBackGlass_fracture_1.asset
+  artifactKey: Guid(9b0ccc66fa23ec14ea3e46184e1ed97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass_meshes_fractures/RightBackGlass_fracture_1.asset using Guid(9b0ccc66fa23ec14ea3e46184e1ed97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a996ed15f7e56782803cf84099c0ddea') in 0.018672 seconds 
+  Import took 0.021255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_0.asset
+  artifactKey: Guid(4ed329a585b7d284b9293ae0f7e1c9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_0.asset using Guid(4ed329a585b7d284b9293ae0f7e1c9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3fd210212f2356f7643ca0db76d1bed') in 0.031025 seconds 
+  Import took 0.033779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_2.asset
+  artifactKey: Guid(8e3a5e61adf3a3e4188df4f30eab4535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_2.asset using Guid(8e3a5e61adf3a3e4188df4f30eab4535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79228db96e1c275e9408a338791444b1') in 0.013995 seconds 
+  Import took 0.016365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_8.asset
+  artifactKey: Guid(a40f8f1c2f8f1f644971d4b868678883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_8.asset using Guid(a40f8f1c2f8f1f644971d4b868678883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b115c681bfc8f705baeb2b7a7320499') in 0.014428 seconds 
+  Import took 0.017083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_5.asset
+  artifactKey: Guid(3a65b135aa1d9c8439d3fc07e3eab091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightBackGlass2_meshes_fractures/RightBackGlass2_fracture_5.asset using Guid(3a65b135aa1d9c8439d3fc07e3eab091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a15bc10b8efd3d7720b61e4fffe93598') in 0.012809 seconds 
+  Import took 0.015451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LeftBackGlass2_meshes_fractures/LeftBackGlass2_fracture_0.asset
+  artifactKey: Guid(a970c52366bb3574a8b9adf5d3e116c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LeftBackGlass2_meshes_fractures/LeftBackGlass2_fracture_0.asset using Guid(a970c52366bb3574a8b9adf5d3e116c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96dfd21b2794d58aeed25dc832914a0a') in 0.016497 seconds 
+  Import took 0.042624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LefBacktGlass_meshes_fractures/LefBacktGlass_fracture_1.asset
+  artifactKey: Guid(b6500026bdba0134da514b727c622d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LefBacktGlass_meshes_fractures/LefBacktGlass_fracture_1.asset using Guid(b6500026bdba0134da514b727c622d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8818325dc271a3e5774f05bdfcd01175') in 0.010249 seconds 
+  Import took 0.013875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_3.asset
+  artifactKey: Guid(94406feb0f6d9fd409f6455e965b52ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/RightGlass1_meshes_fractures/RightGlass1_fracture_3.asset using Guid(94406feb0f6d9fd409f6455e965b52ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '321deeb182832d27092f829a8bfcd851') in 0.015255 seconds 
+  Import took 0.018485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_3.asset
+  artifactKey: Guid(a3e9a5b111efc984e969987fbe1e98c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_3.asset using Guid(a3e9a5b111efc984e969987fbe1e98c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66119836904988207a6a98a77f5f18fa') in 0.054460 seconds 
+  Import took 0.057434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_1.asset
+  artifactKey: Guid(ce2054674948d6b4e974e69ef0ccc7c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/LeftGlass1_meshes_fractures/LeftGlass1_fracture_1.asset using Guid(ce2054674948d6b4e974e69ef0ccc7c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f048c5e915b52c3b8faada9157a54ff1') in 0.011655 seconds 
+  Import took 0.013938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_0.asset
+  artifactKey: Guid(ae1721869c8125c4b8401f5449a7ee5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_0.asset using Guid(ae1721869c8125c4b8401f5449a7ee5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '314aa50e5731a9ed3ba1308939679a06') in 0.012522 seconds 
+  Import took 0.015126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_2.asset
+  artifactKey: Guid(7f1ad6005f6cc024f87c558537d6f3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_2.asset using Guid(7f1ad6005f6cc024f87c558537d6f3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e83d21accad0a65be23934752afa0ac') in 0.019620 seconds 
+  Import took 0.022964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_7.asset
+  artifactKey: Guid(a4d54ddfdc6ff494483c4f468b65d710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/FrontGlass_meshes_fractures/FrontGlass_fracture_7.asset using Guid(a4d54ddfdc6ff494483c4f468b65d710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a193e5a3385996188cee91a55c5603f8') in 0.010927 seconds 
+  Import took 0.015051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Shooting Target Model/ShootingTargetFractured.fbx
+  artifactKey: Guid(0e33325f169b0e6478408254f87b0499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Shooting Target Model/ShootingTargetFractured.fbx using Guid(0e33325f169b0e6478408254f87b0499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72168bd92129ed08199590a82ea2207') in 0.101060 seconds 
+  Import took 0.104105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Julhiecio TPS Controller/Prefabs/Fractures/Sphere Fractured.prefab
+  artifactKey: Guid(82fbffb7dd94c734dbb6346073fd3783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Prefabs/Fractures/Sphere Fractured.prefab using Guid(82fbffb7dd94c734dbb6346073fd3783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427f18da44ee72d35ddf73b4cfc4e695') in 0.766472 seconds 
+  Import took 0.769486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_23.asset
+  artifactKey: Guid(894ea6fa89081614db0d0ddb17c5fcc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_23.asset using Guid(894ea6fa89081614db0d0ddb17c5fcc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964de2cb3017e7891dd0c78c8df49ba1') in 0.010800 seconds 
+  Import took 0.029638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_28.asset
+  artifactKey: Guid(6e5b9ce6ec5747849b45de299b49f3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_28.asset using Guid(6e5b9ce6ec5747849b45de299b49f3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828552a69df8b33578e6a96d1e8c7974') in 0.023505 seconds 
+  Import took 0.026050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_25.asset
+  artifactKey: Guid(7445ea41228bdcd4da41c7898e28e97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_25.asset using Guid(7445ea41228bdcd4da41c7898e28e97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c77c55218d5a041212e2e58adc816420') in 0.014953 seconds 
+  Import took 0.017320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_17.asset
+  artifactKey: Guid(cc63ff8ae04da8f4bbdf4eff980840ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_17.asset using Guid(cc63ff8ae04da8f4bbdf4eff980840ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c03230ca209ec3ec12e79c1191ec342c') in 0.013489 seconds 
+  Import took 0.015935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_7.asset
+  artifactKey: Guid(a0e2e63c49d044749a0f91ebadf6b846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_7.asset using Guid(a0e2e63c49d044749a0f91ebadf6b846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbaa0e76a3bd3574855f52624e1e86fd') in 0.023003 seconds 
+  Import took 0.025472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_13.asset
+  artifactKey: Guid(c5837f0764526394884b57dc29965ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_13.asset using Guid(c5837f0764526394884b57dc29965ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3893783470bc38a0e6efbb29749c3650') in 0.016277 seconds 
+  Import took 0.019199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_6.asset
+  artifactKey: Guid(8e34090d322bab74787435230f629d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_6.asset using Guid(8e34090d322bab74787435230f629d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0696247bf744106ff5e45da6596f70ba') in 0.013305 seconds 
+  Import took 0.016810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000510 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_29.asset
+  artifactKey: Guid(9a92232be87dbfa47a9ba91c2cc5c113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_29.asset using Guid(9a92232be87dbfa47a9ba91c2cc5c113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb49fcecb99c2f93f96dfb908752a4d') in 0.016279 seconds 
+  Import took 0.018993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_22.asset
+  artifactKey: Guid(b22082c9697fa644ea6c9ce774a08dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_22.asset using Guid(b22082c9697fa644ea6c9ce774a08dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3de8895d85cf2aee9ccb372bcbba0680') in 0.014533 seconds 
+  Import took 0.023804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_19.asset
+  artifactKey: Guid(35892c3321b50634f90debb243e91024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_19.asset using Guid(35892c3321b50634f90debb243e91024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc90bb6e4723f89828b515e16020a23') in 0.012058 seconds 
+  Import took 0.019791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_36.asset
+  artifactKey: Guid(cf0b01141fbfe0940a54c0bb0e89f0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_36.asset using Guid(cf0b01141fbfe0940a54c0bb0e89f0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492640e91693e1e31b5c8c02e3b7614f') in 0.015539 seconds 
+  Import took 0.018130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_38.asset
+  artifactKey: Guid(753645f6b68f6db4386ecb65d2f3c3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_38.asset using Guid(753645f6b68f6db4386ecb65d2f3c3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3459598a0416256cde2ea22ac716e8e9') in 0.016531 seconds 
+  Import took 0.019165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_37.asset
+  artifactKey: Guid(86744333d9a27fa4a89713370c27fe94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_37.asset using Guid(86744333d9a27fa4a89713370c27fe94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9eab3207f0a5083ae21ad39c8b88024') in 0.013388 seconds 
+  Import took 0.016554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_43.asset
+  artifactKey: Guid(6edbd8868b20bd14bb4bc0d2e5019c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_43.asset using Guid(6edbd8868b20bd14bb4bc0d2e5019c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6a90d61b1f31586fbc5ffce5dba579') in 0.023450 seconds 
+  Import took 0.025993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_34.asset
+  artifactKey: Guid(4c183cf59e97a934ab7401da3af8e417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_34.asset using Guid(4c183cf59e97a934ab7401da3af8e417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '357de20aa1d2343cca1413aff4686f4c') in 0.014781 seconds 
+  Import took 0.017682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_40.asset
+  artifactKey: Guid(2c39def2319e5ce4e816099fead5b182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_40.asset using Guid(2c39def2319e5ce4e816099fead5b182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a76fafbbe1f7676b43e0fb322212359') in 0.015021 seconds 
+  Import took 0.018176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_41.asset
+  artifactKey: Guid(85a7dd7526ecdeb4389c5a1c00ae702e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_41.asset using Guid(85a7dd7526ecdeb4389c5a1c00ae702e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '271d3806042be45ccfbfcd959733f451') in 0.017682 seconds 
+  Import took 0.020747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_52.asset
+  artifactKey: Guid(af4ceea3b9903cf4094ef50f214143e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_52.asset using Guid(af4ceea3b9903cf4094ef50f214143e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b990d05f9182085883e2a6b4f9b4dc') in 0.014965 seconds 
+  Import took 0.017757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_35.asset
+  artifactKey: Guid(bd7fba0627f63834f891b9557ad1b70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_35.asset using Guid(bd7fba0627f63834f891b9557ad1b70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2b566410ad4f65c504409c944784f0') in 0.014135 seconds 
+  Import took 0.016475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_51.asset
+  artifactKey: Guid(237aba16e3458174ebb488e6e5498f15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_51.asset using Guid(237aba16e3458174ebb488e6e5498f15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3961d4aa691c592e72752a1cf37e0740') in 0.015319 seconds 
+  Import took 0.017874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_44.asset
+  artifactKey: Guid(0de07b98888cdb1449284d05e8659b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_44.asset using Guid(0de07b98888cdb1449284d05e8659b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a26f630f98870cd73e7c54df15b737c') in 0.011620 seconds 
+  Import took 0.016217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_12.asset
+  artifactKey: Guid(b49a0ab12542e5a4eb7af872a6db4735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_12.asset using Guid(b49a0ab12542e5a4eb7af872a6db4735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3a29c5488621d077a08ab630bc8ddb') in 0.019911 seconds 
+  Import took 0.024904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_45.asset
+  artifactKey: Guid(511cbc04f6b099944beda284cb6857bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_45.asset using Guid(511cbc04f6b099944beda284cb6857bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f26a536f17fc75d5148cf39dfb1f10c') in 0.015791 seconds 
+  Import took 0.018054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_30.asset
+  artifactKey: Guid(37ddb6331e4e46640a462aba229e726c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_30.asset using Guid(37ddb6331e4e46640a462aba229e726c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19acdca9a1a977fc8541256e833edb7d') in 0.014013 seconds 
+  Import took 0.016344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_31.asset
+  artifactKey: Guid(c2fc3d8d6dcb7594d8de914a3ac32fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_31.asset using Guid(c2fc3d8d6dcb7594d8de914a3ac32fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad783f67aa02213498e87e55832a24d0') in 0.022303 seconds 
+  Import took 0.027315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_21.asset
+  artifactKey: Guid(a3e1f32280e019a418fc5f23cfdc5102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_21.asset using Guid(a3e1f32280e019a418fc5f23cfdc5102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ba2c8b3917b370675e0a42a9155094') in 0.024843 seconds 
+  Import took 0.027690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_24.asset
+  artifactKey: Guid(51c4441cf6865e24bb4ab672620ee22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_24.asset using Guid(51c4441cf6865e24bb4ab672620ee22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc79663ec9bf3bd74c06367a2be867bd') in 0.015657 seconds 
+  Import took 0.020381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_50.asset
+  artifactKey: Guid(f5a99df581aaaa545ad6c0e25f2e25fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_50.asset using Guid(f5a99df581aaaa545ad6c0e25f2e25fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ee69b796a9e8381475467961f4fae9') in 0.015152 seconds 
+  Import took 0.019468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_10.asset
+  artifactKey: Guid(831723e4a51278743a56ef293a5f356e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_10.asset using Guid(831723e4a51278743a56ef293a5f356e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd10d44d8008455b21a11aad0eae1ee2f') in 0.019790 seconds 
+  Import took 0.024056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_11.asset
+  artifactKey: Guid(f922213bb681bac4ba6f448d8657f04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_11.asset using Guid(f922213bb681bac4ba6f448d8657f04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d8e9e8d63ef7999686195a2a2545c5') in 0.018631 seconds 
+  Import took 0.023079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_20.asset
+  artifactKey: Guid(3450219853821014396ebc6f6f81e0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_20.asset using Guid(3450219853821014396ebc6f6f81e0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a75a634c409a70fc4598fadaf1e83e') in 0.018034 seconds 
+  Import took 0.023000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000504 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_14.asset
+  artifactKey: Guid(9dac4f7770b71e34e9427140a7ef6c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_14.asset using Guid(9dac4f7770b71e34e9427140a7ef6c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1da57c82571bdb73841af2354f58b8') in 0.015919 seconds 
+  Import took 0.019876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_49.asset
+  artifactKey: Guid(c166a37f6dad6de4e8c42f6b56aa9d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_49.asset using Guid(c166a37f6dad6de4e8c42f6b56aa9d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a35e345c3e39225afaf1422c5caee5f') in 0.017550 seconds 
+  Import took 0.022147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_53.asset
+  artifactKey: Guid(1e8849adbaefd2a49a33e6ab88f8aa24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_53.asset using Guid(1e8849adbaefd2a49a33e6ab88f8aa24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b21685c99f73113c7a360ca2afa1ad1b') in 0.015686 seconds 
+  Import took 0.018673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_32.asset
+  artifactKey: Guid(6af7ee642060f53428d8fccdc7520793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_32.asset using Guid(6af7ee642060f53428d8fccdc7520793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b4ee0e431b1eb4e8f3e42ffa800c00') in 0.016807 seconds 
+  Import took 0.020201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_18.asset
+  artifactKey: Guid(33d23eaea18ede543896f603a3fa91e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_18.asset using Guid(33d23eaea18ede543896f603a3fa91e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c26c56cdca93ec0c6a92b3fa35dd8ff') in 0.014162 seconds 
+  Import took 0.017662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_33.asset
+  artifactKey: Guid(9459a50499a9a474485a16dd3e4a3dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_33.asset using Guid(9459a50499a9a474485a16dd3e4a3dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac850732053b241e216385a1392a9903') in 0.015197 seconds 
+  Import took 0.017846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_46.asset
+  artifactKey: Guid(1ed558a2f34620b4c8fc6d1d5de7bab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_46.asset using Guid(1ed558a2f34620b4c8fc6d1d5de7bab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e09f29a5002ea0a9d5725c428a026d3') in 0.015011 seconds 
+  Import took 0.017591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_8.asset
+  artifactKey: Guid(893cac8852db1a94e96f51ee395250c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_8.asset using Guid(893cac8852db1a94e96f51ee395250c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5184786a9ea0549b0bc806aa2d098f0b') in 0.013023 seconds 
+  Import took 0.016818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_39.asset
+  artifactKey: Guid(2331779c0eb79e043b17ea034ad66ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_39.asset using Guid(2331779c0eb79e043b17ea034ad66ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce782b896ea4a4baca4b90cb08ac1cb1') in 0.022469 seconds 
+  Import took 0.025759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_48.asset
+  artifactKey: Guid(528f3e1704afd4c47b635d64e1f5877a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_48.asset using Guid(528f3e1704afd4c47b635d64e1f5877a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85d24970dc854dd6c0d81e16f0e501ed') in 0.013944 seconds 
+  Import took 0.016769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_27.asset
+  artifactKey: Guid(7f3ddcb20f899af4b8e3721f3ad78879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_27.asset using Guid(7f3ddcb20f899af4b8e3721f3ad78879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40806bcc482559ef5b0edd88cde4059a') in 0.015914 seconds 
+  Import took 0.018845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_16.asset
+  artifactKey: Guid(a05c67ef8d81ae249938f301bb6e6f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_16.asset using Guid(a05c67ef8d81ae249938f301bb6e6f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '837cd18a093bb1f3cd20cb92297ad36d') in 0.015517 seconds 
+  Import took 0.017931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_47.asset
+  artifactKey: Guid(cd6c4218aec48ed4ca5c72695eb37089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_47.asset using Guid(cd6c4218aec48ed4ca5c72695eb37089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e88dccd7f368371cf9853a33743cc5d') in 0.013982 seconds 
+  Import took 0.016706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_42.asset
+  artifactKey: Guid(a6b2fc90359363a48b277131685485de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_42.asset using Guid(a6b2fc90359363a48b277131685485de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc4196821a6ec91ceef11219ca007d2d') in 0.015105 seconds 
+  Import took 0.019027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_15.asset
+  artifactKey: Guid(103ea36ee4f220d4db8d873665dbb72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_15.asset using Guid(103ea36ee4f220d4db8d873665dbb72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2938e24c8464119f674aad00b7cc7e1') in 0.011687 seconds 
+  Import took 0.032617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_26.asset
+  artifactKey: Guid(9d85ded07e11136448c620933f774a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_26.asset using Guid(9d85ded07e11136448c620933f774a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4122b87bf19c5c0f4092f3045b17632') in 0.014346 seconds 
+  Import took 0.020579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000513 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_15.asset
+  artifactKey: Guid(103ea36ee4f220d4db8d873665dbb72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_15.asset using Guid(103ea36ee4f220d4db8d873665dbb72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2938e24c8464119f674aad00b7cc7e1') in 0.014528 seconds 
+  Import took 0.018142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_9.asset
+  artifactKey: Guid(e1332e5eedf800641a579f86ec9c7a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_9.asset using Guid(e1332e5eedf800641a579f86ec9c7a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7218cdd78a2e99274374f8d22750e611') in 0.017057 seconds 
+  Import took 0.020007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.144991 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_54.asset
+  artifactKey: Guid(aa296fd6041929d49b068111a068afbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_54.asset using Guid(aa296fd6041929d49b068111a068afbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7001bf6dde5ccf3dcd66d90f76b523ae') in 0.012794 seconds 
+  Import took 0.015422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_55.asset
+  artifactKey: Guid(d31006abb39ad0845925a42f6040921f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_55.asset using Guid(d31006abb39ad0845925a42f6040921f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90cd708656cb02d5364b003599328f63') in 0.010759 seconds 
+  Import took 0.013400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_56.asset
+  artifactKey: Guid(84036af9b0f330746acce2b37b029680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_56.asset using Guid(84036af9b0f330746acce2b37b029680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98ebc8940b0c1abe8d44f7dbaf00ec03') in 0.013784 seconds 
+  Import took 0.018014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_59.asset
+  artifactKey: Guid(96a4376eef03086488694e9c1a89f61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_59.asset using Guid(96a4376eef03086488694e9c1a89f61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb9a6428332145ba3546e82113d91e7') in 0.012520 seconds 
+  Import took 0.016394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_60.asset
+  artifactKey: Guid(900606cf8958c534da7fd78f6e586647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_60.asset using Guid(900606cf8958c534da7fd78f6e586647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b85cbb8745b94a38fcca223ee3a2d770') in 0.015224 seconds 
+  Import took 0.017823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_61.asset
+  artifactKey: Guid(1c63925f27621374dba71bdcaa5e1001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_61.asset using Guid(1c63925f27621374dba71bdcaa5e1001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd8d18cab0a6ef5e5a142f8da0179cb1') in 0.012337 seconds 
+  Import took 0.016619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_58.asset
+  artifactKey: Guid(baf4f3b28ecdac443aff4cacdaff01a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_58.asset using Guid(baf4f3b28ecdac443aff4cacdaff01a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064c9d5829dda85ce481ec8183f3635e') in 0.018797 seconds 
+  Import took 0.022255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_57.asset
+  artifactKey: Guid(0351226e10de34041aa7a9fdf3aff7af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Generated Fractures/Sphere_meshes_fractures/Sphere_fracture_57.asset using Guid(0351226e10de34041aa7a9fdf3aff7af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3660c7f65f61289c0c78154807590a') in 0.014354 seconds 
+  Import took 0.017253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.321662 seconds.
+  path: Assets/Julhiecio TPS Controller/JU Foot Placement
+  artifactKey: Guid(d2b9673ecba5fd14e98d5ccba92a62ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/JU Foot Placement using Guid(d2b9673ecba5fd14e98d5ccba92a62ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75078a9e2836778a5ff6ea34a768f5d1') in 0.007991 seconds 
+  Import took 0.011727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.420293 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Effect Models/Bottle/BottleModel.fbx
+  artifactKey: Guid(106e0df89d8d272458bdba4221ccb251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Effect Models/Bottle/BottleModel.fbx using Guid(106e0df89d8d272458bdba4221ccb251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ced33990a24e9d4d404d53ce74a7cb0') in 0.094523 seconds 
+  Import took 0.097437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run forward left.fbx
+  artifactKey: Guid(bc9038da5bfd287418af1ddc34903e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run forward left.fbx using Guid(bc9038da5bfd287418af1ddc34903e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '798cc90af091f644c902aaead85ab74f') in 0.031702 seconds 
+  Import took 0.034674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Running.fbx
+  artifactKey: Guid(b669245d6b87f8d4b9cdce53f345caa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Running.fbx using Guid(b669245d6b87f8d4b9cdce53f345caa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0f1b6553bbc78dcc5c264225f881d23') in 0.023359 seconds 
+  Import took 0.043029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run backward right.fbx
+  artifactKey: Guid(97eaaf0dcc512fc4388fb6442c53aedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run backward right.fbx using Guid(97eaaf0dcc512fc4388fb6442c53aedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10bb43cfb9011fb93ed2b0c24ca02b6a') in 0.020929 seconds 
+  Import took 0.023334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Julhiecio TPS Controller/JU Foot Placement/Models/Characters/Old JU Robot/JU Robot.fbx
+  artifactKey: Guid(7d69ce2eb7998734b83667d67a3dd391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/JU Foot Placement/Models/Characters/Old JU Robot/JU Robot.fbx using Guid(7d69ce2eb7998734b83667d67a3dd391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba59382087aa23e16ef1c15eb104b83') in 0.281641 seconds 
+  Import took 0.284143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Vehicles Models/Car Model/Car.fbx
+  artifactKey: Guid(63678e9d79a9ea74f994ff1ba0302644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Vehicles Models/Car Model/Car.fbx using Guid(63678e9d79a9ea74f994ff1ba0302644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9face0ff4c2648298d6f338bce1ac7fa') in 0.719777 seconds 
+  Import took 0.722185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Getting Up/Getting Up From Belly.fbx
+  artifactKey: Guid(015e12a0472879f45a8e894cbfa2ffa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Getting Up/Getting Up From Belly.fbx using Guid(015e12a0472879f45a8e894cbfa2ffa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df560a9380e0902a2c07be8195f9ba5b') in 0.030294 seconds 
+  Import took 0.033481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Running Turn 180.fbx
+  artifactKey: Guid(e2980484d03cfb64599ae41fc90bf140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Running Turn 180.fbx using Guid(e2980484d03cfb64599ae41fc90bf140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7d365f70e460b0426a7d44d0b21492') in 0.057499 seconds 
+  Import took 0.059967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Idle Animations/Rifle Idle.fbx
+  artifactKey: Guid(fdcbc43d19607284cb348f1ec3c3de14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Idle Animations/Rifle Idle.fbx using Guid(fdcbc43d19607284cb348f1ec3c3de14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a30d218a5580cd5db0042620b1dbd17') in 0.080048 seconds 
+  Import took 0.082466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run backward.fbx
+  artifactKey: Guid(62aadb0c6e89bf14097a4288ea851e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run backward.fbx using Guid(62aadb0c6e89bf14097a4288ea851e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e225a1aa4ca49bd1da1a4daf98e49c44') in 0.009154 seconds 
+  Import took 0.011662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Prototype Models/Footstep Plataform.fbx
+  artifactKey: Guid(7858e44e027ce58499949456ceef4af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Prototype Models/Footstep Plataform.fbx using Guid(7858e44e027ce58499949456ceef4af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3f98ae8d48086fe18f0f5336ea99ab') in 0.129255 seconds 
+  Import took 0.131586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Weapons/BulletBox/BulletBox.fbx
+  artifactKey: Guid(ff180ee8baac84844a295fcec421e3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Weapons/BulletBox/BulletBox.fbx using Guid(ff180ee8baac84844a295fcec421e3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f5400f6522b0546353dac3816fa4bb') in 0.178048 seconds 
+  Import took 0.180279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Characters/JU Mannequin/JU Mannequin Model.fbx
+  artifactKey: Guid(f6b7116127276274e81a13a42d82f8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Characters/JU Mannequin/JU Mannequin Model.fbx using Guid(f6b7116127276274e81a13a42d82f8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ea0966a0b9c0ed15527d93315a249c4') in 0.046274 seconds 
+  Import took 0.048764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Weapons/Pistol/Pistol.fbx
+  artifactKey: Guid(90a4f94370e2bed41bfc6af30a3ab416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Weapons/Pistol/Pistol.fbx using Guid(90a4f94370e2bed41bfc6af30a3ab416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f300917fbee97f4110b6c9d558563df3') in 0.051719 seconds 
+  Import took 0.054415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Prototype Models/Plataform.fbx
+  artifactKey: Guid(d9a38f0076629b5429763dc8bced5153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Prototype Models/Plataform.fbx using Guid(d9a38f0076629b5429763dc8bced5153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43166b6493d18ae254759bb375a8497b') in 0.064854 seconds 
+  Import took 0.067136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Props/Door/Modern Door.fbx
+  artifactKey: Guid(eb544e893b4e4de47ad709ab4ea45081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Props/Door/Modern Door.fbx using Guid(eb544e893b4e4de47ad709ab4ea45081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '727ceea8830ab658919508dabaffad31') in 0.067284 seconds 
+  Import took 0.069611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Hand Gun Visualizer Model.fbx
+  artifactKey: Guid(bb3860e4e566300458934675c8d3e5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Hand Gun Visualizer Model.fbx using Guid(bb3860e4e566300458934675c8d3e5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7038041a502c721fea601d820404b636') in 0.037391 seconds 
+  Import took 0.039733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Idle Animations/Neutral Idle.fbx
+  artifactKey: Guid(1db7059c76af9024e89578b2f143c442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Idle Animations/Neutral Idle.fbx using Guid(1db7059c76af9024e89578b2f143c442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe5a63d271b716ca36a74f95d626a2e') in 0.011797 seconds 
+  Import took 0.014673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run forward right.fbx
+  artifactKey: Guid(8c632f798cb6d04449d1877789dc4406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run forward right.fbx using Guid(8c632f798cb6d04449d1877789dc4406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f949c18f945da34819591504f488b3') in 0.020198 seconds 
+  Import took 0.022961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Impact Interaction System/Demo/Models/Plastic_Container.fbx
+  artifactKey: Guid(62ea7075854f44e40b4d15862061b70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Impact Interaction System/Demo/Models/Plastic_Container.fbx using Guid(62ea7075854f44e40b4d15862061b70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217f42ea54fe79d10396b601ba9ac84f') in 0.082375 seconds 
+  Import took 0.084882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Impact Interaction System/Demo/Models/Ragdoll.fbx
+  artifactKey: Guid(938dee6f6d2b6524a86af8252b1c587e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Impact Interaction System/Demo/Models/Ragdoll.fbx using Guid(938dee6f6d2b6524a86af8252b1c587e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca05acf134d77e7bfb36da9fd99a35a') in 0.065815 seconds 
+  Import took 0.068268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Hand Gun Visualizer Wire Model.fbx
+  artifactKey: Guid(da6556561970af2438d2ae1aa6e84244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Hand Gun Visualizer Wire Model.fbx using Guid(da6556561970af2438d2ae1aa6e84244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6e342b8ae2a53ace8455c59603bd5b') in 0.018527 seconds 
+  Import took 0.021436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Prototype Models/SemiSpheres.fbx
+  artifactKey: Guid(817db3e39bccc754d83c553ea671743f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Prototype Models/SemiSpheres.fbx using Guid(817db3e39bccc754d83c553ea671743f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249a9a75bb0594c6a7ca01f5d1e026e5') in 0.164538 seconds 
+  Import took 0.167702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Weapons/BulletCasing.fbx
+  artifactKey: Guid(382e52ec1cec94b4b902f4a44e7024f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Weapons/BulletCasing.fbx using Guid(382e52ec1cec94b4b902f4a44e7024f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ca1f990eb908b3991b3ec4a751a732') in 0.128633 seconds 
+  Import took 0.131010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Getting Up/Getting Up From Back.fbx
+  artifactKey: Guid(75a235316b958d8448741843c61a6d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Getting Up/Getting Up From Back.fbx using Guid(75a235316b958d8448741843c61a6d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b02635a5d52ba060e6cd21175556258f') in 0.024268 seconds 
+  Import took 0.026905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Characters/JU Robot/Model/JU Robot.fbx
+  artifactKey: Guid(ed1e0801f18169c4589e620f11e35d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Characters/JU Robot/Model/JU Robot.fbx using Guid(ed1e0801f18169c4589e620f11e35d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81231ff6b8c4caa964af9124f26f066') in 0.468224 seconds 
+  Import took 0.471501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Shooting Target Model/ShootingTarget.fbx
+  artifactKey: Guid(481f209ba9298ee4ab0677157bbc563a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Shooting Target Model/ShootingTarget.fbx using Guid(481f209ba9298ee4ab0677157bbc563a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c53f4b66fd000cd8bbb8feccc8a025a') in 0.054362 seconds 
+  Import took 0.056967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Prototype Models/Ragdoll Ball.fbx
+  artifactKey: Guid(1213a2c8f54d79f4597ff65e931aed9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Prototype Models/Ragdoll Ball.fbx using Guid(1213a2c8f54d79f4597ff65e931aed9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ddd77a0d62ba2bf139e37d1c450e44') in 0.021190 seconds 
+  Import took 0.023572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run left.fbx
+  artifactKey: Guid(de0bc783799d97c4090b2bb8a7d614dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run left.fbx using Guid(de0bc783799d97c4090b2bb8a7d614dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7fed2d3ab5f8883d2c92ce5f160ab1') in 0.023967 seconds 
+  Import took 0.026679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Hand Visualizer Model.fbx
+  artifactKey: Guid(f43450d739791494e945fcb926d9f321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Hand Visualizer Model.fbx using Guid(f43450d739791494e945fcb926d9f321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '256d300278eaf40b7ebddcc4e4657cb8') in 0.032718 seconds 
+  Import took 0.035485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/crouch idle.fbx
+  artifactKey: Guid(97cc845d60bd5624ba4ec86a88fab90d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/crouch idle.fbx using Guid(97cc845d60bd5624ba4ec86a88fab90d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0219d08d707a7d1960908bd24ba95dc2') in 0.084259 seconds 
+  Import took 0.088166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Hand Visualizer Model.fbx
+  artifactKey: Guid(f43450d739791494e945fcb926d9f321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Hand Visualizer Model.fbx using Guid(f43450d739791494e945fcb926d9f321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '256d300278eaf40b7ebddcc4e4657cb8') in 0.021878 seconds 
+  Import took 0.024796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Characters/DummyRobot/RobotModel.fbx
+  artifactKey: Guid(4721370cdc604824989d5008df670e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Characters/DummyRobot/RobotModel.fbx using Guid(4721370cdc604824989d5008df670e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecc396df8a301d1becded5d9a67e5531') in 0.143430 seconds 
+  Import took 0.146164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run forward.fbx
+  artifactKey: Guid(64216960a3719614589472daa058dd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run forward.fbx using Guid(64216960a3719614589472daa058dd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc283b1d4f7f8a7b53bfde09dbabdee') in 0.029055 seconds 
+  Import took 0.031648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Hand Visualizer Wire Model.fbx
+  artifactKey: Guid(fe540e1fc719da948bd737a43191696a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Hand Visualizer Wire Model.fbx using Guid(fe540e1fc719da948bd737a43191696a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c894c95ebbeb91c9626e8bf0d7f67d54') in 0.021607 seconds 
+  Import took 0.024830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000568 seconds.
+  path: Assets/Impact Interaction System/Demo/Models/Metal_Sheet.fbx
+  artifactKey: Guid(abd3c15053aa5dc42ac75e1a25e273b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Impact Interaction System/Demo/Models/Metal_Sheet.fbx using Guid(abd3c15053aa5dc42ac75e1a25e273b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d41db02674746f9099c5d3c81af44c6') in 0.050514 seconds 
+  Import took 0.054092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Effect Models/Bullet Hole.fbx
+  artifactKey: Guid(de80778d1581c404e8aa02e1401d5796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Effect Models/Bullet Hole.fbx using Guid(de80778d1581c404e8aa02e1401d5796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283dd33c898aee1ddbe1a981ee99ef0d') in 0.112589 seconds 
+  Import took 0.115438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Characters/Cyber Robot/CyberRobotCharacter.fbx
+  artifactKey: Guid(6b75ab7ceaeff4741909bd68202f9721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Characters/Cyber Robot/CyberRobotCharacter.fbx using Guid(6b75ab7ceaeff4741909bd68202f9721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8650c9632790f05db38b98ba4fe9095') in 0.185402 seconds 
+  Import took 0.188245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Effect Models/Bullet Hole.fbx
+  artifactKey: Guid(de80778d1581c404e8aa02e1401d5796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Effect Models/Bullet Hole.fbx using Guid(de80778d1581c404e8aa02e1401d5796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283dd33c898aee1ddbe1a981ee99ef0d') in 0.013024 seconds 
+  Import took 0.015754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Vehicles Models/Motorcycle Model/Motorcycle.fbx
+  artifactKey: Guid(2c5e3b4379c827547856f862f48c1405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Vehicles Models/Motorcycle Model/Motorcycle.fbx using Guid(2c5e3b4379c827547856f862f48c1405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af10cfd6e817f11afaf83484ffa0e3b6') in 0.315933 seconds 
+  Import took 0.318985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Walking.fbx
+  artifactKey: Guid(16275c422e0056b4f8e40a8dffae9f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Walking.fbx using Guid(16275c422e0056b4f8e40a8dffae9f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0aa8589651950176e975fe71f780b3') in 0.025040 seconds 
+  Import took 0.027916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run right.fbx
+  artifactKey: Guid(6eafe1762801d6e4d8bcb584e4c8620b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run right.fbx using Guid(6eafe1762801d6e4d8bcb584e4c8620b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c09a2a93d59bb0ae8d93b014bb9d61') in 0.010392 seconds 
+  Import took 0.012850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Prototype Models/MeshTerrain.fbx
+  artifactKey: Guid(9821c488a0945db4083707b85498b4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Prototype Models/MeshTerrain.fbx using Guid(9821c488a0945db4083707b85498b4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7af2e11e761415978a5915547ad63dbf') in 0.071775 seconds 
+  Import took 0.074147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run backward left.fbx
+  artifactKey: Guid(0a65c10c34b74964a9acb21d9301b93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Armed/run backward left.fbx using Guid(0a65c10c34b74964a9acb21d9301b93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e6f1cd3ca4cd14f84655b91f3614ee7') in 0.019043 seconds 
+  Import took 0.021569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Prototype Models/Ramp.fbx
+  artifactKey: Guid(9f8ece394f19c684f988cd115940c610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Prototype Models/Ramp.fbx using Guid(9f8ece394f19c684f988cd115940c610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a659c97380d422fceba2ae7fe038040') in 0.052900 seconds 
+  Import took 0.071892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Prototype Models/Ramp 45 degrees.fbx
+  artifactKey: Guid(4414ad9ba9ef2964cbe0d565671119c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Prototype Models/Ramp 45 degrees.fbx using Guid(4414ad9ba9ef2964cbe0d565671119c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a84eb1bab9a011dabe0d08c97ca975c') in 0.065111 seconds 
+  Import took 0.068272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Running Right Turn.fbx
+  artifactKey: Guid(3f6e862891c01f844801e442a55e9819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Running Right Turn.fbx using Guid(3f6e862891c01f844801e442a55e9819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba1a450447750ca7b8985210a70cd8f') in 0.039235 seconds 
+  Import took 0.042421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Prototype Models/Pickable Item Case.fbx
+  artifactKey: Guid(61647d13ae3779e4c8fee904d5dbaa57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Prototype Models/Pickable Item Case.fbx using Guid(61647d13ae3779e4c8fee904d5dbaa57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac7709dd44a241601c1ffa6c3b2815e') in 0.016540 seconds 
+  Import took 0.018825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Weapons/Shotgun/Shotgun.fbx
+  artifactKey: Guid(4ec5493dadd021b41917865ee0f26203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Weapons/Shotgun/Shotgun.fbx using Guid(4ec5493dadd021b41917865ee0f26203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21be72b0f82c717a4a554b1a23819bd2') in 0.040389 seconds 
+  Import took 0.042939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.489499 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Weapons/Sniper/SniperRifle.fbx
+  artifactKey: Guid(6c12f0a8879a8dd40b9365a2990e1fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Weapons/Sniper/SniperRifle.fbx using Guid(6c12f0a8879a8dd40b9365a2990e1fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0f335e2a82864843c7a4ffc2a3d7148') in 0.224622 seconds 
+  Import took 0.227491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk left.fbx
+  artifactKey: Guid(f39798fdf665f3645ab8ba13db8591a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk left.fbx using Guid(f39798fdf665f3645ab8ba13db8591a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8444e0342f6ccb31f98e141def7e6c4') in 0.016842 seconds 
+  Import took 0.019563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching right.fbx
+  artifactKey: Guid(29364c8463bdd1f4ca080af413f74481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching right.fbx using Guid(29364c8463bdd1f4ca080af413f74481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd352323ada5d8ba0883b991970e5db44') in 0.028798 seconds 
+  Import took 0.031395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Prototype Models/Stair02.fbx
+  artifactKey: Guid(5a89294da513fd747b131a1c1f4a2a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Prototype Models/Stair02.fbx using Guid(5a89294da513fd747b131a1c1f4a2a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '622ff1f372a24165b544dfb914b019ca') in 0.106174 seconds 
+  Import took 0.109602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk backward.fbx
+  artifactKey: Guid(ed84472a4aa099a41b84077a196fa721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk backward.fbx using Guid(ed84472a4aa099a41b84077a196fa721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6b4255d92d1d51e542da202389cb2e') in 0.018749 seconds 
+  Import took 0.021748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching left.fbx
+  artifactKey: Guid(02f5144f6e34efa45bad3afc99cfd763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching left.fbx using Guid(02f5144f6e34efa45bad3afc99cfd763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8efdfe0d78e1894a195dc3732f2042') in 0.056510 seconds 
+  Import took 0.059514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Weapons/Submachine Gun/Submachine Gun.fbx
+  artifactKey: Guid(6a4614df4dbff3f43a776f73e2a1157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Weapons/Submachine Gun/Submachine Gun.fbx using Guid(6a4614df4dbff3f43a776f73e2a1157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd94ad88a5343314d01feab10430909') in 0.052359 seconds 
+  Import took 0.054855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk forward.fbx
+  artifactKey: Guid(47a25f32bef3dbd4bba76a82f6a52c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk forward.fbx using Guid(47a25f32bef3dbd4bba76a82f6a52c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '367b214c02b2082c8677993238040888') in 0.011553 seconds 
+  Import took 0.014590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Standard Run.fbx
+  artifactKey: Guid(ead5f65329a078c46aea4e8231788a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Running Animations/Standard Run.fbx using Guid(ead5f65329a078c46aea4e8231788a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ec229f13a257dd540dfefe1a8576bf') in 0.069171 seconds 
+  Import took 0.071771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching backward.fbx
+  artifactKey: Guid(064df147aed729047b8d8065194db10e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching backward.fbx using Guid(064df147aed729047b8d8065194db10e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49aac6279ace20860e306d03d7f42bd7') in 0.039261 seconds 
+  Import took 0.041785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Step Visualizer Model Wire.fbx
+  artifactKey: Guid(17be10cd01a532c44b8d1d89672b99cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Step Visualizer Model Wire.fbx using Guid(17be10cd01a532c44b8d1d89672b99cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f896fa12ee6d836568f983ba3050d65') in 0.030154 seconds 
+  Import took 0.032579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk backward right.fbx
+  artifactKey: Guid(c84371efa439f0844ab9ea37333f7960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk backward right.fbx using Guid(c84371efa439f0844ab9ea37333f7960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c36cc0e0ad70ca410f95e0f44e0ed80') in 0.023418 seconds 
+  Import took 0.027674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Prototype Models/Stair01.fbx
+  artifactKey: Guid(33c73af8d15481e48ab87c931c512f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Prototype Models/Stair01.fbx using Guid(33c73af8d15481e48ab87c931c512f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05490f86fbff29384bb44a2152286c09') in 0.110688 seconds 
+  Import took 0.113496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching forward.fbx
+  artifactKey: Guid(373bf16d22f3e4942ba3e7509ee18e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching forward.fbx using Guid(373bf16d22f3e4942ba3e7509ee18e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69dd66262435fc06bd35dee7348a0e1') in 0.011132 seconds 
+  Import took 0.013636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching backward right.fbx
+  artifactKey: Guid(72e9d1cb90387c74383b57ca4065de47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching backward right.fbx using Guid(72e9d1cb90387c74383b57ca4065de47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707ade96da8ecb4f06b889dd19c38b55') in 0.026467 seconds 
+  Import took 0.029085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk right.fbx
+  artifactKey: Guid(5610e861a4b1a5740bb6dce40c2d2619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk right.fbx using Guid(5610e861a4b1a5740bb6dce40c2d2619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500a76790089af9873e383f7440dee0a') in 0.012725 seconds 
+  Import took 0.015399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching backward left.fbx
+  artifactKey: Guid(07950da4f27b72c4cb51cdb2afdf7adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching backward left.fbx using Guid(07950da4f27b72c4cb51cdb2afdf7adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62d08069832d0b50a3c4a51d548569b5') in 0.013907 seconds 
+  Import took 0.016604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Walking.fbx
+  artifactKey: Guid(6bb5f3f694c53e04d8e192a95fb85c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Walking.fbx using Guid(6bb5f3f694c53e04d8e192a95fb85c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d606cb8361f785be097e98aba037dac') in 0.012302 seconds 
+  Import took 0.015158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching forward left.fbx
+  artifactKey: Guid(1049d5f48bba93742aea6533e42dd6c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching forward left.fbx using Guid(1049d5f48bba93742aea6533e42dd6c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9364a29824cb70ca8995f555bbeb8b') in 0.013866 seconds 
+  Import took 0.016665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk forward right.fbx
+  artifactKey: Guid(0aef9d35004e84040834cf3f07b05916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk forward right.fbx using Guid(0aef9d35004e84040834cf3f07b05916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c573a21650e775317077a59aaa9aea1') in 0.012256 seconds 
+  Import took 0.030411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk backward left.fbx
+  artifactKey: Guid(0b18f6077ba518c44ae63463372b1126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk backward left.fbx using Guid(0b18f6077ba518c44ae63463372b1126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '637bec084472a15eed7243c92d06de40') in 0.012135 seconds 
+  Import took 0.014908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Walk.fbx
+  artifactKey: Guid(9145469b3ecf68b4383a643dfb3dde99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Walk.fbx using Guid(9145469b3ecf68b4383a643dfb3dde99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '827c51889e6e58093d24d12ddec01a22') in 0.095338 seconds 
+  Import took 0.097888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching forward right.fbx
+  artifactKey: Guid(eec6c6155d1544542a2ba918e763a1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Crouched Animations/Crouched Armed/walk crouching forward right.fbx using Guid(eec6c6155d1544542a2ba918e763a1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd73eaa16c8095d3320df0f49835c6ee') in 0.011418 seconds 
+  Import took 0.014668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk forward left.fbx
+  artifactKey: Guid(c0472c25b4095174ba76d4165c36c946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Animations/Humanoid Animations/Walk Animations/Armed/walk forward left.fbx using Guid(c0472c25b4095174ba76d4165c36c946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692b3a22ab580d6b3b84ab81e7ed2e7a') in 0.011260 seconds 
+  Import took 0.015881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Step Visualizer Model.fbx
+  artifactKey: Guid(6b70b21f3295a7441b544a6f7bd820e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Editor/Editor Resources/GizmosModels/Step Visualizer Model.fbx using Guid(6b70b21f3295a7441b544a6f7bd820e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b158ffdff2f835958faff180203250d9') in 0.023878 seconds 
+  Import took 0.027172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.895226 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Vehicles Models/Car Model/Materials/front_light.mat
+  artifactKey: Guid(4cabbe81033bce347996f894909bc544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Vehicles Models/Car Model/Materials/front_light.mat using Guid(4cabbe81033bce347996f894909bc544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3875f694cd71d6a0edfa6f8ee27d04f') in 0.022541 seconds 
+  Import took 0.027151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006023 seconds.
+  path: Assets/Julhiecio TPS Controller/Models/Vehicles Models/Car Model/Materials/front_light.mat
+  artifactKey: Guid(4cabbe81033bce347996f894909bc544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Julhiecio TPS Controller/Models/Vehicles Models/Car Model/Materials/front_light.mat using Guid(4cabbe81033bce347996f894909bc544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3875f694cd71d6a0edfa6f8ee27d04f') in 0.008525 seconds 
+  Import took 0.011864 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003340 seconds.
+Registered in 0.003342 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.916 seconds
+- Completed reload, in  0.923 seconds
 Domain Reload Profiling:
-	ReloadAssembly (917ms)
-		BeginReloadAssembly (112ms)
+	ReloadAssembly (924ms)
+		BeginReloadAssembly (125ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (752ms)
-			LoadAssemblies (93ms)
+		EndReloadAssembly (744ms)
+			LoadAssemblies (95ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (238ms)
+			SetupTypeCache (233ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (310ms)
+			SetupLoadedEditorAssemblies (306ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (237ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1631 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 152.1 MB.
-System memory in use after: 152.2 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2152.
-Total: 2.554600 ms (FindLiveObjects: 0.164400 ms CreateObjectMapping: 0.046900 ms MarkObjects: 2.324400 ms  DeleteObjects: 0.018000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 833.966172 seconds.
-  path: Assets/MVP/MVPSettings.lighting
-  artifactKey: Guid(e887740ac4c411746923636f8d57b6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MVP/MVPSettings.lighting using Guid(e887740ac4c411746923636f8d57b6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033d7261af2e8c41e247aa04e8f9411a') in 0.035097 seconds 
-  Import took 0.038090 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.019924 seconds.
-  path: Assets/MVP/MVPSettings.lighting
-  artifactKey: Guid(e887740ac4c411746923636f8d57b6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MVP/MVPSettings.lighting using Guid(e887740ac4c411746923636f8d57b6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033d7261af2e8c41e247aa04e8f9411a') in 0.002512 seconds 
-  Import took 0.006285 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.640275 seconds.
-  path: Assets/MVP/enemy.cs
-  artifactKey: Guid(f027a090de7a141489101e1be3c85c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MVP/enemy.cs using Guid(f027a090de7a141489101e1be3c85c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b509466488e10b9f1b0ac3513e3fbde') in 0.021354 seconds 
-  Import took 0.023819 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003831 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.956 seconds
-Domain Reload Profiling:
-	ReloadAssembly (957ms)
-		BeginReloadAssembly (109ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (793ms)
-			LoadAssemblies (99ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (253ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (322ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (245ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1631 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 152.1 MB.
-System memory in use after: 152.3 MB.
+System memory in use before: 167.6 MB.
+System memory in use after: 167.7 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2154.
-Total: 2.737200 ms (FindLiveObjects: 0.150400 ms CreateObjectMapping: 0.042900 ms MarkObjects: 2.529500 ms  DeleteObjects: 0.013800 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2155.
+Total: 2.709500 ms (FindLiveObjects: 0.131400 ms CreateObjectMapping: 0.043000 ms MarkObjects: 2.518100 ms  DeleteObjects: 0.016200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
