@@ -222,3 +222,35 @@ Received Import Request.
 Start importing Assets/MVP/cube test/test_destructable_box.fbx using Guid(2c475f4c5f6c81e4cafcbdb912ae9e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348d60faf51389a0f5a11c4212ad1d5b') in 0.239607 seconds 
   Import took 0.242370 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 3243.011688 seconds.
+  path: Assets/MVP/cube test/test_destructable_box Variant.prefab
+  artifactKey: Guid(c78a3d168852f324196ce737e3452af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MVP/cube test/test_destructable_box Variant.prefab using Guid(c78a3d168852f324196ce737e3452af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6512cc48a98ae9204756b901f28a068') in 0.062561 seconds 
+  Import took 0.083985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.295584 seconds.
+  path: Assets/MVP/cube test/prefab.prefab
+  artifactKey: Guid(c78a3d168852f324196ce737e3452af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MVP/cube test/prefab.prefab using Guid(c78a3d168852f324196ce737e3452af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d335433d895a7332f02557e1babe58') in 0.038093 seconds 
+  Import took 0.049462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.891298 seconds.
+  path: Assets/MVP/cube test/prefab.prefab
+  artifactKey: Guid(c78a3d168852f324196ce737e3452af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MVP/cube test/prefab.prefab using Guid(c78a3d168852f324196ce737e3452af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4297b43e3048b44e29d5ee9391f887') in 0.034658 seconds 
+  Import took 0.043629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.665530 seconds.
+  path: Assets/MVP/cube test/prefab.prefab
+  artifactKey: Guid(c78a3d168852f324196ce737e3452af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MVP/cube test/prefab.prefab using Guid(c78a3d168852f324196ce737e3452af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff6009e87959beb06a0eaf21025e808') in 0.039359 seconds 
+  Import took 0.048795 seconds .
+
