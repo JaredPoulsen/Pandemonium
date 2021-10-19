@@ -119,6 +119,7 @@ public class ThirdPersonController : MonoBehaviour
     [HideInInspector] public bool InverseKinematics = true;
 
 
+
     void Start()
     {
         Game = FindObjectOfType<GameManagerAndUI>();
@@ -1319,6 +1320,26 @@ public class ThirdPersonController : MonoBehaviour
             advancedRagdollController.State = AdvancedRagdollController.RagdollState.Ragdolled;
             print("Ragdolled");
         }
+
+        if (other.gameObject.tag == "Bullet")
+        {
+            Health -= 5;
+            Debug.Log(Health);
+
+            if (Health <= 0)
+            {
+                print("Killed by Bullet");
+            }
+        }
+        if (other.gameObject.tag == "Enemy")
+        {
+            Health -= 25;
+            Debug.Log(Health);
+            if (Health <= 0)
+            {
+                print("Killed by Enemy");
+            }
+        }
     }
 
 
@@ -1391,4 +1412,6 @@ public class ThirdPersonController : MonoBehaviour
             }
         }
     }
+
+
 }
