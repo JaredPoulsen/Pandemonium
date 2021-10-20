@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/MVP/SceneChange/title.unity
     guid: 1b162c82cf21e164990862c8e0ec75d1
-  - enabled: 1
+  - enabled: 0
     path: Assets/MVP/SceneChange/Instructions.unity
     guid: 9a4640f31f6c724439688804f47317d3
   - enabled: 1
