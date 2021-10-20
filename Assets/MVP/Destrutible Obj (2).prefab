@@ -113,7 +113,7 @@ MonoBehaviour:
   FracturedObject: {fileID: 6543992914970358980, guid: 1e44e1f9c75a29b45a3fb59dcd15df00, type: 3}
   PositionOffset: {x: 0, y: 0, z: 0}
   TimeToDestroy: 500
-  DoSlowmotionWhenDestroy: 1
+  DoSlowmotionWhenDestroy: 0
   DoSlowmotionWhenPlayerIsJumping: 0
 --- !u!54 &8633089881775160644
 Rigidbody:
