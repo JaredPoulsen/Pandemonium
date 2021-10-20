@@ -1052,6 +1052,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (192)
@@ -1183,7 +1187,7 @@ GameObject:
   - component: {fileID: 61167880}
   m_Layer: 0
   m_Name: Cube (35)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1705,7 +1709,7 @@ GameObject:
   - component: {fileID: 109416580}
   m_Layer: 0
   m_Name: Cube (15)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1941,7 +1945,7 @@ GameObject:
   - component: {fileID: 117156256}
   m_Layer: 0
   m_Name: Cube (28)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2222,7 +2226,7 @@ GameObject:
   - component: {fileID: 130506853}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2559,6 +2563,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (9)
@@ -2932,7 +2940,7 @@ GameObject:
   - component: {fileID: 184799035}
   m_Layer: 0
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3022,63 +3030,63 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6978201786571102877, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.00000039907218
+      value: 0.00000044284434
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786571102877, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.34425262
+      value: 0.34425265
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786571102877, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 0.025168996
+      value: 0.02516875
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786687466141, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.22194217
+      value: -0.22194213
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786687466141, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.22971576
+      value: 0.2297158
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786687466141, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.007822279
+      value: -0.007822644
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786708387574, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.00000053970143
+      value: 0.000000059138983
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786708387574, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.21883518
+      value: 0.21883541
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786708387574, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.000000070780516
+      value: -0.00000009313226
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786730864842, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.0000009019859
+      value: -0.0000003860332
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786730864842, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.21885319
+      value: 0.21885303
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786730864842, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.00000022724271
+      value: -0.000000029802322
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786832831958, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.08332781
+      value: -0.08332681
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786832831958, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.055817015
+      value: -0.055817004
       objectReference: {fileID: 0}
     - target: {fileID: 6978201786832831958, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.00045617658
+      value: -0.00045566575
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787015021510, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3090,39 +3098,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787162639768, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.0000006600749
+      value: -0.0000006882474
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787162639768, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.39950812
+      value: 0.39950806
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787162639768, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 0.000000230968
+      value: 0.00000028871
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787299074997, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.08332811
+      value: 0.08332699
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787299074997, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.055816974
+      value: -0.05581699
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787299074997, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 0.004193059
+      value: 0.0041928184
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787380767990, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.0016368824
+      value: -0.0016355403
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787380767990, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.21758102
+      value: 0.21758103
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787380767990, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.028637286
+      value: -0.028636904
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787404527569, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3134,15 +3142,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787408954568, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.00000033155084
+      value: 0.00000023469329
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787408954568, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.40090945
+      value: 0.4009094
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787408954568, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 0.0000005289912
+      value: 0.00000035762787
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787492123282, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: TimeToGetUp
@@ -3158,15 +3166,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787697881007, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.22194213
+      value: 0.22194241
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787697881007, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.22963914
+      value: 0.22963896
       objectReference: {fileID: 0}
     - target: {fileID: 6978201787697881007, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.007240992
+      value: -0.0072396323
       objectReference: {fileID: 0}
     - target: {fileID: 7195494932091304387, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3273,7 +3281,7 @@ GameObject:
   - component: {fileID: 193615469}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3595,43 +3603,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -99.02777
+      value: -99.056564
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.232109
+      value: 8.239578
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.174023
+      value: -42.104366
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.93374866
+      value: 0.93835855
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.10463987
+      value: 0.04293658
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.34226418
+      value: -0.34298646
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.004389134
+      value: -0.000074239266
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 11.093
+      value: 4.619
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -40.714
+      value: -40.225
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -4.666
+      value: -1.701
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
@@ -3745,7 +3753,7 @@ GameObject:
   - component: {fileID: 235562959}
   m_Layer: 0
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3895,6 +3903,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (205)
@@ -4198,6 +4210,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (29)
@@ -4255,6 +4271,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (182)
@@ -4420,7 +4440,7 @@ GameObject:
   - component: {fileID: 275327065}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4513,6 +4533,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (38)
@@ -4582,7 +4606,7 @@ GameObject:
   - component: {fileID: 289274844}
   m_Layer: 0
   m_Name: Cube (29)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4826,6 +4850,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 825779176}
+    - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
+      propertyPath: maxdistance
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body
@@ -5108,6 +5136,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (146)
@@ -5227,6 +5259,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (176)
@@ -5351,6 +5387,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (150)
@@ -5558,6 +5598,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (126)
@@ -5692,43 +5736,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -98.47
+      value: -98.445145
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.362109
+      value: 9.2601385
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.75
+      value: -42.814545
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8794774
+      value: 0.8839565
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.10310856
+      value: 0.036774535
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.46427453
+      value: -0.46595675
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.018368324
+      value: -0.012369384
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 9.457
+      value: 3.066
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -56.277
+      value: -55.676
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -7.459
+      value: -3.223
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
@@ -5986,6 +6030,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 825779176}
+    - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
+      propertyPath: maxdistance
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (1)
@@ -10820,6 +10868,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (42)
@@ -11211,7 +11263,7 @@ GameObject:
   - component: {fileID: 477060058}
   m_Layer: 0
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11547,6 +11599,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (74)
@@ -11678,7 +11734,7 @@ GameObject:
   - component: {fileID: 502725963}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11766,6 +11822,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (77)
@@ -12471,7 +12531,7 @@ GameObject:
   - component: {fileID: 550013189}
   m_Layer: 0
   m_Name: Cube (31)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13091,7 +13151,7 @@ GameObject:
   - component: {fileID: 581412218}
   m_Layer: 0
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13186,7 +13246,7 @@ GameObject:
   - component: {fileID: 594966149}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13455,6 +13515,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (75)
@@ -13824,7 +13888,7 @@ GameObject:
   - component: {fileID: 689577362}
   m_Layer: 0
   m_Name: Cube (24)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14022,6 +14086,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 825779176}
+    - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
+      propertyPath: maxdistance
+      value: 31
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (2)
@@ -14275,7 +14343,7 @@ GameObject:
   - component: {fileID: 709779529}
   m_Layer: 0
   m_Name: Cube (39)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15062,7 +15130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ed7715bed8ac041b7d5bf3a79d9ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: {fileID: 11400000, guid: 3a816e80e863acc4f97f86861bd09d9c, type: 2}
 --- !u!4 &825779176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7448167567439144304, guid: 5c9057365c1298745add99e74effe260, type: 3}
@@ -15318,6 +15385,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (22)
@@ -15511,7 +15582,7 @@ GameObject:
   - component: {fileID: 860290022}
   m_Layer: 0
   m_Name: Cube (19)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15850,6 +15921,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (115)
@@ -16258,6 +16333,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (24)
@@ -16561,7 +16640,7 @@ MonoBehaviour:
   FracturedObject: {fileID: 6543992914970358980, guid: 1e44e1f9c75a29b45a3fb59dcd15df00, type: 3}
   PositionOffset: {x: 0, y: 0, z: 0}
   TimeToDestroy: 500
-  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenDestroy: 1
   DoSlowmotionWhenPlayerIsJumping: 0
 --- !u!65 &933102980
 BoxCollider:
@@ -17144,6 +17223,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (13)
@@ -17364,6 +17447,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (107)
@@ -17482,6 +17569,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 825779176}
+    - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
+      propertyPath: maxdistance
+      value: 22
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (3)
@@ -22757,6 +22848,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (46)
@@ -22819,6 +22914,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (61)
@@ -23061,6 +23160,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 825779176}
+    - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
+      propertyPath: maxdistance
+      value: 28
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (4)
@@ -23085,7 +23188,7 @@ GameObject:
   - component: {fileID: 1109554362}
   m_Layer: 0
   m_Name: Cube (27)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23258,7 +23361,7 @@ GameObject:
   - component: {fileID: 1118706909}
   m_Layer: 0
   m_Name: Cube (33)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23415,7 +23518,7 @@ GameObject:
   - component: {fileID: 1134233068}
   m_Layer: 0
   m_Name: Cube (23)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23563,7 +23666,7 @@ MonoBehaviour:
   FracturedObject: {fileID: 6543992914970358980, guid: 1e44e1f9c75a29b45a3fb59dcd15df00, type: 3}
   PositionOffset: {x: 0, y: 0, z: 0}
   TimeToDestroy: 500
-  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenDestroy: 1
   DoSlowmotionWhenPlayerIsJumping: 0
 --- !u!65 &1134921392
 BoxCollider:
@@ -24453,6 +24556,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (36)
@@ -24515,6 +24622,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_RootOrder
       value: 198
@@ -24850,6 +24961,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (199)
@@ -24912,6 +25027,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (12)
@@ -25111,6 +25230,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (120)
@@ -25173,6 +25296,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (49)
@@ -25307,43 +25434,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -97.88
+      value: -97.91461
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.232109
+      value: 8.085376
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.95
+      value: -42.873573
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8794774
+      value: 0.8839565
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.10310856
+      value: 0.036774535
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.46427453
+      value: -0.46595675
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.018368324
+      value: -0.012369384
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 9.457
+      value: 3.066
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -56.277
+      value: -55.676
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -7.459
+      value: -3.223
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
@@ -25830,6 +25957,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (72)
@@ -26195,6 +26326,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (52)
@@ -26257,6 +26392,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (108)
@@ -26701,6 +26840,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (18)
@@ -26961,7 +27104,7 @@ GameObject:
   - component: {fileID: 1478529333}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27118,7 +27261,7 @@ GameObject:
   - component: {fileID: 1490230439}
   m_Layer: 0
   m_Name: Cube (17)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27590,43 +27733,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -99.971924
+      value: -99.99463
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.232109
+      value: 8.395721
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -41.297276
+      value: -41.235
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9750867
+      value: 0.97985893
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.10408146
+      value: 0.03877297
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.19554348
+      value: -0.19588527
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.011654028
+      value: -0.0014223586
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 11.978
+      value: 4.326
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -22.79
+      value: -22.649
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.053
+      value: -1.033
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
@@ -27642,6 +27785,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (140)
@@ -27715,7 +27862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1542214583
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28023,6 +28170,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (210)
@@ -28464,7 +28615,7 @@ GameObject:
   - component: {fileID: 1562932943}
   m_Layer: 0
   m_Name: Cube (18)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33490,6 +33641,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (53)
@@ -34172,7 +34327,7 @@ GameObject:
   - component: {fileID: 1624611810}
   m_Layer: 0
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34438,7 +34593,7 @@ GameObject:
   - component: {fileID: 1637051442}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34582,6 +34737,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 825779176}
+    - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
+      propertyPath: maxdistance
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (5)
@@ -34982,6 +35141,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (58)
@@ -35044,6 +35207,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (160)
@@ -35175,7 +35342,7 @@ GameObject:
   - component: {fileID: 1701365623}
   m_Layer: 0
   m_Name: Cube (25)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35270,7 +35437,7 @@ GameObject:
   - component: {fileID: 1703052195}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35358,6 +35525,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (156)
@@ -35432,7 +35603,7 @@ GameObject:
   - component: {fileID: 1717149077}
   m_Layer: 0
   m_Name: Cube (34)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36490,7 +36661,7 @@ GameObject:
   - component: {fileID: 1755690774}
   m_Layer: 0
   m_Name: Cube (21)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36585,7 +36756,7 @@ GameObject:
   - component: {fileID: 1757133974}
   m_Layer: 0
   m_Name: Cube (16)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36742,6 +36913,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (27)
@@ -36935,7 +37110,7 @@ GameObject:
   - component: {fileID: 1796994384}
   m_Layer: 0
   m_Name: Cube (25)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37030,7 +37205,7 @@ GameObject:
   - component: {fileID: 1802215552}
   m_Layer: 0
   m_Name: Cube (38)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37344,7 +37519,7 @@ GameObject:
   - component: {fileID: 1815844524}
   m_Layer: 0
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37501,7 +37676,7 @@ GameObject:
   - component: {fileID: 1834618466}
   m_Layer: 0
   m_Name: Cube (23)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37894,6 +38069,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (172)
@@ -38409,7 +38588,7 @@ GameObject:
   - component: {fileID: 1895658627}
   m_Layer: 0
   m_Name: Cube (22)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38628,7 +38807,7 @@ GameObject:
   - component: {fileID: 1916863366}
   m_Layer: 0
   m_Name: Cube (36)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38716,6 +38895,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (14)
@@ -38855,7 +39038,7 @@ GameObject:
   - component: {fileID: 1926767475}
   m_Layer: 0
   m_Name: Cube (20)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38943,6 +39126,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (31)
@@ -39260,6 +39447,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (32)
@@ -39382,7 +39573,7 @@ MonoBehaviour:
   FracturedObject: {fileID: 6543992914970358980, guid: 1e44e1f9c75a29b45a3fb59dcd15df00, type: 3}
   PositionOffset: {x: 0, y: 0, z: 0}
   TimeToDestroy: 500
-  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenDestroy: 1
   DoSlowmotionWhenPlayerIsJumping: 0
 --- !u!65 &1948722137
 BoxCollider:
@@ -39601,7 +39792,7 @@ GameObject:
   - component: {fileID: 1967309627}
   m_Layer: 0
   m_Name: Cube (40)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40073,7 +40264,7 @@ GameObject:
   - component: {fileID: 1992488800}
   m_Layer: 0
   m_Name: Cube (26)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40161,6 +40352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (162)
@@ -40342,7 +40537,7 @@ GameObject:
   - component: {fileID: 2010326294}
   m_Layer: 0
   m_Name: Cube (30)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40685,7 +40880,7 @@ GameObject:
   - component: {fileID: 2042024485}
   m_Layer: 0
   m_Name: Cube (37)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40835,6 +41030,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenPlayerIsJumping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (104)
@@ -40845,43 +41048,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -99.53
+      value: -99.5002
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.362109
+      value: 9.394356
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.100002
+      value: -42.170315
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.940001
+      value: 0.944684
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.10470374
+      value: 0.038230933
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.3246989
+      value: -0.32567874
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0024266678
+      value: -0.006615584
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 11.26
+      value: 3.895
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -38.531
+      value: -38.116
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -4.243
+      value: -2.148
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
@@ -40904,7 +41107,7 @@ GameObject:
   - component: {fileID: 2062112781}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41247,7 +41450,7 @@ GameObject:
   - component: {fileID: 2089840681}
   m_Layer: 0
   m_Name: Cube (24)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41342,7 +41545,7 @@ GameObject:
   - component: {fileID: 2098215735}
   m_Layer: 0
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41556,7 +41759,7 @@ GameObject:
   - component: {fileID: 2112867295}
   m_Layer: 0
   m_Name: Cube (32)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41713,7 +41916,7 @@ GameObject:
   - component: {fileID: 2122981697}
   m_Layer: 0
   m_Name: Ceiling
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41987,6 +42190,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45243071}
     m_Modifications:
+    - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
+      propertyPath: DoSlowmotionWhenDestroy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
       value: Destrutible Obj (47)

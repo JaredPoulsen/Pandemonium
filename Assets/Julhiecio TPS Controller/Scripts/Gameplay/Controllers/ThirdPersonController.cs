@@ -96,7 +96,7 @@ public class ThirdPersonController : MonoBehaviour
     public Vehicle VehicleInArea;
 
     [Header("States")]
-    public float Health = 100;
+    public float Health = 250;
     public bool IsDead;
     public bool DisableAllMove;
     public bool CanMove;
@@ -1323,7 +1323,7 @@ public class ThirdPersonController : MonoBehaviour
 
         if (other.gameObject.tag == "Bullet")
         {
-            Health -= 5;
+            Health -= 2;
             Debug.Log(Health);
 
             if (Health <= 0)
@@ -1333,7 +1333,7 @@ public class ThirdPersonController : MonoBehaviour
         }
         if (other.gameObject.tag == "Enemy")
         {
-            Health -= 25;
+            Health -= 10;
             Debug.Log(Health);
             if (Health <= 0)
             {
