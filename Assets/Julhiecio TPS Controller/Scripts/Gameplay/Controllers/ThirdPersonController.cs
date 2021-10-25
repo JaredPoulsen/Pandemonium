@@ -96,7 +96,7 @@ public class ThirdPersonController : MonoBehaviour
     public Vehicle VehicleInArea;
 
     [Header("States")]
-    public float Health = 100;
+    public float Health = 250;
     public bool IsDead;
     public bool DisableAllMove;
     public bool CanMove;
@@ -117,6 +117,7 @@ public class ThirdPersonController : MonoBehaviour
     [HideInInspector] public bool IsReloading;
     [HideInInspector] public bool WallInFront;
     [HideInInspector] public bool InverseKinematics = true;
+
 
 
     void Start()
@@ -1319,6 +1320,26 @@ public class ThirdPersonController : MonoBehaviour
             advancedRagdollController.State = AdvancedRagdollController.RagdollState.Ragdolled;
             print("Ragdolled");
         }
+
+        if (other.gameObject.tag == "Bullet")
+        {
+            Health -= 3;
+            Debug.Log(Health);
+
+            if (Health <= 0)
+            {
+                print("Killed by Bullet");
+            }
+        }
+        if (other.gameObject.tag == "Enemy")
+        {
+            Health -= 10;
+            Debug.Log(Health);
+            if (Health <= 0)
+            {
+                print("Killed by Enemy");
+            }
+        }
     }
 
 
@@ -1391,4 +1412,6 @@ public class ThirdPersonController : MonoBehaviour
             }
         }
     }
+
+
 }

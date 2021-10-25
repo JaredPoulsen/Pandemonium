@@ -55,6 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +80,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4293988915756571286
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,10 +259,8 @@ MonoBehaviour:
   Precision: 15
   LossOfAccuracyPerShot: 0.16
   ShotErrorProbability: 0
-  BulletPrefab: {fileID: 3163126826636465162, guid: 02e0e3a4e7ef532438a19a6e72cc7503,
-    type: 3}
-  MuzzleFlashParticlePrefab: {fileID: 6463995516412543354, guid: 126a491ff75fc2d46865cf8c7b986211,
-    type: 3}
+  BulletPrefab: {fileID: 3163126826636465162, guid: 02e0e3a4e7ef532438a19a6e72cc7503, type: 3}
+  MuzzleFlashParticlePrefab: {fileID: 6463995516412543354, guid: 126a491ff75fc2d46865cf8c7b986211, type: 3}
   Shoot_Position: {fileID: 3158513837318192081}
   FireMode: 0
   AimMode: 1
@@ -275,8 +275,7 @@ MonoBehaviour:
   GunSlider: {fileID: 3699160557259386845}
   SliderMovementOffset: 0.049
   SliderStartLocalPosition: {x: 0, y: 0, z: 0}
-  BulletCasingPrefab: {fileID: 292560056580327781, guid: cd4048a4ee5a6f54e869b3f9b38dcccc,
-    type: 3}
+  BulletCasingPrefab: {fileID: 292560056580327781, guid: cd4048a4ee5a6f54e869b3f9b38dcccc, type: 3}
   IK_Position_LeftHand: {fileID: 7208400350547004853}
   ShootAudio: {fileID: 8300000, guid: cf8eb31222c638b408942941d5e0bbf0, type: 3}
   ReloadAudio: {fileID: 8300000, guid: 17534bbf483d6194e802ccd8f011b494, type: 3}
@@ -287,10 +286,8 @@ MonoBehaviour:
     WireGizmosColor: {r: 0.9, g: 0.4, b: 0.2, a: 0.5}
     StepVisualizerMesh: {fileID: 0}
     StepVisualizerWireMesh: {fileID: 0}
-    HandVisualizerMesh: {fileID: 2524342215456974474, guid: f43450d739791494e945fcb926d9f321,
-      type: 3}
-    HandVisualizerWireMesh: {fileID: 7836665536001248718, guid: fe540e1fc719da948bd737a43191696a,
-      type: 3}
+    HandVisualizerMesh: {fileID: 2524342215456974474, guid: f43450d739791494e945fcb926d9f321, type: 3}
+    HandVisualizerWireMesh: {fileID: 7836665536001248718, guid: fe540e1fc719da948bd737a43191696a, type: 3}
 --- !u!1 &5766627632991944634
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,7 +312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5766627632991944634}
   m_LocalRotation: {x: 0.07633094, y: 0.32889983, z: 0.7645113, w: 0.5491093}
-  m_LocalPosition: {x: -0.066589415, y: -0.059984572, z: 0.19874364}
+  m_LocalPosition: {x: -0.066589475, y: -0.059984613, z: 0.19874355}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3520830328213258284}
@@ -376,6 +373,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -400,6 +398,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6082760225782391563
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +454,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -479,6 +479,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8014813239020226066
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,6 +535,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -558,6 +560,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8844659572466511098
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +585,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8844659572466511098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00028602034, y: 0.07582176, z: 0.3773623}
+  m_LocalPosition: {x: 0.00028645992, y: 0.07582172, z: -0.496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3520830328213258284}

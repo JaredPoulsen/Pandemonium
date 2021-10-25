@@ -12,11 +12,13 @@ TagManager:
   - Grass
   - Stone
   - Tiles
+  - Enemy
+  - Wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Bullet
   - Water
   - UI
   - 
