@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class EnemyAction : MonoBehaviour
 {
+    // Moving to the player's postion
+    // Requires Ray Cast Script
+
     public EnemyRayCast detect;
     public float moveSpeed; // change speed in Update for if statement
 
     private float min;
     private float max;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +32,12 @@ public class EnemyAction : MonoBehaviour
             {
                 moveSpeed = 0.01f;
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(detect.playerRef.transform.position.x, transform.position.y, detect.playerRef.transform.position.z), moveSpeed);
-                
+   
             }
             else
             {
                 moveSpeed = 0f;
-
-            }
-           
-            
+            }      
         }
         else if (!detect.canSeePlayer)
         {
