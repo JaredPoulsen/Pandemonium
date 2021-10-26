@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
 {
-    // Randomly Shooting Angle
+    //Randomly Shooting Angle
+    //Requires Ray Cast Script
 
     public EnemyRayCast detect;
     public GameObject bullet;
@@ -15,12 +16,6 @@ public class EnemyShooting : MonoBehaviour
     public float fireRate = 1f;
     private float nextShot;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -29,7 +24,6 @@ public class EnemyShooting : MonoBehaviour
             transform.LookAt(detect.playerRef.transform);
             Shoot();
         }
-       
     }
     void Shoot()
     {
