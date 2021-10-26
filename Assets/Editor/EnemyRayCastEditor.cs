@@ -6,6 +6,9 @@ using UnityEditor;
 [CustomEditor(typeof(EnemyRayCast))]
 public class EnemyRayCastEditor : Editor
 {
+    /// <summary>
+    /// Editor code for Ray Cast
+    /// </summary>
     private void OnSceneGUI()
     {
         EnemyRayCast fov = (EnemyRayCast)target;

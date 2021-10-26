@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class EnemyRayCast : MonoBehaviour
 {
+    /// <summary>
+    /// Ray Cast Enemy
+    /// Make sure to have Editor code follow with this
+    /// </summary>
+
     public float radius;
     [Range(0, 360)]
     public float angle;

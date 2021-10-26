@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
 {
-    //Randomly Shooting Angle
-    //Requires Ray Cast Script
+    /// <summary>
+    /// Randomly Shooting Angle
+    /// Requires Ray Cast Script
+    /// </summary>
 
     public EnemyRayCast detect;
     public GameObject bullet;

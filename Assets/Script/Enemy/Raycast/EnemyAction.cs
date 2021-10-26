@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class EnemyAction : MonoBehaviour
 {
-    // Moving to the player's postion
-    // Requires Ray Cast Script
+    /// <summary>
+    /// Moving to the player's postion
+    /// Requires Ray Cast Script
+    /// </summary>
 
     public EnemyRayCast detect;
     public float moveSpeed; // change speed in Update for if statement
