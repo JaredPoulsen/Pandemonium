@@ -279,6 +279,8 @@ GameObject:
   - component: {fileID: 98983818}
   - component: {fileID: 98983817}
   - component: {fileID: 98983823}
+  - component: {fileID: 98983824}
+  - component: {fileID: 98983822}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -385,6 +387,24 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 131072
   canSeePlayer: 0
+--- !u!114 &98983822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98983816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 5589637650903631980, guid: 622707bd54a507e478476714ddc9c459, type: 3}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
 --- !u!54 &98983823
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -401,6 +421,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &98983824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98983816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5f3439ee4ffb744b4d597924066ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fractures: 15
+  MinFracturedSize: 0.4
+  NewFracturedObject: {fileID: 0}
 --- !u!1 &137285622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,6 +1510,8 @@ GameObject:
   - component: {fileID: 1792269476}
   - component: {fileID: 1792269475}
   - component: {fileID: 1792269474}
+  - component: {fileID: 1792269478}
+  - component: {fileID: 1792269479}
   m_Layer: 17
   m_Name: Cube
   m_TagString: Untagged
@@ -1553,11 +1590,44 @@ Transform:
   m_GameObject: {fileID: 1792269473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.09, y: 1.9, z: 0.44}
-  m_LocalScale: {x: 8.0952, y: 5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1792269478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792269473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 15.6
+  FracturedObject: {fileID: 0}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 150
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
+--- !u!114 &1792269479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792269473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5f3439ee4ffb744b4d597924066ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fractures: 15
+  MinFracturedSize: 0.4
+  NewFracturedObject: {fileID: 0}
 --- !u!1001 &1956484053
 PrefabInstance:
   m_ObjectHideFlags: 0
