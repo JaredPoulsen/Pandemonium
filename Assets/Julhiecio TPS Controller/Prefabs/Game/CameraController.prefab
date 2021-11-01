@@ -209,7 +209,7 @@ MonoBehaviour:
   PlayerTarget: {fileID: 0}
   mCamera: {fileID: 3243631559774615310}
   IsMobile: 0
-  MovementSpeed: 15
+  MovementSpeed: 25
   CameraShakeWhenShooting: 1
   CameraShakeSensibility: 0.698
   CameraCollisionLayer:
@@ -218,7 +218,7 @@ MonoBehaviour:
   CameraCollisionDrivingLayer:
     serializedVersion: 2
     m_Bits: 67585
-  RotationSpeed: 2.1
+  RotationSpeed: 4.1
   Distance: 4
   IsArmedDistance: 2.5
   FPS_Limit: 75
