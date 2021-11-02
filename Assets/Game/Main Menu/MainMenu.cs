@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Scenestuff : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
     public GameObject MainMenuPanel;
     public GameObject InstrutionPanel;
