@@ -287,6 +287,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 8.336, y: 0, z: 0}
+--- !u!1 &162404615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2405679492360525149, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
+  m_PrefabInstance: {fileID: 889717693}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &162404616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162404615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b7fd46d3db479429731d3a36aaf23f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detect: {fileID: 162404621}
+  moveSpeed: 0.01
+  distance: 7
+--- !u!114 &162404621 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
+  m_PrefabInstance: {fileID: 889717693}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162404615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &331835073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,6 +1763,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 11400000, guid: b84eb3e05d323254eab1dfe4adcaa9db, type: 2}
   textScore: {fileID: 947560977}
+--- !u!1 &1790828670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8673609862537965751, guid: dc8ea3c70a982134eb1357aa28295757, type: 3}
+  m_PrefabInstance: {fileID: 846712237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1790828671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790828670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8de8ab2dc7e8747bf3f96ab7b41abe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detect: {fileID: 1790828676}
+  moveSpeed: 0.01
+  distance: 7
+--- !u!114 &1790828676 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8893441278170882087, guid: dc8ea3c70a982134eb1357aa28295757, type: 3}
+  m_PrefabInstance: {fileID: 846712237}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790828670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebce27b70a30568458f377168601f998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1792269473
 GameObject:
   m_ObjectHideFlags: 0
