@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Score", menuName = "ScriptableObjects/Score", order = 1)]
-public class Score : ScriptableObject
+[CreateAssetMenu(fileName = "ScoreLv1", menuName = "ScriptableObjects/ScoreLv1", order = 2)]
+public class ScoreLv1 : ScriptableObject
 {
     public int initValue;
     public int value;
@@ -14,6 +14,3 @@ public class Score : ScriptableObject
         value = initValue;
     }
 }
-   
-  
-
