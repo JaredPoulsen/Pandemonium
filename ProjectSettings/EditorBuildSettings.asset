@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Main Menu/Main Menu.unity
     guid: 1b162c82cf21e164990862c8e0ec75d1
+  - enabled: 0
+    path: Assets/Game/Level 1/Template.unity
+    guid: 64f691cb6c06aba4f8b1846062a4b01b
   - enabled: 1
     path: Assets/Game/Level 1/1.unity
-    guid: 64f691cb6c06aba4f8b1846062a4b01b
+    guid: 34a497af796308d4d83e2fc8e915eca5
   m_configObjects: {}
