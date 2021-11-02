@@ -2047,7 +2047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3243631560226216736, guid: 3f9896eb08ade7b4ab7b111e294279d4, type: 3}
       propertyPath: RotationSpeed
-      value: 3.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3243631560226216736, guid: 3f9896eb08ade7b4ab7b111e294279d4, type: 3}
       propertyPath: IsArmedDistance
