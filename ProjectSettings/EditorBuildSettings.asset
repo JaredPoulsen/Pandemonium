@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/MVP/MVP.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Game/Main Menu/Main Menu.unity
     guid: 1b162c82cf21e164990862c8e0ec75d1
   - enabled: 0
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Level 1/1.unity
     guid: 34a497af796308d4d83e2fc8e915eca5
+  - enabled: 1
+    path: Assets/Game/Win.unity
+    guid: 541a1874192dcce4487ad466724ec7a8
   m_configObjects: {}

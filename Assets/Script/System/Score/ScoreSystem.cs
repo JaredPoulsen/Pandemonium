@@ -21,7 +21,7 @@ public class ScoreSystem : MonoBehaviour
 
         if (score.value >= 180)
         {
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("Win");
         }
     }
 }

@@ -53,8 +53,8 @@ MonoBehaviour:
   maxHealth: 50
   scorePoint: 10
   score: {fileID: 0}
-  radius: 7
-  angle: 70
+  radius: 10
+  angle: 142
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -64,7 +64,7 @@ MonoBehaviour:
     m_Bits: 131072
   canSeePlayer: 0
   bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
-  inaccuracy: 1.34
+  inaccuracy: 1
   fireRate: 2
 --- !u!33 &2405679492360525150
 MeshFilter:
