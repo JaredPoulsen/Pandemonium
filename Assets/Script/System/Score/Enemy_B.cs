@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy_B : EnemyBase
 {
     public Score score;
+    public GameObject prefab;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -21,5 +22,7 @@ public class Enemy_B : EnemyBase
     {
         score.value += 50;
         base.Die();
+        GameObject clone = Instantiate(prefab, transform.position, transform.rotation) as GameObject;
+        Destroy(clone, 10);
     }
 }

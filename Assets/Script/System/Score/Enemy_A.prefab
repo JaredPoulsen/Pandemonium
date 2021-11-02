@@ -61,6 +61,7 @@ MonoBehaviour:
     m_Bits: 131072
   canSeePlayer: 0
   score: {fileID: 11400000, guid: 5b64e4297309ca24aa9300160bbbe850, type: 2}
+  prefab: {fileID: 8038755069608328986, guid: 3ee4fe917310cf64cac57a1a2278899f, type: 3}
 --- !u!33 &7908836873832895258
 MeshFilter:
   m_ObjectHideFlags: 0
