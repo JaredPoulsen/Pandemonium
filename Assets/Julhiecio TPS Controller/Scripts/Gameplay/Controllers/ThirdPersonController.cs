@@ -1306,6 +1306,16 @@ public class ThirdPersonController : MonoBehaviour
             VehicleInArea = null;
             ToEnterVehicle = false;
         }
+        if (other.gameObject.tag == "Bullet")
+        {
+            Health -= 3;
+            Debug.Log(Health);
+
+            if (Health <= 0)
+            {
+                print("Killed by Bullet");
+            }
+        }
     }
 
     void OnCollisionEnter(Collision other)

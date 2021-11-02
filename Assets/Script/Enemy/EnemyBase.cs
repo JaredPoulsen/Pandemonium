@@ -15,18 +15,32 @@ public class EnemyBase : MonoBehaviour
     [SerializeField]
     protected float maxHealth = 100f;
 
+    [SerializeField]
+    protected int scorePoint = 10;
+
+    public Score score;
+
     private float health;
 
     public float radius;
     [Range(0, 360)]
     public float angle;
 
-    public GameObject playerRef;
+    public GameObject playerRef; // DO NOT DEFINE / DRAG ANYTHING TO THIS
 
     public LayerMask targetMask;
     public LayerMask obstructionMask;
 
     public bool canSeePlayer;
+
+    public GameObject bullet;
+
+    [Range(0, 10)]
+    public float inaccuracy;
+
+    public float fireRate = 1f; //  more value means low fire rate
+    private float nextShot;
+
     #endregion //Calling Var 
     protected virtual void Start()
     {
@@ -35,7 +49,11 @@ public class EnemyBase : MonoBehaviour
     }
     protected virtual void Update()
     {
-        
+        if (canSeePlayer)
+        {
+            transform.LookAt(playerRef.transform);
+            Shoot();
+        }
     }
     // Ray Cast System 
     #region RayCast
@@ -84,6 +102,24 @@ public class EnemyBase : MonoBehaviour
 
     }
     #endregion //RayCast System
+
+    #region Shooting
+    void Shoot()
+    {
+        float randomNumberX = Random.Range(-inaccuracy, inaccuracy);
+        float randomNumberY = Random.Range(-inaccuracy, inaccuracy);
+        float randomNumberZ = Random.Range(-inaccuracy, inaccuracy);
+
+        if (Time.time >= nextShot)
+        {
+            GameObject clonebullet = Instantiate(bullet, transform.position + transform.forward * 0.5f + transform.up * 1f, transform.rotation) as GameObject;
+            clonebullet.transform.Rotate(randomNumberX, randomNumberY, randomNumberZ);
+            Destroy(clonebullet, 5f);
+            nextShot = Time.time + fireRate;
+        }
+    }
+    #endregion
+
     private void Awake()
     {
         health = maxHealth;
@@ -99,6 +135,7 @@ public class EnemyBase : MonoBehaviour
     }
     public virtual void Die()
     {
+        score.value += scorePoint;
         Destroy(gameObject);
     }
     private void OnCollisionEnter(Collision collision)
@@ -108,4 +145,5 @@ public class EnemyBase : MonoBehaviour
             takeDamage(10f);
         }
     }
+    
 }
