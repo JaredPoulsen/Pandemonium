@@ -40,11 +40,11 @@ public class EnemyBase : MonoBehaviour
     private float nextShot;
 
     // Adjust shooting point
-    [Range(-10, 10)]
+    [Range(-5, 5)]
     public float upward;
-    [Range(-10, 10)]
+    [Range(-5, 5)]
     public float forward;
-    [Range(-10, 10)]
+    [Range(-5, 5)]
     public float leftright;
     #endregion //Calling Var 
     protected virtual void Start()
