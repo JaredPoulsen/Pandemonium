@@ -8,8 +8,14 @@ public class EnemyBase : MonoBehaviour
     #region Variables
     [SerializeField]
     protected string name;
+
+    [SerializeField]
     protected float moveSpeed = 3f;
+
+    [SerializeField]
     protected float maxHealth = 100f;
+
+    [SerializeField]
     protected int scorePoint = 10;
 
     public Score score;
