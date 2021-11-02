@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreSystem : MonoBehaviour
 {
@@ -17,5 +18,10 @@ public class ScoreSystem : MonoBehaviour
     void Update()
     {
         textScore.text = "Score: " + score.value;
+
+        if (score.value >= 180)
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
     }
 }

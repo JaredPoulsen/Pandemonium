@@ -6,31 +6,44 @@ public class EnemyBase : MonoBehaviour
 {
     // Calling variable here
     #region Variables
-
+    [SerializeField]
     protected string name;
+
+    [SerializeField]
     protected float moveSpeed = 3f;
+
+    [SerializeField]
     protected float maxHealth = 100f;
+
+    [SerializeField]
     protected int scorePoint = 10;
+
     public Score score;
+
     private float health;
+
     public float radius;
     [Range(0, 360)]
     public float angle;
+
     public GameObject playerRef; // DO NOT DEFINE / DRAG ANYTHING TO THIS
+
     public LayerMask targetMask;
     public LayerMask obstructionMask;
+
     public bool canSeePlayer;
+
     public GameObject bullet;
+
     [Range(0, 10)]
     public float inaccuracy;
+
     public float fireRate = 1f; //  more value means low fire rate
     private float nextShot;
-    private AudioSource source;
 
     #endregion //Calling Var 
     protected virtual void Start()
     {
-        source = GetComponent<AudioSource>();
         playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
     }
@@ -100,7 +113,6 @@ public class EnemyBase : MonoBehaviour
         if (Time.time >= nextShot)
         {
             GameObject clonebullet = Instantiate(bullet, transform.position + transform.forward * 0.5f + transform.up * 1f, transform.rotation) as GameObject;
-            source.Play();
             clonebullet.transform.Rotate(randomNumberX, randomNumberY, randomNumberZ);
             Destroy(clonebullet, 5f);
             nextShot = Time.time + fireRate;
