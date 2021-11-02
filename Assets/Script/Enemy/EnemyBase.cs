@@ -6,13 +6,11 @@ public class EnemyBase : MonoBehaviour
 {
     // Calling variable here
     #region Variables
-    [SerializeField]
+
     protected string name;
 
-    [SerializeField]
     protected float moveSpeed = 3f;
 
-    [SerializeField]
     protected float maxHealth = 100f;
 
     [SerializeField]
@@ -41,6 +39,13 @@ public class EnemyBase : MonoBehaviour
     public float fireRate = 1f; //  more value means low fire rate
     private float nextShot;
 
+    // Adjust shooting point
+    [Range(-10, 10)]
+    public float upward;
+    [Range(-10, 10)]
+    public float forward;
+    [Range(-10, 10)]
+    public float leftright;
     #endregion //Calling Var 
     protected virtual void Start()
     {
@@ -112,7 +117,7 @@ public class EnemyBase : MonoBehaviour
 
         if (Time.time >= nextShot)
         {
-            GameObject clonebullet = Instantiate(bullet, transform.position + transform.forward * 0.5f + transform.up * 1f, transform.rotation) as GameObject;
+            GameObject clonebullet = Instantiate(bullet, transform.position + transform.forward * forward + transform.up * upward + transform.right * leftright, transform.rotation) as GameObject;
             clonebullet.transform.Rotate(randomNumberX, randomNumberY, randomNumberZ);
             Destroy(clonebullet, 5f);
             nextShot = Time.time + fireRate;
