@@ -23000,8 +23000,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detect: {fileID: 995310079}
-  moveSpeed: 0
-  distance: 0
+  moveSpeed: 0.01
+  distance: 1
 --- !u!1 &995379400 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8621492136753610402, guid: e6f911a84f7185a48be9d65057570086, type: 3}
