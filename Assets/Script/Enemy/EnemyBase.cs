@@ -11,7 +11,7 @@ public class EnemyBase : MonoBehaviour
 
     protected float moveSpeed = 3f;
 
-    protected float maxHealth = 100f;
+    public float maxHealth = 100f;
 
     [SerializeField]
     protected int scorePoint = 10;
@@ -32,6 +32,8 @@ public class EnemyBase : MonoBehaviour
     public bool canSeePlayer;
 
     public GameObject bullet;
+
+    public AudioSource ShootAudio;
 
     [Range(0, 10)]
     public float inaccuracy;
@@ -123,6 +125,7 @@ public class EnemyBase : MonoBehaviour
         {
             GameObject clonebullet = Instantiate(bullet, transform.position + transform.forward * forward + transform.up * upward + transform.right * leftright, transform.rotation) as GameObject;
             clonebullet.transform.Rotate(randomNumberX, randomNumberY, randomNumberZ);
+            ShootAudio.Play();
             Destroy(clonebullet, 5f);
             nextShot = Time.time + fireRate;
         }
