@@ -51,7 +51,7 @@ public class EnemyBase : MonoBehaviour
 
     protected virtual void Start()
     {
-        //playerRef = GameObject.FindGameObjectWithTag("Player");
+        playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
     }
     protected virtual void Update()
