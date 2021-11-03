@@ -47,9 +47,11 @@ public class EnemyBase : MonoBehaviour
     [Range(-5, 5)]
     public float leftright;
     #endregion //Calling Var 
+
+
     protected virtual void Start()
     {
-        playerRef = GameObject.FindGameObjectWithTag("Player");
+        //playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
     }
     protected virtual void Update()
@@ -58,6 +60,8 @@ public class EnemyBase : MonoBehaviour
         {
             transform.LookAt(playerRef.transform);
             Shoot();
+
+          
         }
     }
     // Ray Cast System 
