@@ -1915,7 +1915,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (7)
@@ -3218,7 +3218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7448167567439144304, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7448167567439144304, guid: 5c9057365c1298745add99e74effe260, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4790,7 +4790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 310361162}
-  player: {fileID: 987558342}
+  player: {fileID: 0}
 --- !u!1001 &320999379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4849,7 +4849,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: maxdistance
       value: 35
@@ -4922,7 +4922,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (16)
@@ -5508,7 +5508,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (3)
@@ -6029,7 +6029,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: maxdistance
       value: 35
@@ -13632,7 +13632,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (2)
@@ -13825,7 +13825,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (14)
@@ -14085,7 +14085,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: maxdistance
       value: 31
@@ -14313,7 +14313,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (8)
@@ -14696,7 +14696,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (11)
@@ -14766,7 +14766,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (18)
@@ -14906,7 +14906,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (4)
@@ -15112,11 +15112,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
   m_PrefabInstance: {fileID: 260190704}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &825779176 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7448167567439144304, guid: 5c9057365c1298745add99e74effe260, type: 3}
-  m_PrefabInstance: {fileID: 185824663}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &828935996
 PrefabInstance:
@@ -15762,7 +15757,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (12)
@@ -17002,17 +16997,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8633089881775160667, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
   m_PrefabInstance: {fileID: 985598050}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &987558342 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6978201787492123294, guid: 5c9057365c1298745add99e74effe260, type: 3}
-  m_PrefabInstance: {fileID: 185824663}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6d9587242255124c9dfb9689c81eeee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &990857846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17551,7 +17535,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: maxdistance
       value: 22
@@ -22622,7 +22606,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (5)
@@ -23142,7 +23126,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: maxdistance
       value: 28
@@ -23314,7 +23298,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (17)
@@ -23828,7 +23812,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (9)
@@ -24022,7 +24006,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (13)
@@ -25190,7 +25174,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (10)
@@ -25760,7 +25744,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (1)
@@ -34479,14 +34463,14 @@ PrefabInstance:
     - target: {fileID: 3243631560226216736, guid: 3f9896eb08ade7b4ab7b111e294279d4, type: 3}
       propertyPath: PlayerTarget
       value: 
-      objectReference: {fileID: 987558342}
+      objectReference: {fileID: 0}
     - target: {fileID: 3243631560226216737, guid: 3f9896eb08ade7b4ab7b111e294279d4, type: 3}
       propertyPath: m_Name
       value: CameraController
       objectReference: {fileID: 0}
     - target: {fileID: 3243631560226216739, guid: 3f9896eb08ade7b4ab7b111e294279d4, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3243631560226216739, guid: 3f9896eb08ade7b4ab7b111e294279d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34719,7 +34703,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: maxdistance
       value: 25
@@ -34991,7 +34975,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (19)
@@ -35748,7 +35732,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (15)
@@ -36835,7 +36819,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body
@@ -38498,7 +38482,7 @@ PrefabInstance:
     - target: {fileID: 3370578173702860545, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 825779176}
+      objectReference: {fileID: 0}
     - target: {fileID: 3370578173702860556, guid: b6b3b987f5064da448618842c3e8464e, type: 3}
       propertyPath: m_Name
       value: Enemy_body (6)
