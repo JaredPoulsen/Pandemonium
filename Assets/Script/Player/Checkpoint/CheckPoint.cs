@@ -7,6 +7,8 @@ public class CheckPoint : MonoBehaviour
     /// <summary>
     /// Check Point System
     /// </summary>
+    /// 
+    public AudioSource CPAudio;
    
     // Indicate if the checkpoint is activated
     public bool Activated = false;
@@ -62,6 +64,7 @@ public class CheckPoint : MonoBehaviour
         if (other.tag == "Player")
         {
             ActivateCheckPoint();
+            CPAudio.Play();
         }
     }
 

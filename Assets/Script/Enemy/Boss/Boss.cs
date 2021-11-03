@@ -9,6 +9,7 @@ public class Boss : EnemyBase
     {
         
         base.Start();
+        maxHealth = 1000;
     }
 
     protected override void Update()

@@ -8,7 +8,7 @@ public class MoveVer : MonoBehaviour
     private float max;
     public EnemyBase detect;
     public float moveSpeed; // change speed in Update for if statement
-    public int distance;
+    public float distance;
 
     // Start is called before the first frame update
     void Start()

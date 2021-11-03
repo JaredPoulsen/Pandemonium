@@ -431,7 +431,7 @@ public class ThirdPersonController : MonoBehaviour
         }
 
         //Roll
-        if (JUInput.GetButtonDown(JUInput.Buttons.RollButton) && IsGrounded == true && IsRolling == false)
+        if (JUInput.GetButtonDown(JUInput.Buttons.CrouchButton) && JUInput.GetButton(JUInput.Buttons.RunButton) && IsGrounded == true && IsRolling == false)
         {
             anim.SetTrigger("roll");
             Invoke("_disableroll", 1f);
@@ -476,7 +476,9 @@ public class ThirdPersonController : MonoBehaviour
             //Aiming
             if (JUInput.GetButtonDown(JUInput.Buttons.AmingButton))
             {
-                IsAiming = !IsAiming;
+                //IsAiming = !IsAiming;
+                MyPivotCamera.DoSlowMotion(0.1f, 4f); 
+                
             }
             CanShoot = WeaponInUse.CanShoot;
 
