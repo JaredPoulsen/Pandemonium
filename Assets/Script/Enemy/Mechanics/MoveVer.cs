@@ -36,7 +36,7 @@ public class MoveVer : MonoBehaviour
         }
         else if (!detect.canSeePlayer)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.PingPong(Time.time * 2, max - min) + min);
+            //transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.PingPong(Time.time * 2, max - min) + min);
         }
     }
 }
