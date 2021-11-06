@@ -15,13 +15,6 @@ public class Fracture : MonoBehaviour
         rigidbody = gameObject.GetComponent<Rigidbody>();
         rigidbody.isKinematic = true;
     }
-    private void Update()
-    {
-        if (this.rigidbody.isKinematic == false)
-        {
-            Debug.Log("Kin false");
-        }
-    }
 
     private void OnCollisionEnter(Collision collision)
     {

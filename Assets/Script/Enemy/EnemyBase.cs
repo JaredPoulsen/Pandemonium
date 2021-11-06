@@ -39,7 +39,7 @@ public class EnemyBase : MonoBehaviour
     public float inaccuracy;
 
     public float fireRate = 1f; //  more value means low fire rate
-    private float nextShot;
+    protected float nextShot;
 
     // Adjust shooting point
     [Range(-5, 5)]
@@ -121,7 +121,7 @@ public class EnemyBase : MonoBehaviour
     #endregion //RayCast System
 
     #region Shooting
-    void Shoot()
+    protected virtual void Shoot()
     {
         float randomNumberX = Random.Range(-inaccuracy, inaccuracy);
         float randomNumberY = Random.Range(-inaccuracy, inaccuracy);

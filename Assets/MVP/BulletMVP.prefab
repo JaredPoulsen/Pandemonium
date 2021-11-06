@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 346526967013483734}
   - component: {fileID: 305308058526563895}
   - component: {fileID: 6703740975196170978}
-  - component: {fileID: -1268243102974883939}
   m_Layer: 3
   m_Name: BulletMVP
   m_TagString: Bullet
@@ -109,14 +108,23 @@ TrailRenderer:
         inWeight: 0
         outWeight: 0.19433483
       - serializedVersion: 3
-        time: 0.48947552
-        value: 0.22173008
-        inSlope: -0.013387011
-        outSlope: -0.013387011
+        time: 0.114692315
+        value: 0.68530387
+        inSlope: 7.604936
+        outSlope: 7.604936
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.20261097
-        outWeight: 0.36451006
+        inWeight: 0.25420856
+        outWeight: 0.21044008
+      - serializedVersion: 3
+        time: 0.85936207
+        value: 0.5289736
+        inSlope: -4.884349
+        outSlope: -4.884349
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.2590971
       - serializedVersion: 3
         time: 1
         value: 0
@@ -131,15 +139,15 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 0.60722864, b: 0.0990566, a: 1}
+      key0: {r: 0.4340725, g: 0, b: 1, a: 1}
+      key1: {r: 0.8051433, g: 0.09803921, b: 1, a: 1}
       key2: {r: 1, g: 0.8472252, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
+      ctime0: 3662
       ctime1: 10409
       ctime2: 38936
       ctime3: 0
@@ -148,7 +156,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 13685
+      atime1: 32382
       atime2: 65342
       atime3: 0
       atime4: 0
@@ -198,15 +206,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-1268243102974883939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3163126826636465162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 834073dc6fffb6d4a9625a8787c4af10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

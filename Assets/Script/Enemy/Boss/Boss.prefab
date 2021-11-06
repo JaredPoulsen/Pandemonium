@@ -49,8 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deee03862a48ef04b937c1918268565d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boss
-  moveSpeed: 0.5
   maxHealth: 1000
   scorePoint: 100
   score: {fileID: 0}
@@ -65,8 +63,12 @@ MonoBehaviour:
     m_Bits: 131072
   canSeePlayer: 0
   bullet: {fileID: 7478913327921050925, guid: 738d3ba52a75c5c4cabbe30a9aa3a0f4, type: 3}
+  ShootAudio: {fileID: 0}
   inaccuracy: 1
-  fireRate: 0.3
+  fireRate: 0.4
+  upward: 0
+  forward: 0
+  leftright: 0
 --- !u!33 &4298020484373488381
 MeshFilter:
   m_ObjectHideFlags: 0
