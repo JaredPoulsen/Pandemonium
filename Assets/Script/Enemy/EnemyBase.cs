@@ -84,27 +84,33 @@ public class EnemyBase : MonoBehaviour
 
         if (rangeChecks.Length != 0)
         {
-            Transform target = rangeChecks[0].transform;
-            // If you want to check multiple objects inside the layer targetMask, do a for loop of rangeChecks
-            Vector3 directionToTarget = (target.position - transform.position).normalized;
+            //for(int i = 0; i <= rangeChecks.Length; i++)
+            //{
+                Transform target = rangeChecks[0].transform;
 
-            if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2)
-            {
-                float distanceToTarget = Vector3.Distance(transform.position, target.position);
+                Vector3 directionToTarget = (target.position - transform.position).normalized;
 
-                if (Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
+                if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2)
                 {
-                    canSeePlayer = false;
+                    float distanceToTarget = Vector3.Distance(transform.position, target.position);
+
+                    if (Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
+                    {
+                        canSeePlayer = false;
+                    }
+                    else
+                    {
+                        canSeePlayer = true;
+                    }
                 }
                 else
                 {
-                    canSeePlayer = true;
+                    canSeePlayer = false;
                 }
-            }
-            else
-            {
-                canSeePlayer = false;
-            }
+            //}
+           
+            // If you want to check multiple objects inside the layer targetMask, do a for loop of rangeChecks
+            
         }
         else if (canSeePlayer)
         {

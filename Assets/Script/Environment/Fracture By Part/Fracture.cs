@@ -15,6 +15,13 @@ public class Fracture : MonoBehaviour
         rigidbody = gameObject.GetComponent<Rigidbody>();
         rigidbody.isKinematic = true;
     }
+    private void Update()
+    {
+        if (this.rigidbody.isKinematic == false)
+        {
+            Debug.Log("Kin false");
+        }
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -23,16 +30,18 @@ public class Fracture : MonoBehaviour
             Debug.Log("Hit");
             rigidbody.isKinematic = false;
             rigidbody.WakeUp();
+            rigidbody.AddForce(transform.forward* 5);
             Destroy(gameObject, 30f);
         }
     }
 
     // if you want the player breaks the object by punching, uncomment this function (Ctrl K + U)
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    rigidbody.isKinematic = false;
-    //    rigidbody.WakeUp();
-    //    Destroy(gameObject, 30f);
-    //}
+    private void OnTriggerEnter(Collider other)
+    {
+        rigidbody.isKinematic = false;
+        rigidbody.WakeUp();
+        rigidbody.AddForce(transform.forward * 15);
+        Destroy(gameObject, 30f);
+    }
 }
