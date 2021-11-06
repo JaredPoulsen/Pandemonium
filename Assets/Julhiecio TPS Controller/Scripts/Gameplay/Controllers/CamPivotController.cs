@@ -120,13 +120,13 @@ public class CamPivotController : MonoBehaviour
 		Aiming = PlayerTarget.IsAiming;
         if (Aiming && PlayerTarget.WeaponInUse.AimMode != Weapon.WeaponAimMode.None)
         {
-			var gun = PlayerTarget.WeaponInUse;
-			mCamera.transform.position = gun.transform.position
-				+ gun.transform.right * gun.CameraAimingPosition.x
-				+ gun.transform.up * gun.CameraAimingPosition.y
-				+ transform.forward * gun.CameraAimingPosition.z;
+			//var gun = PlayerTarget.WeaponInUse;
+			//mCamera.transform.position = gun.transform.position
+			//	+ gun.transform.right * gun.CameraAimingPosition.x
+			//	+ gun.transform.up * gun.CameraAimingPosition.y
+			//	+ transform.forward * gun.CameraAimingPosition.z;
 
-			mCamera.fieldOfView = Mathf.Lerp(mCamera.fieldOfView,gun.CameraFOV, 15 * Time.deltaTime);
+			mCamera.fieldOfView = Mathf.Lerp(mCamera.fieldOfView, 10 , 10 * Time.deltaTime);
         }
         else
         {

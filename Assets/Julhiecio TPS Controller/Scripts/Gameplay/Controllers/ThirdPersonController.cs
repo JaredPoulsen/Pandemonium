@@ -476,8 +476,8 @@ public class ThirdPersonController : MonoBehaviour
             //Aiming
             if (JUInput.GetButtonDown(JUInput.Buttons.AmingButton))
             {
-                //IsAiming = !IsAiming;
-                MyPivotCamera.DoSlowMotion(0.1f, 4f); 
+                IsAiming = !IsAiming;
+                
                 
             }
             CanShoot = WeaponInUse.CanShoot;
