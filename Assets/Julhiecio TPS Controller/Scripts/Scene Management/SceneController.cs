@@ -19,9 +19,9 @@ public class SceneController : MonoBehaviour
     void Start()
     {  
         pl = FindObjectOfType<ThirdPersonController>();
-        SpawnPoint = GameObject.Find("SpawnPoint");
-        pl.transform.position = SpawnPoint.transform.position;
-        
+        pl.transform.position = GameObject.FindGameObjectWithTag("SpawnPoint").transform.position;
+        Destroy(GameObject.FindGameObjectWithTag("SpawnPoint"));
+
     }
     void Update()
     {
