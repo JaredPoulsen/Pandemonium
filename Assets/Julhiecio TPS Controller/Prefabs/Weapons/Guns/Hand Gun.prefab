@@ -238,10 +238,8 @@ MonoBehaviour:
   Precision: 0.9
   LossOfAccuracyPerShot: 0.01
   ShotErrorProbability: 0
-  BulletPrefab: {fileID: 3163126826636465162, guid: 02e0e3a4e7ef532438a19a6e72cc7503,
-    type: 3}
-  MuzzleFlashParticlePrefab: {fileID: 6463995516412543354, guid: 126a491ff75fc2d46865cf8c7b986211,
-    type: 3}
+  BulletPrefab: {fileID: 3163126826636465162, guid: 02e0e3a4e7ef532438a19a6e72cc7503, type: 3}
+  MuzzleFlashParticlePrefab: {fileID: 6463995516412543354, guid: 126a491ff75fc2d46865cf8c7b986211, type: 3}
   Shoot_Position: {fileID: 219556020952635013}
   FireMode: 1
   AimMode: 1
@@ -256,10 +254,9 @@ MonoBehaviour:
   GunSlider: {fileID: 507835965897860726}
   SliderMovementOffset: 0.0846
   SliderStartLocalPosition: {x: 0, y: 0, z: 0}
-  BulletCasingPrefab: {fileID: 292560056580327781, guid: cd4048a4ee5a6f54e869b3f9b38dcccc,
-    type: 3}
+  BulletCasingPrefab: {fileID: 292560056580327781, guid: cd4048a4ee5a6f54e869b3f9b38dcccc, type: 3}
   IK_Position_LeftHand: {fileID: 219556020805526082}
-  ShootAudio: {fileID: 8300000, guid: af00d6e87d147f14096a0504b8f3e52e, type: 3}
+  ShootAudio: {fileID: 8300000, guid: f48f7cbe112f6c840a7a69d47fad68ba, type: 3}
   ReloadAudio: {fileID: 8300000, guid: 17534bbf483d6194e802ccd8f011b494, type: 3}
   GizmosVisualizationSettings:
     ResourcesPath: C:/Users/jplay/Documents/Unity Projects/TPS TEMPLATE/Assets/Julhiecio
@@ -268,10 +265,8 @@ MonoBehaviour:
     WireGizmosColor: {r: 0.9, g: 0.4, b: 0.2, a: 0.5}
     StepVisualizerMesh: {fileID: 0}
     StepVisualizerWireMesh: {fileID: 0}
-    HandVisualizerMesh: {fileID: 2524342215456974474, guid: f43450d739791494e945fcb926d9f321,
-      type: 3}
-    HandVisualizerWireMesh: {fileID: 7836665536001248718, guid: fe540e1fc719da948bd737a43191696a,
-      type: 3}
+    HandVisualizerMesh: {fileID: 2524342215456974474, guid: f43450d739791494e945fcb926d9f321, type: 3}
+    HandVisualizerWireMesh: {fileID: 7836665536001248718, guid: fe540e1fc719da948bd737a43191696a, type: 3}
 --- !u!1 &3369423569253674772
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +322,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -351,6 +347,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5750246202666571538
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +403,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -431,6 +429,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6399671898141902122
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,6 +485,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -510,6 +510,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6584380159043866553
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +566,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -589,3 +591,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

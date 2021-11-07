@@ -277,7 +277,7 @@ MonoBehaviour:
   SliderStartLocalPosition: {x: 0, y: 0, z: 0}
   BulletCasingPrefab: {fileID: 292560056580327781, guid: cd4048a4ee5a6f54e869b3f9b38dcccc, type: 3}
   IK_Position_LeftHand: {fileID: 7208400350547004853}
-  ShootAudio: {fileID: 8300000, guid: cf8eb31222c638b408942941d5e0bbf0, type: 3}
+  ShootAudio: {fileID: 8300000, guid: ad4957eea0e8c1c4293692dacc30bf34, type: 3}
   ReloadAudio: {fileID: 8300000, guid: 17534bbf483d6194e802ccd8f011b494, type: 3}
   GizmosVisualizationSettings:
     ResourcesPath: C:/Users/jplay/Documents/Unity Projects/TPS TEMPLATE/Assets/Julhiecio

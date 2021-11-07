@@ -55,6 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +80,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &723729612161740548
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +137,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -159,6 +162,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1938453226869149230
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +248,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -268,6 +273,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6320649018121980616
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,10 +467,8 @@ MonoBehaviour:
   Precision: 15
   LossOfAccuracyPerShot: 0.03
   ShotErrorProbability: 0
-  BulletPrefab: {fileID: 3163126826636465162, guid: 610ed711791a45f46ab8ae257422ba08,
-    type: 3}
-  MuzzleFlashParticlePrefab: {fileID: 6463995516412543354, guid: 126a491ff75fc2d46865cf8c7b986211,
-    type: 3}
+  BulletPrefab: {fileID: 3163126826636465162, guid: 610ed711791a45f46ab8ae257422ba08, type: 3}
+  MuzzleFlashParticlePrefab: {fileID: 6463995516412543354, guid: 126a491ff75fc2d46865cf8c7b986211, type: 3}
   Shoot_Position: {fileID: 3530470210292938692}
   FireMode: 3
   AimMode: 0
@@ -479,10 +483,9 @@ MonoBehaviour:
   GunSlider: {fileID: 6226064856028939979}
   SliderMovementOffset: 0.0573
   SliderStartLocalPosition: {x: 0, y: 0, z: 0}
-  BulletCasingPrefab: {fileID: 292560056580327781, guid: cd4048a4ee5a6f54e869b3f9b38dcccc,
-    type: 3}
+  BulletCasingPrefab: {fileID: 292560056580327781, guid: cd4048a4ee5a6f54e869b3f9b38dcccc, type: 3}
   IK_Position_LeftHand: {fileID: 4934529971654103617}
-  ShootAudio: {fileID: 8300000, guid: 7b54595b170a2664fa7ef19fb52d52be, type: 3}
+  ShootAudio: {fileID: 8300000, guid: 3e794146c5a17964db8cae2323cddcad, type: 3}
   ReloadAudio: {fileID: 8300000, guid: 17534bbf483d6194e802ccd8f011b494, type: 3}
   GizmosVisualizationSettings:
     ResourcesPath: C:/Users/jplay/Documents/Unity Projects/TPS TEMPLATE/Assets/Julhiecio
@@ -491,10 +494,8 @@ MonoBehaviour:
     WireGizmosColor: {r: 0.9, g: 0.4, b: 0.2, a: 0.5}
     StepVisualizerMesh: {fileID: 0}
     StepVisualizerWireMesh: {fileID: 0}
-    HandVisualizerMesh: {fileID: 2524342215456974474, guid: f43450d739791494e945fcb926d9f321,
-      type: 3}
-    HandVisualizerWireMesh: {fileID: 7836665536001248718, guid: fe540e1fc719da948bd737a43191696a,
-      type: 3}
+    HandVisualizerMesh: {fileID: 2524342215456974474, guid: f43450d739791494e945fcb926d9f321, type: 3}
+    HandVisualizerWireMesh: {fileID: 7836665536001248718, guid: fe540e1fc719da948bd737a43191696a, type: 3}
 --- !u!65 &2680991440285029845
 BoxCollider:
   m_ObjectHideFlags: 0
