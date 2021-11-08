@@ -35,18 +35,18 @@ public class EnemyBase : MonoBehaviour
 
     public AudioSource ShootAudio;
 
-    [Range(0, 10)]
+    [Range(0, 2)]
     public float inaccuracy;
 
-    public float fireRate = 1f; //  more value means low fire rate
+    public float timeBetweenShot = 0.5f; //  more value means low fire rate
     protected float nextShot;
 
     // Adjust shooting point
-    [Range(-5, 5)]
+    [Range(-1, 1)]
     public float upward;
-    [Range(-5, 5)]
+    [Range(-1, 1)]
     public float forward;
-    [Range(-5, 5)]
+    [Range(-1, 1)]
     public float leftright;
     #endregion //Calling Var 
 
@@ -133,7 +133,7 @@ public class EnemyBase : MonoBehaviour
             clonebullet.transform.Rotate(randomNumberX, randomNumberY, randomNumberZ);
             ShootAudio.Play();
             Destroy(clonebullet, 5f);
-            nextShot = Time.time + fireRate;
+            nextShot = Time.time + timeBetweenShot;
         }
     }
     #endregion

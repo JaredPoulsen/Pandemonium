@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
   scorePoint: 10
   score: {fileID: 0}
   radius: 10
@@ -61,10 +62,11 @@ MonoBehaviour:
     m_Bits: 131072
   canSeePlayer: 0
   bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
+  ShootAudio: {fileID: 0}
   inaccuracy: 0.5
-  fireRate: 2
-  upward: 0
-  forward: 0
+  fireRate: 0.5
+  upward: 0.55
+  forward: 0.1
   leftright: 0
 --- !u!33 &2405679492360525150
 MeshFilter:
