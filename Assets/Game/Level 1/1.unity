@@ -4948,11 +4948,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: fireRate
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: leftright
-      value: -0.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: ShootAudio
@@ -12949,7 +12949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2495735295570973800, guid: 157d1952bdff7b04eb284d813ee26d33, type: 3}
       propertyPath: leftright
-      value: 0.45
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: -2495735295570973800, guid: 157d1952bdff7b04eb284d813ee26d33, type: 3}
       propertyPath: maxHealth
@@ -14331,11 +14331,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: fireRate
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: leftright
-      value: -0.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: ShootAudio
@@ -15600,11 +15600,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: fireRate
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: leftright
-      value: -0.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: ShootAudio
@@ -15884,11 +15884,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: fireRate
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: leftright
-      value: -0.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: ShootAudio
@@ -18930,11 +18930,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: fireRate
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: leftright
-      value: -0.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: ShootAudio
@@ -23641,11 +23641,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: fireRate
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: leftright
-      value: -0.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: ShootAudio
@@ -35264,11 +35264,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: fireRate
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: leftright
-      value: -0.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: ShootAudio
@@ -47214,11 +47214,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: fireRate
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: leftright
-      value: -0.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: ShootAudio
