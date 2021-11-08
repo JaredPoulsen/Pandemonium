@@ -23632,22 +23632,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
-      propertyPath: upward
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
-      propertyPath: forward
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
-      propertyPath: fireRate
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
-      propertyPath: leftright
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2405679492360525144, guid: 28d358bb5558b824dad90b75d086d095, type: 3}
       propertyPath: ShootAudio
       value: 
       objectReference: {fileID: 995310081}
