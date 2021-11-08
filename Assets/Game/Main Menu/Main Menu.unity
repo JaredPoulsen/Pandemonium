@@ -1529,21 +1529,21 @@ MonoBehaviour:
     LEFT CLICK to shoot
 
 
-    RIGHT CLICK to Activate Slow Motion
-    for a short time
+    RIGHT CLICK to zoom Aim
 
 
-    Hold SHIFT to sprint
+    Hold
+    SHIFT to sprint
 
 
-    While sprinitng, press C to
-    roll
+    While sprinitng, press C to roll
 
 
-    MOUSE WHEEL to switch weapons
+    MOUSE WHEEL to switch
+    weapons
 
 
-    ESCAPE to quit'
+    ALT + F4 to quit'
 --- !u!222 &1439873448
 CanvasRenderer:
   m_ObjectHideFlags: 0

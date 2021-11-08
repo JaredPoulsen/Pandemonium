@@ -2074,6 +2074,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 375901e67cda7d34695859b7c443e52c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &110539936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 367662159, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
+  m_PrefabInstance: {fileID: 1546792112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &110539941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110539936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0.3773585, b: 0.09322976, a: 0.8156863}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &111020229 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6162636046270160271, guid: b26078aa3880a484cb088caf099e6018, type: 3}
@@ -41605,6 +41625,34 @@ PrefabInstance:
     - target: {fileID: 308667335, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367662160, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000030518
+      objectReference: {fileID: 0}
+    - target: {fileID: 367662160, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -87
+      objectReference: {fileID: 0}
+    - target: {fileID: 367662162, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
+      propertyPath: m_Color.b
+      value: 0.24754548
+      objectReference: {fileID: 0}
+    - target: {fileID: 367662162, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 367662162, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367662162, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: e1a105923c48a1c498bfdf01cd0942ec, type: 3}
+    - target: {fileID: 367662162, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 632042543, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
       propertyPath: m_Sprite
