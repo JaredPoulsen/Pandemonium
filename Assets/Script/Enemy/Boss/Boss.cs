@@ -40,7 +40,7 @@ public class Boss : EnemyBase
             ShootAudio.Play();
             Destroy(clonebullet1, 5f);
             Destroy(clonebullet2, 5f);
-            nextShot = Time.time + fireRate;
+            nextShot = Time.time + timeBetweenShot;
         }
 
     }
