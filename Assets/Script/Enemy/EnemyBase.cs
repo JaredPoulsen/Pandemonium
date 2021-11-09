@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyBase : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class EnemyBase : MonoBehaviour
 
     protected string name;
 
-    protected float moveSpeed = 3f;
+    protected float moveSpeed = 0.02f;
 
     public float maxHealth = 100f;
 
@@ -61,9 +62,9 @@ public class EnemyBase : MonoBehaviour
         if (canSeePlayer)
         {
             transform.LookAt(playerRef.transform);
+            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
             Shoot();
-
-          
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(playerRef.transform.position.x, transform.position.y, playerRef.transform.position.z), moveSpeed);
         }
     }
     // Ray Cast System 
@@ -161,6 +162,12 @@ public class EnemyBase : MonoBehaviour
         if(collision.gameObject.tag == "Bullet")
         {
             takeDamage(10f);
+            canSeePlayer = true;
+            radius = 35f;
+        }
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
         }
     }
     
