@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 5375907468363817514}
   - component: {fileID: 5375907468363817515}
   - component: {fileID: 5375907468363817512}
+  - component: {fileID: 8280452246412847212}
+  - component: {fileID: 4265183578676596976}
+  - component: {fileID: 4214983756654900812}
   m_Layer: 0
   m_Name: Assaulter
   m_TagString: Enemy
@@ -47,8 +50,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6af79a40aa1f46c4ea431d567774db58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Assaulter
-  moveSpeed: 5
   maxHealth: 200
   scorePoint: 20
   score: {fileID: 0}
@@ -63,8 +64,12 @@ MonoBehaviour:
     m_Bits: 131072
   canSeePlayer: 0
   bullet: {fileID: 7478913327921050925, guid: d964a0a24713f1e4499d0b9dff4ce58f, type: 3}
+  ShootAudio: {fileID: 0}
   inaccuracy: 5
-  fireRate: 5
+  timeBetweenShot: 0.5
+  upward: 0
+  forward: 0
+  leftright: 0
 --- !u!33 &5375907468363817517
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -144,3 +149,61 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!195 &8280452246412847212
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5375907468363817513}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.49999997
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.9999999
+  m_BaseOffset: 0.99999994
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &4265183578676596976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5375907468363817513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c16801fe80a4a4e93f82036097127f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  method: 2
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &4214983756654900812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5375907468363817513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc94cc6904a48a4ba355f7db58edde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointManager: {fileID: 0}
+  myPathBuilder: {fileID: 0}
+  aiPathPoints: []
+  destPoint: 0
+  agent: {fileID: 0}
