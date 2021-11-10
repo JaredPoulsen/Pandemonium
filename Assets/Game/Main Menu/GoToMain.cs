@@ -1,13 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ScoreSystem : MonoBehaviour
+public class GoToMain : MonoBehaviour
 {
-    public Score score;
-    public Text textScore;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +14,9 @@ public class ScoreSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textScore.text = "Score: " + score.value;
-
-        if (score.value >= 10)
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Win");
+            SceneManager.LoadScene("Main Menu");
         }
     }
 }
