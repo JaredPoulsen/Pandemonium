@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
-public class BasicEnemy : MonoBehaviour
+public class BasicEnemy1 : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Animator animator = null;
 
     private Rigidbody[] ragdollBodies;
     private Collider[] ragdollColliders;
-    private NavMeshAgent NavMeshAgent;
+    private UnityEngine.AI.NavMeshAgent NavMeshAgent;
     public Collider overall;
 
     public int health = 100;
@@ -19,7 +18,6 @@ public class BasicEnemy : MonoBehaviour
     {
         ragdollBodies = GetComponentsInChildren<Rigidbody>();
         ragdollColliders = GetComponentsInChildren<Collider>();
-        NavMeshAgent = GetComponent<NavMeshAgent>();
         ToggleRagdoll(false);
         overall.enabled = true;
         
@@ -28,7 +26,6 @@ public class BasicEnemy : MonoBehaviour
     private void ToggleRagdoll (bool state)
     {
         animator.enabled = !state;
-        animator.SetFloat("Vel", NavMeshAgent.speed);
 
         foreach (Rigidbody rb in ragdollBodies)
         {
@@ -47,7 +44,6 @@ public class BasicEnemy : MonoBehaviour
         {
             rb.AddExplosionForce(500f, new Vector3(-3f, 0.5f, -3f), 3f, 0f, ForceMode.Impulse);
         }
-        NavMeshAgent.isStopped = true;
     }
     // Update is called once per frame
     void Update()
