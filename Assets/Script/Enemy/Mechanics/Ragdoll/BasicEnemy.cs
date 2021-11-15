@@ -11,7 +11,7 @@ public class BasicEnemy : MonoBehaviour
     private Rigidbody[] ragdollBodies;
     private Collider[] ragdollColliders;
     private NavMeshAgent NavMeshAgent;
-    public Collider overall;
+    private Collider overall;
 
     public int health = 100;
     // Start is called before the first frame update
@@ -21,8 +21,8 @@ public class BasicEnemy : MonoBehaviour
         ragdollColliders = GetComponentsInChildren<Collider>();
         NavMeshAgent = GetComponent<NavMeshAgent>();
         ToggleRagdoll(false);
+        overall = this.gameObject.GetComponent<Collider>();
         overall.enabled = true;
-        
     }
 
     private void ToggleRagdoll (bool state)

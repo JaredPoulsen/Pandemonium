@@ -10,7 +10,7 @@ public class BasicEnemy1 : MonoBehaviour
     private Rigidbody[] ragdollBodies;
     private Collider[] ragdollColliders;
     private UnityEngine.AI.NavMeshAgent NavMeshAgent;
-    public Collider overall;
+    private Collider overall;
 
     public int health = 100;
     // Start is called before the first frame update
@@ -19,8 +19,8 @@ public class BasicEnemy1 : MonoBehaviour
         ragdollBodies = GetComponentsInChildren<Rigidbody>();
         ragdollColliders = GetComponentsInChildren<Collider>();
         ToggleRagdoll(false);
+        overall = this.gameObject.GetComponent<Collider>();
         overall.enabled = true;
-        
     }
 
     private void ToggleRagdoll (bool state)
@@ -44,6 +44,7 @@ public class BasicEnemy1 : MonoBehaviour
         {
             rb.AddExplosionForce(500f, new Vector3(-3f, 0.5f, -3f), 3f, 0f, ForceMode.Impulse);
         }
+        overall.enabled = false;
     }
     // Update is called once per frame
     void Update()
