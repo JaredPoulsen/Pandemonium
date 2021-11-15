@@ -301,11 +301,11 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154013916}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: cb4c27a6c7c7439438b60dcff009fdda, type: 3}
   m_Controller: {fileID: 9100000, guid: 65cbfbce7f46ba7429e50eddd50aec5a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -348,13 +348,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154013916}
   serializedVersion: 2
-  m_Mass: 10000
+  m_Mass: 100000000
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 32
   m_CollisionDetection: 1
 --- !u!114 &154013921
 MonoBehaviour:
@@ -1033,7 +1033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662429497}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.27, y: -19.110813, z: -39.32}
+  m_LocalPosition: {x: 4.4, y: -19.110813, z: -15.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 556322623}
@@ -1972,11 +1972,11 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678074158}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 65cbfbce7f46ba7429e50eddd50aec5a, type: 2}
+  m_Avatar: {fileID: 9000000, guid: cb4c27a6c7c7439438b60dcff009fdda, type: 3}
+  m_Controller: {fileID: 9100000, guid: fd358a009d00ae149a3563c7225e1c6c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
