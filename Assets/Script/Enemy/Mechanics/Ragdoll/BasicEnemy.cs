@@ -48,6 +48,7 @@ public class BasicEnemy : MonoBehaviour
             rb.AddExplosionForce(500f, new Vector3(-3f, 0.5f, -3f), 3f, 0f, ForceMode.Impulse);
         }
         NavMeshAgent.isStopped = true;
+        overall.enabled = false;
     }
     // Update is called once per frame
     void Update()
