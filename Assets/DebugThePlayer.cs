@@ -14,6 +14,6 @@ public class DebugThePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(pl.IsArmed);
+
     }
 }

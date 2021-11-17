@@ -11,8 +11,6 @@ public class EnemyBase : MonoBehaviour
     [Header("Base Stat")]
     [SerializeField]
     protected string name;
-    [SerializeField]
-    protected float approachSpeed = 0.002f;
     public float maxHealth = 100f;
     [SerializeField]
     protected int scorePoint = 10;
@@ -30,10 +28,9 @@ public class EnemyBase : MonoBehaviour
 
     [Header("References")]
     public GameObject playerRef; // DO NOT DEFINE / DRAG ANYTHING TO THIS
-    [SerializeField] private Animator animator = null;
+    [SerializeField] protected Animator animator = null;
     private Rigidbody[] ragdollBodies;
     private Collider[] ragdollColliders;
-    private NavMeshAgent NavMeshAgent;
     public Collider overall;
     public AudioSource ShootAudio;
 
@@ -51,7 +48,6 @@ public class EnemyBase : MonoBehaviour
     [Range(-1, 1)]
     public float leftright;
 
-    
 
     #endregion //Calling Var 
 
@@ -61,11 +57,12 @@ public class EnemyBase : MonoBehaviour
         playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
 
-        ragdollBodies = GetComponentsInChildren<Rigidbody>();
+       /* ragdollBodies = GetComponentsInChildren<Rigidbody>();
         ragdollColliders = GetComponentsInChildren<Collider>();
-        NavMeshAgent = GetComponent<NavMeshAgent>();
         ToggleRagdoll(false);
-        overall.enabled = true;
+        overall.enabled = true;*/
+
+        
     }
     protected virtual void Update()
     {
@@ -73,8 +70,10 @@ public class EnemyBase : MonoBehaviour
         {
             transform.LookAt(playerRef.transform);
             gameObject.GetComponent<NavMeshAgent>().isStopped = true;
-            Shoot();
-            //transform.position = Vector3.MoveTowards(transform.position, new Vector3(playerRef.transform.position.x, transform.position.y, playerRef.transform.position.z), approachSpeed);
+            Shoot(); 
+        } else
+        {
+            gameObject.GetComponent<NavMeshAgent>().isStopped = false;
         }
     }
     // Ray Cast System 
@@ -131,6 +130,7 @@ public class EnemyBase : MonoBehaviour
     }
     #endregion //RayCast System
 
+    // Shooting System
     #region Shooting
     protected virtual void Shoot()
     {
@@ -153,39 +153,27 @@ public class EnemyBase : MonoBehaviour
     {
         health = maxHealth;
     }
-
-    public void takeDamage(float amount)
+    protected void takeDamage(float amount)
     {
         health -= amount;
         if (health <= 0)
         {
             Die();
-            Destroy(gameObject, 30f);
         }
     }
-    public virtual void Die()
+    protected void Die()
     {
         score.value += scorePoint;
-        ToggleRagdoll(true);
+        canSeePlayer = false;
+        radius = 0;
         gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+        /*ToggleRagdoll(true);*/
+        Destroy(gameObject, 10f);
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Bullet")
-        {
-            takeDamage(10f);
-            canSeePlayer = true;
-            radius = 35f;
-        }
-        if (collision.gameObject.tag == "Player")
-        {
-            //Destroy(gameObject);
-        }
-    }
-    private void ToggleRagdoll(bool state)
+ 
+    /*protected void ToggleRagdoll(bool state)
     {
         animator.enabled = !state;
-        animator.SetFloat("Vel", NavMeshAgent.speed);
 
         foreach (Rigidbody rb in ragdollBodies)
         {
@@ -196,7 +184,15 @@ public class EnemyBase : MonoBehaviour
         {
             collider.enabled = state;
         }
+    }*/
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            takeDamage(10f);
+            canSeePlayer = true;
+            radius = 35f;
+           
+        }
     }
-
-
 }
