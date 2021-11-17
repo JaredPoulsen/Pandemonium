@@ -18974,8 +18974,8 @@ MonoBehaviour:
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 90
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -20115,8 +20115,8 @@ MonoBehaviour:
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 125
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -20983,8 +20983,8 @@ MonoBehaviour:
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 137
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -25629,8 +25629,8 @@ MonoBehaviour:
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 49
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -31892,23 +31892,23 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1196229224}
+    m_TransformParent: {fileID: 1099963621}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.02
+      value: 50.92
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7170732
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.48
+      value: 24.029995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -32460,8 +32460,8 @@ MonoBehaviour:
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 86
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -34767,8 +34767,8 @@ MonoBehaviour:
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 71
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -50223,8 +50223,8 @@ MonoBehaviour:
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 86
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -56056,7 +56056,6 @@ Transform:
   - {fileID: 584854352}
   - {fileID: 1916841001}
   - {fileID: 1897779278}
-  - {fileID: 1320731495}
   - {fileID: 1099963621}
   - {fileID: 1086022085}
   - {fileID: 438012741}
@@ -62238,11 +62237,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
   m_PrefabInstance: {fileID: 684642651}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1320731495 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
-  m_PrefabInstance: {fileID: 684642651}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1320731496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62331,8 +62325,8 @@ MonoBehaviour:
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 78
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -70022,24 +70016,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1416953219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 99
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
     m_Bits: 512
   obstructionMask:
     serializedVersion: 2
-    m_Bits: 65536
+    m_Bits: 589824
   canSeePlayer: 0
   bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
-  ShootAudio: {fileID: 1416953226}
+  ShootAudio: {fileID: 1540380893}
   inaccuracy: 0
   timeBetweenShot: 0.5
   upward: 0
@@ -79012,14 +79006,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1540380889}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 6
+  angle: 110
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -79030,7 +79024,7 @@ MonoBehaviour:
   canSeePlayer: 0
   bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
   ShootAudio: {fileID: 1540380893}
-  inaccuracy: 0
+  inaccuracy: 0.2
   timeBetweenShot: 0.5
   upward: 0
   forward: 0
@@ -80950,7 +80944,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -84185,7 +84179,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -86574,7 +86568,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -90048,7 +90042,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22464
+  m_Name: pb_Mesh73392
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -91690,7 +91684,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -93842,8 +93836,8 @@ MonoBehaviour:
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 88
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -95124,8 +95118,8 @@ MonoBehaviour:
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 110
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -104086,7 +104080,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10bbdd8fe746c8f4882d59b35e0b777b, type: 3}
       propertyPath: m_LocalPosition.x
