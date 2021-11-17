@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(Rigidbody), typeof(AudioSource), typeof(CapsuleCollider))]
 public class EnemyBase : MonoBehaviour
 {
     // Calling variable here
