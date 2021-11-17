@@ -8,41 +8,41 @@ public class EnemyBase : MonoBehaviour
 {
     // Calling variable here
     #region Variables
-
+    [Header("Base Stat")]
+    [SerializeField]
     protected string name;
-
-    protected float moveSpeed = 0.002f;
-
+    [SerializeField]
+    protected float approachSpeed = 0.002f;
     public float maxHealth = 100f;
-
     [SerializeField]
     protected int scorePoint = 10;
-
     public Score score;
-
     private float health;
 
+    
+    [Header("FOV")]
     public float radius;
     [Range(0, 360)]
     public float angle;
-
-    public GameObject playerRef; // DO NOT DEFINE / DRAG ANYTHING TO THIS
-
     public LayerMask targetMask;
     public LayerMask obstructionMask;
-
     public bool canSeePlayer;
 
-    public GameObject bullet;
-
+    [Header("References")]
+    public GameObject playerRef; // DO NOT DEFINE / DRAG ANYTHING TO THIS
+    [SerializeField] private Animator animator = null;
+    private Rigidbody[] ragdollBodies;
+    private Collider[] ragdollColliders;
+    private NavMeshAgent NavMeshAgent;
+    public Collider overall;
     public AudioSource ShootAudio;
 
+    [Header("Shooting")]
+    public GameObject bullet;
     [Range(0, 2)]
     public float inaccuracy;
-
     public float timeBetweenShot = 0.5f; //  more value means low fire rate
     protected float nextShot;
-
     // Adjust shooting point
     [Range(-1, 1)]
     public float upward;
@@ -50,6 +50,9 @@ public class EnemyBase : MonoBehaviour
     public float forward;
     [Range(-1, 1)]
     public float leftright;
+
+    
+
     #endregion //Calling Var 
 
 
@@ -57,6 +60,12 @@ public class EnemyBase : MonoBehaviour
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
+
+        ragdollBodies = GetComponentsInChildren<Rigidbody>();
+        ragdollColliders = GetComponentsInChildren<Collider>();
+        NavMeshAgent = GetComponent<NavMeshAgent>();
+        ToggleRagdoll(false);
+        overall.enabled = true;
     }
     protected virtual void Update()
     {
@@ -65,7 +74,7 @@ public class EnemyBase : MonoBehaviour
             transform.LookAt(playerRef.transform);
             gameObject.GetComponent<NavMeshAgent>().isStopped = true;
             Shoot();
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(playerRef.transform.position.x, transform.position.y, playerRef.transform.position.z), moveSpeed);
+            //transform.position = Vector3.MoveTowards(transform.position, new Vector3(playerRef.transform.position.x, transform.position.y, playerRef.transform.position.z), approachSpeed);
         }
     }
     // Ray Cast System 
@@ -151,12 +160,14 @@ public class EnemyBase : MonoBehaviour
         if (health <= 0)
         {
             Die();
+            Destroy(gameObject, 30f);
         }
     }
     public virtual void Die()
     {
         score.value += scorePoint;
-        Destroy(gameObject);
+        ToggleRagdoll(true);
+        gameObject.GetComponent<NavMeshAgent>().isStopped = true;
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -171,5 +182,21 @@ public class EnemyBase : MonoBehaviour
             //Destroy(gameObject);
         }
     }
-    
+    private void ToggleRagdoll(bool state)
+    {
+        animator.enabled = !state;
+        animator.SetFloat("Vel", NavMeshAgent.speed);
+
+        foreach (Rigidbody rb in ragdollBodies)
+        {
+            rb.isKinematic = !state;
+        }
+
+        foreach (Collider collider in ragdollColliders)
+        {
+            collider.enabled = state;
+        }
+    }
+
+
 }
