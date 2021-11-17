@@ -19,7 +19,7 @@ public class ScoreSystem : MonoBehaviour
     {
         textScore.text = "Score: " + score.value;
 
-        if (score.value >= 10)
+        if (score.value >= 220)
         {
             SceneManager.LoadScene("Win");
         }
