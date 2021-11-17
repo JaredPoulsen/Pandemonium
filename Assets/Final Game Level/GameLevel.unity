@@ -18968,14 +18968,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 438012740}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
   radius: 10
-  angle: 90
+  angle: 80
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -18986,10 +18986,10 @@ MonoBehaviour:
   canSeePlayer: 0
   bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
   ShootAudio: {fileID: 438012748}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: 0.5
+  forward: 0.1
   leftright: 0
 --- !u!114 &438012743
 MonoBehaviour:
@@ -19049,21 +19049,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &438012746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438012740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c9e0025b7f5de4197629f43f39894d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 438012747}
-  overall: {fileID: 438012749}
-  health: 100
 --- !u!95 &438012747
 Animator:
   serializedVersion: 3
@@ -20109,14 +20094,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 481977690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
   radius: 10
-  angle: 125
+  angle: 80
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -20127,10 +20112,10 @@ MonoBehaviour:
   canSeePlayer: 0
   bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
   ShootAudio: {fileID: 481977698}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: 0.5
+  forward: 0.1
   leftright: 0
 --- !u!114 &481977693
 MonoBehaviour:
@@ -20190,21 +20175,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &481977696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481977690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c9e0025b7f5de4197629f43f39894d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 481977697}
-  overall: {fileID: 481977699}
-  health: 100
 --- !u!95 &481977697
 Animator:
   serializedVersion: 3
@@ -20977,14 +20947,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 495234846}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
   radius: 10
-  angle: 137
+  angle: 80
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -20995,10 +20965,10 @@ MonoBehaviour:
   canSeePlayer: 0
   bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
   ShootAudio: {fileID: 495234854}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: 0.5
+  forward: 0.1
   leftright: 0
 --- !u!114 &495234849
 MonoBehaviour:
@@ -21058,21 +21028,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &495234852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495234846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c9e0025b7f5de4197629f43f39894d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 495234853}
-  overall: {fileID: 495234855}
-  health: 100
 --- !u!95 &495234853
 Animator:
   serializedVersion: 3
@@ -25550,12 +25505,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 584854354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c9e0025b7f5de4197629f43f39894d, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 584854360}
-  overall: {fileID: 584854362}
-  health: 100
+  maxHealth: 100
+  scorePoint: 10
+  score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
+  radius: 10
+  angle: 80
+  playerRef: {fileID: 0}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 512
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 65536
+  canSeePlayer: 0
+  bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
+  ShootAudio: {fileID: 584854361}
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: 0.5
+  forward: 0.1
+  leftright: 0
 --- !u!195 &584854356
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25614,38 +25586,6 @@ MonoBehaviour:
   aiPathPoints: []
   destPoint: 0
   agent: {fileID: 584854356}
---- !u!114 &584854359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584854354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  scorePoint: 10
-  score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 10
-  angle: 49
-  playerRef: {fileID: 0}
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 512
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 65536
-  canSeePlayer: 0
-  bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
-  ShootAudio: {fileID: 584854361}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
-  leftright: 0
 --- !u!95 &584854360
 Animator:
   serializedVersion: 3
@@ -32381,12 +32321,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 693708334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c9e0025b7f5de4197629f43f39894d, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 693708340}
-  overall: {fileID: 693708342}
-  health: 100
+  maxHealth: 100
+  scorePoint: 10
+  score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
+  radius: 10
+  angle: 80
+  playerRef: {fileID: 0}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 512
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 65536
+  canSeePlayer: 0
+  bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
+  ShootAudio: {fileID: 693708341}
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: 0.5
+  forward: 0.1
+  leftright: 0
 --- !u!195 &693708336
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32445,38 +32402,6 @@ MonoBehaviour:
   aiPathPoints: []
   destPoint: 0
   agent: {fileID: 693708336}
---- !u!114 &693708339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693708334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  scorePoint: 10
-  score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 10
-  angle: 86
-  playerRef: {fileID: 0}
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 512
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 65536
-  canSeePlayer: 0
-  bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
-  ShootAudio: {fileID: 693708341}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
-  leftright: 0
 --- !u!95 &693708340
 Animator:
   serializedVersion: 3
@@ -34688,12 +34613,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 732528093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c9e0025b7f5de4197629f43f39894d, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 732528099}
-  overall: {fileID: 732528101}
-  health: 100
+  maxHealth: 100
+  scorePoint: 10
+  score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
+  radius: 10
+  angle: 80
+  playerRef: {fileID: 0}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 512
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 65536
+  canSeePlayer: 0
+  bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
+  ShootAudio: {fileID: 732528100}
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: 0.5
+  forward: 0.1
+  leftright: 0
 --- !u!195 &732528095
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34752,38 +34694,6 @@ MonoBehaviour:
   aiPathPoints: []
   destPoint: 0
   agent: {fileID: 732528095}
---- !u!114 &732528098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732528093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  scorePoint: 10
-  score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 10
-  angle: 71
-  playerRef: {fileID: 0}
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 512
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 65536
-  canSeePlayer: 0
-  bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
-  ShootAudio: {fileID: 732528100}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
-  leftright: 0
 --- !u!95 &732528099
 Animator:
   serializedVersion: 3
@@ -50217,14 +50127,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1086022084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
   radius: 10
-  angle: 86
+  angle: 80
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -50235,10 +50145,10 @@ MonoBehaviour:
   canSeePlayer: 0
   bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
   ShootAudio: {fileID: 1086022092}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: 0.5
+  forward: 0.1
   leftright: 0
 --- !u!114 &1086022087
 MonoBehaviour:
@@ -50298,21 +50208,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1086022090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086022084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c9e0025b7f5de4197629f43f39894d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1086022091}
-  overall: {fileID: 1086022093}
-  health: 100
 --- !u!95 &1086022091
 Animator:
   serializedVersion: 3
@@ -51281,14 +51176,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1099963620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 0
-  angle: 0
+  radius: 10
+  angle: 80
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
@@ -51299,10 +51194,10 @@ MonoBehaviour:
   canSeePlayer: 0
   bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
   ShootAudio: {fileID: 1099963628}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: 0.5
+  forward: 0.1
   leftright: 0
 --- !u!114 &1099963623
 MonoBehaviour:
@@ -51362,21 +51257,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1099963626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099963620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c9e0025b7f5de4197629f43f39894d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1099963627}
-  overall: {fileID: 1099963629}
-  health: 100
 --- !u!95 &1099963627
 Animator:
   serializedVersion: 3
@@ -70023,21 +69903,21 @@ MonoBehaviour:
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
   radius: 10
-  angle: 99
+  angle: 80
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
     m_Bits: 512
   obstructionMask:
     serializedVersion: 2
-    m_Bits: 589824
+    m_Bits: 65536
   canSeePlayer: 0
   bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
-  ShootAudio: {fileID: 1540380893}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
+  ShootAudio: {fileID: 1416953226}
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: 0.5
+  forward: 0.1
   leftright: 0
 --- !u!95 &1416953225
 Animator:
@@ -79026,8 +78906,8 @@ MonoBehaviour:
   ShootAudio: {fileID: 1540380893}
   inaccuracy: 0.2
   timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
+  upward: 0.5
+  forward: 0.1
   leftright: 0
 --- !u!136 &1540380892
 CapsuleCollider:
@@ -93757,12 +93637,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1897779277}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c9e0025b7f5de4197629f43f39894d, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1897779284}
-  overall: {fileID: 1897779286}
-  health: 100
+  maxHealth: 100
+  scorePoint: 10
+  score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
+  radius: 10
+  angle: 80
+  playerRef: {fileID: 0}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 512
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 65536
+  canSeePlayer: 0
+  bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
+  ShootAudio: {fileID: 1897779285}
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: 0.5
+  forward: 0.1
+  leftright: 0
 --- !u!195 &1897779280
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -93821,38 +93718,6 @@ MonoBehaviour:
   aiPathPoints: []
   destPoint: 0
   agent: {fileID: 1897779280}
---- !u!114 &1897779283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897779277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  scorePoint: 10
-  score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 10
-  angle: 88
-  playerRef: {fileID: 0}
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 512
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 65536
-  canSeePlayer: 0
-  bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
-  ShootAudio: {fileID: 1897779285}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
-  leftright: 0
 --- !u!95 &1897779284
 Animator:
   serializedVersion: 3
@@ -95039,12 +94904,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1916841003}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c9e0025b7f5de4197629f43f39894d, type: 3}
+  m_Script: {fileID: 11500000, guid: e5d5773fde321f948802d9207d6cd45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1916841009}
-  overall: {fileID: 1916841011}
-  health: 100
+  maxHealth: 100
+  scorePoint: 10
+  score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
+  radius: 10
+  angle: 80
+  playerRef: {fileID: 0}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 512
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 65536
+  canSeePlayer: 0
+  bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
+  ShootAudio: {fileID: 1916841010}
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: 0.5
+  forward: 0.1
+  leftright: 0
 --- !u!195 &1916841005
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -95103,38 +94985,6 @@ MonoBehaviour:
   aiPathPoints: []
   destPoint: 0
   agent: {fileID: 1916841005}
---- !u!114 &1916841008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916841003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4dfb52240ef71e4e97fe7fe73414f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  scorePoint: 10
-  score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 10
-  angle: 110
-  playerRef: {fileID: 0}
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 512
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 65536
-  canSeePlayer: 0
-  bullet: {fileID: 3163126826636465162, guid: 38d07d8958335df43959205dd3dbc794, type: 3}
-  ShootAudio: {fileID: 1916841010}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
-  leftright: 0
 --- !u!95 &1916841009
 Animator:
   serializedVersion: 3

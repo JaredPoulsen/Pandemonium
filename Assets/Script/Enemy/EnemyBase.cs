@@ -11,7 +11,7 @@ public class EnemyBase : MonoBehaviour
 
     protected string name;
 
-    protected float moveSpeed = 0.02f;
+    protected float moveSpeed = 0.002f;
 
     public float maxHealth = 100f;
 
@@ -168,7 +168,7 @@ public class EnemyBase : MonoBehaviour
         }
         if (collision.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
     
