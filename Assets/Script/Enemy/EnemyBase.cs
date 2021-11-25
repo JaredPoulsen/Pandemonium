@@ -49,6 +49,7 @@ public class EnemyBase : MonoBehaviour
     public float leftright;
 
 
+
     #endregion //Calling Var 
 
 
@@ -62,7 +63,7 @@ public class EnemyBase : MonoBehaviour
         ToggleRagdoll(false);
         overall.enabled = true;
 
-        
+
     }
     protected virtual void Update()
     {
@@ -72,7 +73,7 @@ public class EnemyBase : MonoBehaviour
             gameObject.GetComponent<NavMeshAgent>().isStopped = true;
             Shoot(); 
         } else
-        {
+        { 
             gameObject.GetComponent<NavMeshAgent>().isStopped = false;
         }
     }
@@ -163,12 +164,12 @@ public class EnemyBase : MonoBehaviour
     }
     protected void Die()
     {
+        timeBetweenShot = 1000000;
         score.value += scorePoint;
-        canSeePlayer = false;
-        radius = 0;
         gameObject.GetComponent<NavMeshAgent>().isStopped = true;
         ToggleRagdoll(true);
         Destroy(gameObject, 10f);
+
     }
  
     protected void ToggleRagdoll(bool state)

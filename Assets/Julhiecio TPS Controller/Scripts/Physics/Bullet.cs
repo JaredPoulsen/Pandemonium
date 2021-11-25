@@ -57,9 +57,11 @@ public class Bullet : MonoBehaviour
 			//Instantiate and destroy Bullet Collision Particle
 			if (FinalPoint == Vector3.zero)
 				FinalPoint = transform.position;
-
-			var defaultcollisionparticle = (GameObject)Instantiate(DestroyBulletParticle, FinalPoint, Quaternion.FromToRotation(transform.forward, DestroyBulletRotation) * transform.rotation);
-			Destroy(defaultcollisionparticle, 2f);
+				
+					var defaultcollisionparticle = (GameObject)Instantiate(DestroyBulletParticle, FinalPoint, Quaternion.FromToRotation(transform.forward, DestroyBulletRotation) * transform.rotation);
+					Destroy(defaultcollisionparticle, 2f);
+				
+				
 
 			//Instantiate and Destroy Bullet Hole
 			if (MovementType != BulletMovementType.Physics)
