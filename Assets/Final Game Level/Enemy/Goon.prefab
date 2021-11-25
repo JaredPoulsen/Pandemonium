@@ -423,10 +423,10 @@ MonoBehaviour:
   overall: {fileID: 660652351151945537}
   ShootAudio: {fileID: 660652351151945595}
   bullet: {fileID: 7478913327921050925, guid: 5fd550a0b0d019c40b33762758aada4a, type: 3}
-  inaccuracy: 0
-  timeBetweenShot: 0.5
-  upward: 0
-  forward: 0
+  inaccuracy: 0.2
+  timeBetweenShot: 0.3
+  upward: -0.7
+  forward: -0.2
   leftright: 0
 --- !u!54 &660652351151945598
 Rigidbody:
@@ -443,7 +443,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 32
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!136 &660652351151945537
 CapsuleCollider:
   m_ObjectHideFlags: 0

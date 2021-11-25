@@ -57,10 +57,10 @@ public class EnemyBase : MonoBehaviour
         playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
 
-       /* ragdollBodies = GetComponentsInChildren<Rigidbody>();
+        ragdollBodies = GetComponentsInChildren<Rigidbody>();
         ragdollColliders = GetComponentsInChildren<Collider>();
         ToggleRagdoll(false);
-        overall.enabled = true;*/
+        overall.enabled = true;
 
         
     }
@@ -167,11 +167,11 @@ public class EnemyBase : MonoBehaviour
         canSeePlayer = false;
         radius = 0;
         gameObject.GetComponent<NavMeshAgent>().isStopped = true;
-        /*ToggleRagdoll(true);*/
+        ToggleRagdoll(true);
         Destroy(gameObject, 10f);
     }
  
-    /*protected void ToggleRagdoll(bool state)
+    protected void ToggleRagdoll(bool state)
     {
         animator.enabled = !state;
 
@@ -184,7 +184,7 @@ public class EnemyBase : MonoBehaviour
         {
             collider.enabled = state;
         }
-    }*/
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Bullet")
