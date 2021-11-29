@@ -65,6 +65,7 @@ public class CheckPoint : MonoBehaviour
         {
             ActivateCheckPoint();
             CPAudio.Play();
+            
         }
     }
 

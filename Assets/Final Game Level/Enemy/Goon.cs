@@ -23,7 +23,6 @@ public class Goon : EnemyBase
             animator.SetBool("Shoot", false);
         }
 
-        Debug.Log(canSeePlayer);
     }
     
 }

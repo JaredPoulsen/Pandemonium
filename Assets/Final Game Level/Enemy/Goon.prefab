@@ -409,8 +409,8 @@ MonoBehaviour:
   maxHealth: 100
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
-  radius: 6
-  angle: 48
+  radius: 10
+  angle: 110
   targetMask:
     serializedVersion: 2
     m_Bits: 512
@@ -422,11 +422,11 @@ MonoBehaviour:
   animator: {fileID: 660652351151945539}
   overall: {fileID: 660652351151945537}
   ShootAudio: {fileID: 660652351151945595}
-  bullet: {fileID: 7478913327921050925, guid: 5fd550a0b0d019c40b33762758aada4a, type: 3}
+  bullet: {fileID: 3163126826636465162, guid: 02e0e3a4e7ef532438a19a6e72cc7503, type: 3}
   inaccuracy: 0.2
   timeBetweenShot: 0.3
-  upward: -0.7
-  forward: -0.2
+  upward: 0.9
+  forward: 0.4
   leftright: 0
 --- !u!54 &660652351151945598
 Rigidbody:
