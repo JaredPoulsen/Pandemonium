@@ -1862,6 +1862,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.x
       value: 0.00000006053597
       objectReference: {fileID: 0}
+    - target: {fileID: 660652351151945536, guid: 1a5d3712783e87a4481226da5e978a15, type: 3}
+      propertyPath: angle
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 660652351151945598, guid: 1a5d3712783e87a4481226da5e978a15, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
