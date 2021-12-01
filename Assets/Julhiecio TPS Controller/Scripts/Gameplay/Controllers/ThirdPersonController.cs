@@ -1326,7 +1326,7 @@ public class ThirdPersonController : MonoBehaviour
 
         if (other.gameObject.tag == "Bullet")
         {
-            Health -= 7;
+            Health -= 10;
             Debug.Log(Health);
 
             if (Health <= 0)

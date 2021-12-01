@@ -11,7 +11,7 @@ public class hpBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        slider.maxValue = 100;
+        slider.maxValue = 250;
         slider.value = player.Health;
         
     }
