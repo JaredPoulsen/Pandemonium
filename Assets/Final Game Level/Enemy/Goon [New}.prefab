@@ -2441,9 +2441,10 @@ MonoBehaviour:
   playerRef: {fileID: 0}
   animator: {fileID: 6030918682325212435}
   ShootAudio: {fileID: 6030918682325212459}
+  navMeshAgent: {fileID: 0}
   bullet: {fileID: 3163126826636465162, guid: 02e0e3a4e7ef532438a19a6e72cc7503, type: 3}
   inaccuracy: 0.2
-  timeBetweenShot: 0.3
+  timeBetweenShot: 0.7
   upward: 0.9
   forward: 0.4
   leftright: 0

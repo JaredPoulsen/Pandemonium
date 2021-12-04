@@ -62,7 +62,6 @@ public class EnemyBase : MonoBehaviour
         baseTimeBetweenShot = timeBetweenShot;
         navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
         ragdollBodies = GetComponentsInChildren<Rigidbody>();
-        //ToggleRagdoll(false);
         rgd = GetComponent<RagdollEnemyAdvanced>();
     }
     protected virtual void Update()
@@ -82,7 +81,6 @@ public class EnemyBase : MonoBehaviour
             navMeshAgent.isStopped = false;
         }
         Physics.IgnoreLayerCollision(10, 20, true);
-        Debug.Log(navMeshAgent.isStopped); 
     }
     // Ray Cast System 
     #region RayCast
