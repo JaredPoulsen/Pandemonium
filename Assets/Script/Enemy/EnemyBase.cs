@@ -15,7 +15,7 @@ public class EnemyBase : MonoBehaviour
     [SerializeField]
     protected int scorePoint = 10;
     public Score score;
-    private float health;
+    public float health;
 
     
     [Header("FOV")]
@@ -30,15 +30,16 @@ public class EnemyBase : MonoBehaviour
     public GameObject playerRef; // DO NOT DEFINE / DRAG ANYTHING TO THIS
     [SerializeField] protected Animator animator = null;
     private Rigidbody[] ragdollBodies;
-    private Collider[] ragdollColliders;
-    public Collider overall;
+    private RagdollEnemyAdvanced rgd;
     public AudioSource ShootAudio;
+    public NavMeshAgent navMeshAgent;
 
     [Header("Shooting")]
     public GameObject bullet;
     [Range(0, 2)]
     public float inaccuracy;
     public float timeBetweenShot = 0.5f; //  more value means low fire rate
+    private float baseTimeBetweenShot;
     protected float nextShot;
     // Adjust shooting point
     [Range(-1, 1)]
@@ -58,24 +59,30 @@ public class EnemyBase : MonoBehaviour
         playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
 
+        baseTimeBetweenShot = timeBetweenShot;
+        navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
         ragdollBodies = GetComponentsInChildren<Rigidbody>();
-        ragdollColliders = GetComponentsInChildren<Collider>();
-        ToggleRagdoll(false);
-        overall.enabled = true;
-
-
+        //ToggleRagdoll(false);
+        rgd = GetComponent<RagdollEnemyAdvanced>();
     }
     protected virtual void Update()
     {
-        if (canSeePlayer)
-        {
-            transform.LookAt(playerRef.transform);
-            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
-            Shoot(); 
-        } else
+        if (canSeePlayer && rgd.State != RagdollEnemyAdvanced.RagdollState.Ragdolled && rgd.State != RagdollEnemyAdvanced.RagdollState.WaitStablePosition)
         { 
-            gameObject.GetComponent<NavMeshAgent>().isStopped = false;
+            transform.LookAt(playerRef.transform);
+            timeBetweenShot = baseTimeBetweenShot;
+            Shoot();
+            if (health > 0)
+            {
+                navMeshAgent.isStopped = true;
+            }      
         }
+        else
+        {
+            navMeshAgent.isStopped = false;
+        }
+        Physics.IgnoreLayerCollision(10, 20, true);
+        Debug.Log(navMeshAgent.isStopped); 
     }
     // Ray Cast System 
     #region RayCast
@@ -133,7 +140,7 @@ public class EnemyBase : MonoBehaviour
 
     // Shooting System
     #region Shooting
-    protected virtual void Shoot()
+    public virtual void Shoot()
     {
         float randomNumberX = Random.Range(-inaccuracy, inaccuracy);
         float randomNumberY = Random.Range(-inaccuracy, inaccuracy);
@@ -166,25 +173,14 @@ public class EnemyBase : MonoBehaviour
     {
         timeBetweenShot = 1000000;
         score.value += scorePoint;
-        gameObject.GetComponent<NavMeshAgent>().isStopped = true;
-        ToggleRagdoll(true);
-        Destroy(gameObject, 10f);
-
-    }
- 
-    protected void ToggleRagdoll(bool state)
-    {
-        animator.enabled = !state;
-
+        navMeshAgent.isStopped = true;
+        rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
         foreach (Rigidbody rb in ragdollBodies)
         {
-            rb.isKinematic = !state;
+            rb.AddExplosionForce(107f, new Vector3(-1f, 0.5f, -1f), 5f, 0f, ForceMode.Impulse);
         }
+        Destroy(gameObject, 10f);
 
-        foreach (Collider collider in ragdollColliders)
-        {
-            collider.enabled = state;
-        }
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -194,6 +190,11 @@ public class EnemyBase : MonoBehaviour
             canSeePlayer = true;
             radius = 35f;
            
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
+            rgd.RagdollStatesController();
         }
     }
 }

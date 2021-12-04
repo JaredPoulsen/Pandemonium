@@ -21,7 +21,7 @@ public class Boss : EnemyBase
         }
 
     }
-    protected override void Shoot()
+    public override void Shoot()
     {
         float randomNumberX = Random.Range(-inaccuracy, inaccuracy);
         float randomNumberY = Random.Range(-inaccuracy, inaccuracy);
