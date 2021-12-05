@@ -83,7 +83,6 @@ public class EnemyBase : MonoBehaviour
             navMeshAgent.isStopped = true;
         }
         Physics.IgnoreLayerCollision(10, 20, true);
-        Debug.Log(navMeshAgent.isStopped);
     }
     // Ray Cast System 
     #region RayCast

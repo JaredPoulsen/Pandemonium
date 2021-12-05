@@ -17,8 +17,9 @@ public class Goon : EnemyBase
         if (canSeePlayer)
         {
             animator.SetBool("Shoot", true);
-        }
-        else if (!canSeePlayer)
+            animator.SetBool("Run", false);
+        } 
+        else
         {
             animator.SetBool("Shoot", false);
         }
