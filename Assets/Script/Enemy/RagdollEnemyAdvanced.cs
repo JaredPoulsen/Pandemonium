@@ -73,6 +73,8 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 	public bool ViewBodyDirection;
 
 	float timebtwShot;
+	float time = 0;
+	
 
 	private void Start()
 	{	
@@ -86,7 +88,7 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 			State = RagdollState.Ragdolled;
 		}
 		RagdollStatesController();
-		
+		Debug.Log(time);
 	}
 	private void LateUpdate()
 	{
@@ -141,11 +143,20 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 		if (State == RagdollState.Ragdolled)
 		{
 			enemy.timeBetweenShot = 1000000;
-			
+			time = time + Time.deltaTime;
+
 			foreach (Rigidbody rb in RagdollBones)
             {
-
-				rb.velocity = (transform.forward * enemy.bulletRecord.x + transform.right * enemy.bulletRecord.z + transform.up * 0.2f).normalized * 15f;
+				//rb.AddExplosionForce(20, rb.position, 3f, 5f, ForceMode.Impulse);
+				rb.velocity = ((transform.forward * enemy.bulletRecord.x + transform.right * enemy.bulletRecord.z + transform.up * 0.06f).normalized * 15f);
+				
+				if (time > 0.4)
+                {
+					rb.velocity = Vector3.zero;
+					time = 0;
+                }
+				
+				//rb.AddForce((transform.forward * enemy.bulletRecord.x + transform.right * enemy.bulletRecord.z + transform.up * 0.2f).normalized *150f);
 			}
 
 			if (RagdollEnabled == false)
@@ -326,7 +337,7 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 
 
 #if UNITY_EDITOR
-	[HideInInspector] private Camera MainCamera;
+    [HideInInspector] private Camera MainCamera;
 	private void OnDrawGizmos()
 	{
 		if (MainCamera == null)

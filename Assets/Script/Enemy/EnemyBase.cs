@@ -194,5 +194,6 @@ public class EnemyBase : MonoBehaviour
             rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
             rgd.RagdollStatesController();
         }
+      
     }
 }
