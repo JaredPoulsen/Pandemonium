@@ -1174,6 +1174,7 @@ MonoBehaviour:
   animator: {fileID: 2066176525428576211}
   ShootAudio: {fileID: 5604198894890551969}
   navMeshAgent: {fileID: 5604198894890551973}
+  bulletRecord: {x: 0, y: 0, z: 0}
   bullet: {fileID: 3163126826636465162, guid: 02e0e3a4e7ef532438a19a6e72cc7503, type: 3}
   inaccuracy: 0.2
   timeBetweenShot: 2.5

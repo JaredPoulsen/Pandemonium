@@ -460,11 +460,11 @@ MonoBehaviour:
   WeaponPositionID: 1
   Unlocked: 0
   BulletsPerMagazine: 4
-  TotalBullets: 4
+  TotalBullets: 36
   BulletsAmounts: 4
   Fire_Rate: 0.7
   CurrentFireRateToShoot: 0
-  Precision: 15
+  Precision: 10
   LossOfAccuracyPerShot: 0.03
   ShotErrorProbability: 0
   BulletPrefab: {fileID: 3163126826636465162, guid: 610ed711791a45f46ab8ae257422ba08, type: 3}
