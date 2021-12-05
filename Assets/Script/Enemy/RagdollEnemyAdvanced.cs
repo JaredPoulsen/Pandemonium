@@ -140,6 +140,11 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 		{
 			enemy.timeBetweenShot = 1000000;
 			
+			foreach (Rigidbody rb in RagdollBones)
+            {
+				rb.velocity = new Vector3(3, 0.02f, -3);
+			}
+
 			if (RagdollEnabled == false)
 			{
 				SetActiveRagdoll(true, true);
