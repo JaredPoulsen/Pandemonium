@@ -142,7 +142,7 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 			
 			foreach (Rigidbody rb in RagdollBones)
             {
-				rb.velocity = new Vector3(3, 0.02f, -3);
+				rb.velocity = new Vector3(24, 0.06f, -24);
 			}
 
 			if (RagdollEnabled == false)
