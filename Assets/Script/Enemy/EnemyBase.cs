@@ -29,7 +29,6 @@ public class EnemyBase : MonoBehaviour
     [Header("References")]
     public GameObject playerRef; // DO NOT DEFINE / DRAG ANYTHING TO THIS
     [SerializeField] protected Animator animator = null;
-    private Rigidbody[] ragdollBodies;
     private RagdollEnemyAdvanced rgd;
     public AudioSource ShootAudio;
     public NavMeshAgent navMeshAgent;
@@ -61,7 +60,6 @@ public class EnemyBase : MonoBehaviour
 
         baseTimeBetweenShot = timeBetweenShot;
         navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
-        ragdollBodies = GetComponentsInChildren<Rigidbody>();
         rgd = GetComponent<RagdollEnemyAdvanced>();
     }
     protected virtual void Update()
@@ -74,13 +72,18 @@ public class EnemyBase : MonoBehaviour
             if (health > 0)
             {
                 navMeshAgent.isStopped = true;
-            }      
+            }     
         }
         else
         {
             navMeshAgent.isStopped = false;
         }
+        if(health <= 0)
+        {
+            navMeshAgent.isStopped = true;
+        }
         Physics.IgnoreLayerCollision(10, 20, true);
+        Debug.Log(navMeshAgent.isStopped);
     }
     // Ray Cast System 
     #region RayCast
@@ -169,14 +172,10 @@ public class EnemyBase : MonoBehaviour
     }
     protected void Die()
     {
+
         timeBetweenShot = 1000000;
         score.value += scorePoint;
-        navMeshAgent.isStopped = true;
-        rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
-        foreach (Rigidbody rb in ragdollBodies)
-        {
-            rb.AddExplosionForce(107f, new Vector3(-1f, 0.5f, -1f), 5f, 0f, ForceMode.Impulse);
-        }
+        rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;  
         Destroy(gameObject, 10f);
 
     }

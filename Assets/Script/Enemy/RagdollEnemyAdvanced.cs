@@ -139,7 +139,7 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 		if (State == RagdollState.Ragdolled)
 		{
 			enemy.timeBetweenShot = 1000000;
-
+			
 			if (RagdollEnabled == false)
 			{
 				SetActiveRagdoll(true, true);
