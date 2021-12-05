@@ -32,6 +32,7 @@ public class EnemyBase : MonoBehaviour
     private RagdollEnemyAdvanced rgd;
     public AudioSource ShootAudio;
     public NavMeshAgent navMeshAgent;
+    public Vector3 bulletRecord;
 
     [Header("Shooting")]
     public GameObject bullet;
@@ -185,6 +186,7 @@ public class EnemyBase : MonoBehaviour
             takeDamage(10f);
             canSeePlayer = true;
             radius = 35f;
+            bulletRecord = collision.transform.position;
            
         }
         if (collision.gameObject.tag == "Enemy")

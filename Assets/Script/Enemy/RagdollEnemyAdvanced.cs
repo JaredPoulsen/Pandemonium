@@ -20,6 +20,8 @@ public class BoneTransformInfo2
 public class RagdollEnemyAdvanced : MonoBehaviour
 {
 	private EnemyBase enemy;
+	private ThirdPersonController player;
+
 	private Animator animator;
 	private Rigidbody rigidBody;
 
@@ -142,7 +144,8 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 			
 			foreach (Rigidbody rb in RagdollBones)
             {
-				rb.velocity = new Vector3(24, 0.06f, -24);
+
+				rb.velocity = (transform.forward * enemy.bulletRecord.x + transform.right * enemy.bulletRecord.z + transform.up * 0.2f).normalized * 15f;
 			}
 
 			if (RagdollEnabled == false)

@@ -118,8 +118,6 @@ public class ThirdPersonController : MonoBehaviour
     [HideInInspector] public bool WallInFront;
     [HideInInspector] public bool InverseKinematics = true;
 
-
-
     void Start()
     {
         Game = FindObjectOfType<GameManagerAndUI>();
