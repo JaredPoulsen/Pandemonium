@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8986338075498328083}
   - component: {fileID: 6580064272602481881}
   - component: {fileID: 2002075310935454019}
+  - component: {fileID: 2716296669479876672}
   m_Layer: 0
   m_Name: teahouse_table1
   m_TagString: Untagged
@@ -98,3 +99,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 0fe6f6b5b5be63d47bfd34b2ac5539d6, type: 3}
+--- !u!114 &2716296669479876672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4634742673798489356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 1861432716826678757, guid: 3f80cb7745416e04d8c453a99c98e8ea, type: 3}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7351536377459786624}
   - component: {fileID: 4747093261003962186}
   - component: {fileID: 5970419247420607747}
+  - component: {fileID: 8099847276712958141}
   m_Layer: 0
   m_Name: barstool
   m_TagString: Untagged
@@ -98,3 +99,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 4df1174294ea9624f9904a7da9e98b20, type: 3}
+--- !u!114 &8099847276712958141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6548775209957398175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 4448887668964297837, guid: 2b7274d8e9518514d9efb4d31f5695e3, type: 3}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0

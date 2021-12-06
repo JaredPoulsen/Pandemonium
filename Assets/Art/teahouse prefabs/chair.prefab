@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7397904544576553964}
   - component: {fileID: 4705792897191720742}
   - component: {fileID: 9217424898657486649}
+  - component: {fileID: 7551921954469786931}
   m_Layer: 0
   m_Name: chair
   m_TagString: Untagged
@@ -97,3 +98,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: d84a8fc5944180643aaf0465c09c5551, type: 3}
+--- !u!114 &7551921954469786931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6507325175456110323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 1565680333135116798, guid: af04dd57967041d4893b9031b85c7654, type: 3}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
