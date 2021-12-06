@@ -1258,7 +1258,7 @@ MonoBehaviour:
   TimeToGetUp: 3
   BlendSpeed: 2
   RagdollDrag: 0.5
-  RagdollWhenPressKeyG: 1
+  RagdollWhenPressKeyG: 0
   ViewHumanBodyBones: 0
   ViewBodyPhysics: 0
   ViewBodyDirection: 0
