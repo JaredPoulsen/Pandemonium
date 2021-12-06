@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6774352848214725601}
   - component: {fileID: 6774352848214725602}
   - component: {fileID: 5721906212050714177}
+  - component: {fileID: 4514351569448121423}
   - component: {fileID: -674285348381081395}
   m_Layer: 18
   m_Name: 'CheckPoint '
@@ -53,12 +54,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6774352848214725603}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 276aa0d60be872547a40e194edb26de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CPAudio: {fileID: 0}
+  Activated: 0
+--- !u!114 &4514351569448121423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774352848214725603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab71a576e28cd97458f6ae54aa400360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CPAudio: {fileID: -674285348381081395}
   Activated: 0
 --- !u!82 &-674285348381081395
 AudioSource:
@@ -70,7 +85,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 72ba1f7d287fa2c499f1a9f00a63d9b8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b614de142232f064eb81c806743a6c5a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
