@@ -88,7 +88,7 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 			State = RagdollState.Ragdolled;
 		}
 		RagdollStatesController();
-		Debug.Log(time);
+		//Debug.Log(time);
 	}
 	private void LateUpdate()
 	{
@@ -150,14 +150,15 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 				//rb.AddExplosionForce(20, rb.position, 3f, 5f, ForceMode.Impulse);
 				rb.velocity = ((transform.forward * enemy.bulletRecord.x + transform.right * enemy.bulletRecord.z + transform.up * 0.06f).normalized * 15f);
 				
-				if (time > 0.4)
+				if (time > 0.1)
                 {
 					rb.velocity = Vector3.zero;
 					time = 0;
-                }
+				}
 				
 				//rb.AddForce((transform.forward * enemy.bulletRecord.x + transform.right * enemy.bulletRecord.z + transform.up * 0.2f).normalized *150f);
 			}
+			
 
 			if (RagdollEnabled == false)
 			{

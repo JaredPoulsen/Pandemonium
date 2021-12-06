@@ -7,21 +7,25 @@ public class Boss : EnemyBase
 
     protected override void Start()
     {
-        
         base.Start();
-        maxHealth = 1000;
     }
 
     protected override void Update()
     {
+        base.Update();
         if (canSeePlayer)
         {
-            transform.LookAt(playerRef.transform);
-            Shoot();
+            animator.SetBool("Shoot", true);
+            animator.SetBool("Run", false);
         }
-
+        else
+        {
+            //animator.SetBool("Shoot", false);
+            animator.SetBool("Run", true);
+        }
+        Debug.Log(health);
     }
-    public override void Shoot()
+   /* public override void Shoot()
     {
         float randomNumberX = Random.Range(-inaccuracy, inaccuracy);
         float randomNumberY = Random.Range(-inaccuracy, inaccuracy);
@@ -33,16 +37,12 @@ public class Boss : EnemyBase
             GameObject clonebullet2 = Instantiate(bullet, transform.position + transform.forward * forward + transform.up * upward + transform.right * -leftright, transform.rotation) as GameObject;
             clonebullet1.transform.Rotate(randomNumberX, randomNumberY, randomNumberZ);
             clonebullet2.transform.Rotate(randomNumberX, randomNumberY, randomNumberZ);
-            if(clonebullet1 != null)
-            {
-                Debug.Log("boom");
-            }
             ShootAudio.Play();
             Destroy(clonebullet1, 5f);
             Destroy(clonebullet2, 5f);
             nextShot = Time.time + timeBetweenShot;
         }
 
-    }
+    }*/
 
 }

@@ -15,7 +15,7 @@ public class EnemyBase : MonoBehaviour
     [SerializeField]
     protected int scorePoint = 10;
     public Score score;
-    public float health;
+    [HideInInspector]public float health;
 
     
     [Header("FOV")]
@@ -42,9 +42,9 @@ public class EnemyBase : MonoBehaviour
     private float baseTimeBetweenShot;
     protected float nextShot;
     // Adjust shooting point
-    [Range(-1, 1)]
+    [Range(0, 2)]
     public float upward;
-    [Range(-1, 1)]
+    [Range(0, 1)]
     public float forward;
     [Range(-1, 1)]
     public float leftright;
@@ -62,6 +62,8 @@ public class EnemyBase : MonoBehaviour
         baseTimeBetweenShot = timeBetweenShot;
         navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
         rgd = GetComponent<RagdollEnemyAdvanced>();
+
+        bulletRecord = Vector3.zero;
     }
     protected virtual void Update()
     {
@@ -176,7 +178,7 @@ public class EnemyBase : MonoBehaviour
         timeBetweenShot = 1000000;
         score.value += scorePoint;
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;  
-        Destroy(gameObject, 10f);
+        Destroy(gameObject, 30f);
 
     }
     private void OnCollisionEnter(Collision collision)
