@@ -177,7 +177,8 @@ public class EnemyBase : MonoBehaviour
 
         timeBetweenShot = 1000000;
         score.value += scorePoint;
-        rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;  
+        rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
+        gameObject.GetComponent<Rigidbody>().isKinematic = true;
         Destroy(gameObject, 30f);
 
     }

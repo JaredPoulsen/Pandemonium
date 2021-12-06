@@ -143,18 +143,23 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 		if (State == RagdollState.Ragdolled)
 		{
 			enemy.timeBetweenShot = 1000000;
-			time = time + Time.deltaTime;
+			time = time + 1;
 
 			foreach (Rigidbody rb in RagdollBones)
             {
-				//rb.AddExplosionForce(20, rb.position, 3f, 5f, ForceMode.Impulse);
-				rb.velocity = ((transform.forward * enemy.bulletRecord.x + transform.right * enemy.bulletRecord.z + transform.up * 0.06f).normalized * 15f);
-				
-				if (time > 0.1)
+			
+				if (rb.gameObject.name == "mixamorig:Hips")
                 {
-					rb.velocity = Vector3.zero;
-					time = 0;
+					rb.freezeRotation = true;
+					rb.velocity = ((transform.forward * enemy.bulletRecord.x).normalized * -20f); //* enemy.bulletRecord.x + transform.right * -enemy.bulletRecord.z + transform.up * 0.02f
+					if (time >= 1.5)
+					{
+						rb.velocity = Vector3.zero;
+						rb.freezeRotation = false;
+						time = 0;
+					}
 				}
+				
 				
 				//rb.AddForce((transform.forward * enemy.bulletRecord.x + transform.right * enemy.bulletRecord.z + transform.up * 0.2f).normalized *150f);
 			}
