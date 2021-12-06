@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 using JU_INPUT_SYSTEM;
 
@@ -190,6 +191,10 @@ public class ThirdPersonController : MonoBehaviour
     }
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.KeypadPlus))
+        {
+            SceneManager.LoadScene("Win");
+        }
         if (IsDead == true)
         {
             Health = 0;
