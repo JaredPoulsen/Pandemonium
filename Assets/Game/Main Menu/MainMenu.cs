@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
         MainMenuPanel.gameObject.SetActive(false);
         InstrutionPanel.gameObject.SetActive(false);
         LoadingPanel.gameObject.SetActive(true);
-        SceneManager.LoadScene("GameLevel");
+        SceneManager.LoadScene("GameLevel_v2");
     }
     public void OpenInstruction()
     {
