@@ -126,7 +126,7 @@ public class CamPivotController : MonoBehaviour
 			//	+ gun.transform.up * gun.CameraAimingPosition.y
 			//	+ transform.forward * gun.CameraAimingPosition.z;
 
-			mCamera.fieldOfView = Mathf.Lerp(mCamera.fieldOfView, 10 , 10 * Time.deltaTime);
+			mCamera.fieldOfView = Mathf.Lerp(mCamera.fieldOfView, 15 , 10 * Time.deltaTime);
         }
         else
         {
