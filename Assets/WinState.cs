@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class WinState : MonoBehaviour
 {
     public GameObject boss; // drag the boss on the inspector 
+    public ThirdPersonController pl;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,10 @@ public class WinState : MonoBehaviour
         if (boss == null)
         {
             SceneManager.LoadScene("Win");
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            pl.Health = 0;
         }
     }
 }

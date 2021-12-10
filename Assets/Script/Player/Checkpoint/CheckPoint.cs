@@ -40,7 +40,6 @@ public class CheckPoint : MonoBehaviour
 
     private void ActivateCheckPoint()
     {
-        // We deactive all checkpoints in the scene
         foreach (GameObject cp in CheckPointsList)
         {
             cp.GetComponent<CheckPoint>().Activated = false;
@@ -55,6 +54,8 @@ public class CheckPoint : MonoBehaviour
     {
         // We search all the checkpoints in the current scene
         CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
+        Debug.Log("Create New Check Point List");
+       
     }
 
 
@@ -64,7 +65,7 @@ public class CheckPoint : MonoBehaviour
         if (other.tag == "Player")
         {
             ActivateCheckPoint();
-            CPAudio.Play();
+            //CPAudio.Play();
             
         }
     }
