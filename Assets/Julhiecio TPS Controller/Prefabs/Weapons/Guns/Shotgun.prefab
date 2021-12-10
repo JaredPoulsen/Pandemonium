@@ -460,7 +460,7 @@ MonoBehaviour:
   WeaponPositionID: 1
   Unlocked: 0
   BulletsPerMagazine: 4
-  TotalBullets: 36
+  TotalBullets: 40
   BulletsAmounts: 4
   Fire_Rate: 0.7
   CurrentFireRateToShoot: 0
@@ -478,7 +478,7 @@ MonoBehaviour:
   CanShoot: 0
   IsShooted: 0
   GenerateProceduralAnimation: 1
-  RecoilForce: 0.1
+  RecoilForce: 0.15
   RecoilForceRotation: 20
   GunSlider: {fileID: 6226064856028939979}
   SliderMovementOffset: 0.0573

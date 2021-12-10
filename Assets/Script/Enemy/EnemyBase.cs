@@ -186,10 +186,12 @@ public class EnemyBase : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            takeDamage(20f);
+           
+            takeDamage(10f);
             canSeePlayer = true;
             radius = 35f;
             bulletRecord = collision.transform.position;
+            
            
         }
         if (collision.gameObject.tag == "Enemy")

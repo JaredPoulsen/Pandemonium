@@ -23,7 +23,7 @@ public class Boss : EnemyBase
             //animator.SetBool("Shoot", false);
             animator.SetBool("Run", true);
         }
-        Debug.Log(health);
+       // Debug.Log(health);
     }
    /* public override void Shoot()
     {

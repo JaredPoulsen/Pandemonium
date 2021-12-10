@@ -54,7 +54,7 @@ public class CheckPoint : MonoBehaviour
     {
         // We search all the checkpoints in the current scene
         CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
-        Debug.Log("Create New Check Point List");
+
        
     }
 

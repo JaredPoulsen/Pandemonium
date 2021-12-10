@@ -10,6 +10,7 @@ public class AmmoBox : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("Pick up the ammo");
             var pl = other.GetComponent<ThirdPersonController>();
             if (pl.IsArmed && pl.WeaponInUse != null)
             {
