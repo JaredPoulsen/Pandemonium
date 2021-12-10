@@ -65,7 +65,7 @@ public class CheckPoint : MonoBehaviour
         if (other.tag == "Player")
         {
             ActivateCheckPoint();
-            //CPAudio.Play();
+            CPAudio.Play();
             
         }
     }
