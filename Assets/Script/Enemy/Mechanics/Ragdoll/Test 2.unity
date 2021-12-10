@@ -2338,7 +2338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063320153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.67, y: -0.41153336, z: -1.23}
+  m_LocalPosition: {x: 6.84, y: -0.41153336, z: -9.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1268036340}
@@ -2580,7 +2580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4783073539155833471, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_IsTrigger
@@ -2729,19 +2729,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1700930487269561830, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.23749869
+      value: 0.23749857
       objectReference: {fileID: 0}
     - target: {fileID: 1700930487269561830, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.38785022
+      value: 0.38784954
       objectReference: {fileID: 0}
     - target: {fileID: 1700930487269561830, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.29773146
+      value: -0.297732
       objectReference: {fileID: 0}
     - target: {fileID: 1700930487269561830, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.8393584
+      value: 0.83935857
       objectReference: {fileID: 0}
     - target: {fileID: 5831060428219392738, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2801,27 +2801,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7142335631165255779, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02
+      value: 0.020001369
       objectReference: {fileID: 0}
     - target: {fileID: 7142335631165255779, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.09
+      value: 0.0900002
       objectReference: {fileID: 0}
     - target: {fileID: 7142335631165255779, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.421
+      value: 0.4210206
       objectReference: {fileID: 0}
     - target: {fileID: 8661926219026024589, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.04
+      value: 0.039999958
       objectReference: {fileID: 0}
     - target: {fileID: 8661926219026024589, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 0.10000008
       objectReference: {fileID: 0}
     - target: {fileID: 8661926219026024589, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0.24999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699110692700996824, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
+      propertyPath: WeaponName
+      value: Submachine Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010215159908736368, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
+      propertyPath: WeaponName
+      value: Shotgun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad88e095eb15d3f46b7f41782baceda6, type: 3}
@@ -2850,7 +2858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8337946549526297171, guid: d13603b6a281110469f1166afe03aefa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.31
+      value: -7.22
       objectReference: {fileID: 0}
     - target: {fileID: 8337946549526297171, guid: d13603b6a281110469f1166afe03aefa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2884,13 +2892,17 @@ PrefabInstance:
       propertyPath: waypointManager
       value: 
       objectReference: {fileID: 1268036338}
+    - target: {fileID: 8375832502170295742, guid: d13603b6a281110469f1166afe03aefa, type: 3}
+      propertyPath: radius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8718272447394423017, guid: d13603b6a281110469f1166afe03aefa, type: 3}
       propertyPath: m_Name
       value: '[BOSS]'
       objectReference: {fileID: 0}
     - target: {fileID: 8718272447394423017, guid: d13603b6a281110469f1166afe03aefa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d13603b6a281110469f1166afe03aefa, type: 3}
