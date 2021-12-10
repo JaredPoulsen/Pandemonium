@@ -21,7 +21,7 @@ public class DestructibleObject : MonoBehaviour
         {
             if (FracturedObject != null)
             {
-                var fractured_obj = (GameObject)Instantiate(FracturedObject, transform.position + PositionOffset, transform.rotation);
+                var fractured_obj = (GameObject)Instantiate(FracturedObject, transform.position + PositionOffset, Quaternion.identity);
                 Destroy(this.gameObject, 0.01f);
                 Destroy(fractured_obj, TimeToDestroy);
                 IsFractured = true;
