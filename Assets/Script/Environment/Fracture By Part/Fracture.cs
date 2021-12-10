@@ -23,8 +23,8 @@ public class Fracture : MonoBehaviour
             Debug.Log("Hit");
             rigidbody.isKinematic = false;
             rigidbody.WakeUp();
-            rigidbody.AddForce(transform.forward* 5);
-            Destroy(gameObject, 10f);
+            rigidbody.AddForce(transform.up* -5);
+            Destroy(gameObject, 4f);
         }
     }
 
@@ -35,6 +35,6 @@ public class Fracture : MonoBehaviour
         rigidbody.isKinematic = false;
         rigidbody.WakeUp();
         rigidbody.AddForce(transform.forward * 15);
-        Destroy(gameObject, 10f);
+        Destroy(gameObject, 4f);
     }
 }
