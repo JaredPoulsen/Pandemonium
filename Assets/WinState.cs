@@ -21,9 +21,16 @@ public class WinState : MonoBehaviour
         {
             SceneManager.LoadScene("Win");
         }
-        if (Input.GetKeyDown(KeyCode.O))
+
+        // UNCOMMENT THIS TO DEBUG
+
+        /*if (Input.GetKeyDown(KeyCode.O))
         {
             pl.Health = 0;
         }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SceneManager.LoadScene("Win");
+        }*/
     }
 }
