@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 715713175513392088}
   - component: {fileID: 1846531553561144670}
+  - component: {fileID: 1905363975}
   m_Layer: 0
   m_Name: teacup_and_dish
   m_TagString: Untagged
@@ -51,6 +52,19 @@ MonoBehaviour:
   TimeToDestroy: 15
   DoSlowmotionWhenDestroy: 0
   DoSlowmotionWhenPlayerIsJumping: 0
+--- !u!135 &1905363975
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190675089366890850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.8231732
+  m_Center: {x: 0, y: 0.70670724, z: -0.03740102}
 --- !u!1 &4385709661525674547
 GameObject:
   m_ObjectHideFlags: 0

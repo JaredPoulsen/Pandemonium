@@ -55,6 +55,7 @@ public class DestructibleObject : MonoBehaviour
     {
         if (other.gameObject.tag == "Bullet")
         {
+            Debug.Log("hit");
             StartCoroutine(_DestroyObject());
         }
         if (other.gameObject.TryGetComponent(out Rigidbody rb))
