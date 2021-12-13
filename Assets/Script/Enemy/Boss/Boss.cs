@@ -20,29 +20,10 @@ public class Boss : EnemyBase
         }
         else
         {
-            //animator.SetBool("Shoot", false);
-            animator.SetBool("Run", true);
+            animator.SetBool("Shoot", false);
         }
        // Debug.Log(health);
     }
-   /* public override void Shoot()
-    {
-        float randomNumberX = Random.Range(-inaccuracy, inaccuracy);
-        float randomNumberY = Random.Range(-inaccuracy, inaccuracy);
-        float randomNumberZ = Random.Range(-inaccuracy, inaccuracy);
-
-        if (Time.time >= nextShot)
-        {
-            GameObject clonebullet1 = Instantiate(bullet, transform.position + transform.forward * forward + transform.up * upward + transform.right * leftright, transform.rotation) as GameObject;
-            GameObject clonebullet2 = Instantiate(bullet, transform.position + transform.forward * forward + transform.up * upward + transform.right * -leftright, transform.rotation) as GameObject;
-            clonebullet1.transform.Rotate(randomNumberX, randomNumberY, randomNumberZ);
-            clonebullet2.transform.Rotate(randomNumberX, randomNumberY, randomNumberZ);
-            ShootAudio.Play();
-            Destroy(clonebullet1, 5f);
-            Destroy(clonebullet2, 5f);
-            nextShot = Time.time + timeBetweenShot;
-        }
-
-    }*/
+   
 
 }
