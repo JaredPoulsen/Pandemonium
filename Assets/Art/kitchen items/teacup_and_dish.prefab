@@ -46,10 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Strength: 0
+  Strength: 50
   FracturedObject: {fileID: 60436755302981325, guid: 3a9d7bac508b7f2489bc6843887e1239, type: 3}
   PositionOffset: {x: 0, y: 0, z: 0}
-  TimeToDestroy: 15
+  TimeToDestroy: 3
   DoSlowmotionWhenDestroy: 0
   DoSlowmotionWhenPlayerIsJumping: 0
 --- !u!135 &1905363975
