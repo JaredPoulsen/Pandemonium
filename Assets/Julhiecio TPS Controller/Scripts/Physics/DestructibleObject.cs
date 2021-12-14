@@ -49,13 +49,20 @@ public class DestructibleObject : MonoBehaviour
         {
             StartCoroutine(_DestroyObject());
         }
+        if (other.gameObject.tag == "Enemy")
+        {
+            StartCoroutine(_DestroyObject());
+        }
 
     }
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Bullet")
         {
-            Debug.Log("hit");
+            StartCoroutine(_DestroyObject());
+        }
+        if (other.gameObject.tag == "Enemy")
+        {
             StartCoroutine(_DestroyObject());
         }
         if (other.gameObject.TryGetComponent(out Rigidbody rb))
@@ -69,6 +76,10 @@ public class DestructibleObject : MonoBehaviour
     private void OnCollisionStay(Collision other)
     {
         if (other.gameObject.tag == "Bullet")
+        {
+            StartCoroutine(_DestroyObject());
+        }
+        if (other.gameObject.tag == "Enemy")
         {
             StartCoroutine(_DestroyObject());
         }
