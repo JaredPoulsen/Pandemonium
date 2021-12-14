@@ -560,6 +560,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527378834}
   m_CullTransparentMesh: 1
+--- !u!1 &612445094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 612445095}
+  - component: {fileID: 612445097}
+  - component: {fileID: 612445096}
+  m_Layer: 5
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &612445095
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612445094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1924603830}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.7872882, y: 0.611}
+  m_AnchorMax: {x: 0.7872882, y: 0.611}
+  m_AnchoredPosition: {x: 3.7640076, y: 4}
+  m_SizeDelta: {x: 309.8065, y: 301.146}
+  m_Pivot: {x: 0.5435471, y: 0.49999997}
+--- !u!114 &612445096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612445094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.67975, b: 0.41960788, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e1a105923c48a1c498bfdf01cd0942ec, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "Music is OGRE by\nAim to head\n\nWeapon Sounds\nfrom JSRS Sound\nLibrary\n\nAI
+    Waypoint\nPathing System\nby Firestorm\n\nLevel Construction \nToolset by\nProbuilder\n"
+--- !u!222 &612445097
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612445094}
+  m_CullTransparentMesh: 1
 --- !u!1 &617098403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,9 +1122,9 @@ RectTransform:
   m_Father: {fileID: 1924603830}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.7128966, y: 90.44517}
+  m_AnchorMin: {x: 0.5, y: 0.134}
+  m_AnchorMax: {x: 0.5, y: 0.134}
+  m_AnchoredPosition: {x: -0.7130699, y: 0.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922110557
@@ -2242,10 +2322,10 @@ RectTransform:
   m_Father: {fileID: 1924603830}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: 48.000015}
-  m_SizeDelta: {x: 215.3326, y: 55.2949}
+  m_AnchorMin: {x: 0.323178, y: 0.41578305}
+  m_AnchorMax: {x: 0.323178, y: 0.41578305}
+  m_AnchoredPosition: {x: 3.3840008, y: 7}
+  m_SizeDelta: {x: 451.6, y: 212.4743}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1792645642
 MonoBehaviour:
@@ -2269,18 +2349,21 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e1a105923c48a1c498bfdf01cd0942ec, type: 3}
-    m_FontSize: 30
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: 'Plug-in: JU TPS'
+    m_LineSpacing: 1.3
+  m_Text: "JU TPS SHOOTER KIT:\nThe core movement, shooting,\nanimation, camera systtem\nand
+    destruction script\nare the work of Julhiecio Soares. \r\n\r\nThe Weapons are
+    based\non the initial weapons provided\nby Julhiecio Soares, although\ntheir
+    properties and behavior\nhave been modified and adapted by us."
 --- !u!222 &1792645643
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2706,6 +2789,7 @@ RectTransform:
   - {fileID: 724286126}
   - {fileID: 1792645641}
   - {fileID: 922110556}
+  - {fileID: 612445095}
   m_Father: {fileID: 1129017941}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
