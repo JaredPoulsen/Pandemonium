@@ -460,9 +460,9 @@ MonoBehaviour:
   WeaponSwitchID: 2
   WeaponPositionID: 1
   Unlocked: 0
-  BulletsPerMagazine: 4
-  TotalBullets: 40
-  BulletsAmounts: 4
+  BulletsPerMagazine: 5
+  TotalBullets: -5
+  BulletsAmounts: 5
   Fire_Rate: 0.7
   CurrentFireRateToShoot: 0
   Precision: 10
