@@ -1157,7 +1157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Goon
-  maxHealth: 100
+  maxHealth: 80
   scorePoint: 10
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
   health: 0
