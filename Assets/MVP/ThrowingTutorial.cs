@@ -5,10 +5,16 @@ using TMPro;
 
 public class ThrowingTutorial : MonoBehaviour
 {
+    public ThirdPersonController tpc;
+
     [Header("References")]
     public Transform cam;
     public Transform attackPoint;
-    public GameObject objectToThrow;
+    private GameObject objectToThrow;
+    public GameObject handgun;
+    public GameObject shotgun;
+    public GameObject smg;
+
 
     [Header("Settings")]
     public int totalThrows;
@@ -23,12 +29,30 @@ public class ThrowingTutorial : MonoBehaviour
 
     private void Start()
     {
+        
         readyToThrow = true;
     }
 
     private void Update()
     {
-        if(Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
+        /*for (int i = tpc.Weapons.Length - 1; i > -1; i--)
+        {
+            if (tpc.WeaponInUse = tpc.Weapons[0])
+            {
+                objectToThrow = handgun;
+            }
+            else if (tpc.WeaponInUse = tpc.Weapons[0])
+            {
+                objectToThrow = shotgun;
+            }
+            else if (tpc.WeaponInUse = tpc.Weapons[0])
+            {
+                objectToThrow = smg;
+            }     
+        }*/
+        objectToThrow = smg;
+
+        if (Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
         {
             Throw();
             
