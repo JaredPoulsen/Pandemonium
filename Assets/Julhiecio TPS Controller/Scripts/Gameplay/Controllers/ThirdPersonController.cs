@@ -78,7 +78,7 @@ public class ThirdPersonController : MonoBehaviour
     public WeaponAimRotationCenter WeaponPositions;
     public Weapon[] Weapons;
     [HideInInspector] public Weapon WeaponInUse;
-    private int WeaponID = -1; // [-1] = Hand
+    public int WeaponID = -1; // [-1] = Hand
     [HideInInspector] float IsArmedWeight;
     [HideInInspector] RaycastHit CrosshairHit;
 

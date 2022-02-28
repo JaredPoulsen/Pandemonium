@@ -38,7 +38,7 @@ public class ThrowingTutorial : MonoBehaviour
         for (int i = tpc.Weapons.Length - 1; i > -1; i--)
         {
             if (tpc.WeaponInUse == tpc.Weapons[0])
-            {
+            {  
                 objectToThrow = handgun;
             }
             else if (tpc.WeaponInUse == tpc.Weapons[2])
@@ -51,6 +51,7 @@ public class ThrowingTutorial : MonoBehaviour
             }  
             else if (tpc.WeaponInUse == tpc.Weapons[-1])
             {
+                readyToThrow = false;
                 objectToThrow = null;
             }
         }
@@ -59,7 +60,16 @@ public class ThrowingTutorial : MonoBehaviour
         if (Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
         {
             Throw();
-            
+            for (int i = tpc.Weapons.Length - 1; i > -1; i--)
+            {
+                if (i == tpc.WeaponID)
+                {
+                    tpc.Weapons[i].gameObject.SetActive(false);
+                }
+            }
+            tpc.WeaponID = -1;
+            tpc.WeaponInUse = null;
+            tpc.IsArmed = false;
         }
     }
 
