@@ -278,6 +278,7 @@ public class ThirdPersonController : MonoBehaviour
                     {
                         Weapons[i].gameObject.SetActive(true);
                         WeaponInUse = Weapons[i];
+                        throwing.readyToThrow = true;
                     }
                     else
                     {
@@ -303,6 +304,7 @@ public class ThirdPersonController : MonoBehaviour
                     {
                         Weapons[i].gameObject.SetActive(true);
                         WeaponInUse = Weapons[i];
+                        throwing.readyToThrow = true;
                     }
                     else
                     {
