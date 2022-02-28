@@ -35,22 +35,26 @@ public class ThrowingTutorial : MonoBehaviour
 
     private void Update()
     {
-        /*for (int i = tpc.Weapons.Length - 1; i > -1; i--)
+        for (int i = tpc.Weapons.Length - 1; i > -1; i--)
         {
-            if (tpc.WeaponInUse = tpc.Weapons[0])
+            if (tpc.WeaponInUse == tpc.Weapons[0])
             {
                 objectToThrow = handgun;
             }
-            else if (tpc.WeaponInUse = tpc.Weapons[0])
+            else if (tpc.WeaponInUse == tpc.Weapons[2])
             {
                 objectToThrow = shotgun;
             }
-            else if (tpc.WeaponInUse = tpc.Weapons[0])
+            else if (tpc.WeaponInUse == tpc.Weapons[1])
             {
                 objectToThrow = smg;
-            }     
-        }*/
-        objectToThrow = smg;
+            }  
+            else if (tpc.WeaponInUse == tpc.Weapons[-1])
+            {
+                objectToThrow = null;
+            }
+        }
+        
 
         if (Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
         {
