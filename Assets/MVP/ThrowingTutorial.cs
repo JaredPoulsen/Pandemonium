@@ -65,6 +65,7 @@ public class ThrowingTutorial : MonoBehaviour
                 if (i == tpc.WeaponID)
                 {
                     tpc.Weapons[i].gameObject.SetActive(false);
+                    tpc.Weapons[i].Unlocked = false;
                 }
             }
             tpc.WeaponID = -1;
