@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ThrowingTutorial : MonoBehaviour
+public class Throwing : MonoBehaviour
 {
     public ThirdPersonController tpc;
 
@@ -35,31 +36,41 @@ public class ThrowingTutorial : MonoBehaviour
 
     private void Update()
     {
-        for (int i = tpc.Weapons.Length - 1; i > -1; i--)
+        try
         {
-            if (tpc.WeaponInUse == tpc.Weapons[0])
-            {  
-                objectToThrow = handgun;
-            }
-            else if (tpc.WeaponInUse == tpc.Weapons[2])
+            // check the weapon the player is using
+            for (int i = tpc.Weapons.Length - 1; i > -1; i--)
             {
-                objectToThrow = shotgun;
-            }
-            else if (tpc.WeaponInUse == tpc.Weapons[1])
-            {
-                objectToThrow = smg;
-            }  
-            else if (tpc.WeaponInUse == tpc.Weapons[-1])
-            {
-                readyToThrow = false;
-                objectToThrow = null;
+                if (tpc.WeaponInUse == tpc.Weapons[0])
+                {
+                    objectToThrow = handgun;
+                }
+                else if (tpc.WeaponInUse == tpc.Weapons[2])
+                {
+                    objectToThrow = shotgun;
+                }
+                else if (tpc.WeaponInUse == tpc.Weapons[1])
+                {
+                    objectToThrow = smg;
+                }
+                else if (tpc.WeaponInUse == tpc.Weapons[-1]) //hand
+                {
+                    readyToThrow = false;
+                    objectToThrow = null;
+                }
             }
         }
+        catch (IndexOutOfRangeException e)
+        {
+            Console.WriteLine($"Hand: '{e}'");
+        }
+        
         
 
         if (Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
         {
             Throw();
+            // after throw, turn off that weapon's visibility and lock it
             for (int i = tpc.Weapons.Length - 1; i > -1; i--)
             {
                 if (i == tpc.WeaponID)
@@ -68,6 +79,7 @@ public class ThrowingTutorial : MonoBehaviour
                     tpc.Weapons[i].Unlocked = false;
                 }
             }
+            // set the state back to unarmed
             tpc.WeaponID = -1;
             tpc.WeaponInUse = null;
             tpc.IsArmed = false;
