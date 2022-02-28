@@ -26,7 +26,7 @@ public class Throwing : MonoBehaviour
     public float throwForce;
     public float throwUpwardForce;
 
-    bool readyToThrow;
+    public bool readyToThrow;
 
     private void Start()
     {
@@ -116,13 +116,13 @@ public class Throwing : MonoBehaviour
         totalThrows--;
 
         // implement throwCooldown
-        Invoke(nameof(ResetThrow), throwCooldown);
+        //Invoke(nameof(ResetThrow), throwCooldown);
 
        
     }
 
-    private void ResetThrow()
+   /* private void ResetThrow()
     {
         readyToThrow = true;
-    }
+    }*/
 }

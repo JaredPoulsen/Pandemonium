@@ -92,6 +92,7 @@ public class ThirdPersonController : MonoBehaviour
 
     [Header("Pick Up Weapons")]
     private LayerMask WeaponLayer;
+    private Throwing throwing;
 
     [HideInInspector]
     public Vehicle VehicleInArea;
@@ -121,6 +122,7 @@ public class ThirdPersonController : MonoBehaviour
 
     void Start()
     {
+        throwing = GetComponent<Throwing>();
         Game = FindObjectOfType<GameManagerAndUI>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
@@ -916,12 +918,14 @@ public class ThirdPersonController : MonoBehaviour
                             Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].Unlocked = true;
                             Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].TotalBullets += hitweapon.transform.GetComponent<Weapon>().BulletsAmounts;
                             Destroy(hitweapon.transform.gameObject);
+                            throwing.readyToThrow = true;
                         }
                         else
                         {
                             Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].TotalBullets += hitweapon.transform.GetComponent<Weapon>().BulletsAmounts;
                             Destroy(hitweapon.transform.gameObject);
                         }
+                        
                     }
                     else
                     {
