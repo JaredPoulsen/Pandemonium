@@ -16,6 +16,7 @@ TagManager:
   - Wall
   - CheckPoint
   - SpawnPoint
+  - Throwing
   layers:
   - Default
   - TransparentFX
