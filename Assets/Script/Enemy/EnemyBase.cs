@@ -49,6 +49,10 @@ public class EnemyBase : MonoBehaviour
     [Range(-1, 1)]
     public float leftright;
 
+    [Header("Stun")]
+    protected bool isStun;
+    public int stunCooldown = 5;
+
 
 
     #endregion //Calling Var 
@@ -56,6 +60,8 @@ public class EnemyBase : MonoBehaviour
 
     protected virtual void Start()
     {
+        isStun = false;
+
         playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
 
@@ -70,8 +76,16 @@ public class EnemyBase : MonoBehaviour
         if (canSeePlayer && rgd.State != RagdollEnemyAdvanced.RagdollState.Ragdolled && rgd.State != RagdollEnemyAdvanced.RagdollState.WaitStablePosition)
         { 
             transform.LookAt(playerRef.transform);
-            timeBetweenShot = baseTimeBetweenShot;
-            Shoot();
+            if (isStun == false)
+            {
+                timeBetweenShot = baseTimeBetweenShot;
+                Shoot(); 
+            } else if (isStun == true)
+            {
+                timeBetweenShot = 100000000;
+                Invoke(nameof(resetStun), stunCooldown);
+            }
+            
             if (health > 0)
             {
                 navMeshAgent.isStopped = true;
@@ -81,6 +95,7 @@ public class EnemyBase : MonoBehaviour
         {
             navMeshAgent.isStopped = false;
         }
+
         if(health <= 0)
         {
             navMeshAgent.isStopped = true;
@@ -145,6 +160,7 @@ public class EnemyBase : MonoBehaviour
     #region Shooting
     public virtual void Shoot()
     {
+        
         float randomNumberX = Random.Range(-inaccuracy, inaccuracy);
         float randomNumberY = Random.Range(-inaccuracy, inaccuracy);
         float randomNumberZ = Random.Range(-inaccuracy, inaccuracy);
@@ -171,6 +187,10 @@ public class EnemyBase : MonoBehaviour
         {
             Die();
         }
+    }
+    protected void resetStun()
+    {
+        isStun = false;
     }
     protected void Die()
     {
@@ -199,6 +219,12 @@ public class EnemyBase : MonoBehaviour
             rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
             rgd.RagdollStatesController();
         }
-      
+        if (collision.gameObject.tag == "Throwing")
+        {
+            isStun = true;
+
+            Debug.Log("Throw hit");
+        }
+
     }
 }

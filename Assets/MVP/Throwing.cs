@@ -88,8 +88,6 @@ public class Throwing : MonoBehaviour
 
     private void Throw()
     {
-        Debug.Log("Out");
-
         readyToThrow = false;
 
         // instantiate object to throw
