@@ -51,7 +51,7 @@ public class EnemyBase : MonoBehaviour
 
     [Header("Stun")]
     protected bool isStun;
-    public int stunCooldown = 5;
+    public float stunCooldown = 6f;
 
 
 
@@ -78,10 +78,12 @@ public class EnemyBase : MonoBehaviour
             transform.LookAt(playerRef.transform);
             if (isStun == false)
             {
+                animator.SetBool("isStunned", false);
                 timeBetweenShot = baseTimeBetweenShot;
                 Shoot(); 
             } else if (isStun == true)
             {
+                
                 //will change to animation here
                 timeBetweenShot = 100000000;
                 Invoke(nameof(resetStun), stunCooldown);
@@ -223,7 +225,7 @@ public class EnemyBase : MonoBehaviour
         if (collision.gameObject.tag == "Throwing")
         {
             isStun = true;
-
+            animator.SetBool("isStunned", true);
             Debug.Log("Throw hit");
         }
 
