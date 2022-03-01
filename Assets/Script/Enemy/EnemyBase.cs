@@ -73,6 +73,8 @@ public class EnemyBase : MonoBehaviour
     }
     protected virtual void Update()
     {
+        
+
         if (canSeePlayer && rgd.State != RagdollEnemyAdvanced.RagdollState.Ragdolled && rgd.State != RagdollEnemyAdvanced.RagdollState.WaitStablePosition)
         { 
             transform.LookAt(playerRef.transform);
@@ -98,7 +100,15 @@ public class EnemyBase : MonoBehaviour
             navMeshAgent.isStopped = false;
         }
 
-        if(health <= 0)
+        if (isStun == true)
+        {
+            Debug.Log(isStun);
+            animator.SetBool("Dizzy", true);
+            navMeshAgent.speed = 0;
+            Invoke(nameof(resetStun), stunCooldown);
+        }
+
+        if (health <= 0)
         {
             navMeshAgent.isStopped = true;
         }
@@ -223,12 +233,15 @@ public class EnemyBase : MonoBehaviour
             rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
             rgd.RagdollStatesController();
         }
+
+    }
+    private void OnCollisionExit(Collision collision)
+    {
         if (collision.gameObject.tag == "Throwing")
         {
             isStun = true;
             animator.SetTrigger("IsStun");
             Debug.Log("Throw hit");
         }
-
     }
 }
