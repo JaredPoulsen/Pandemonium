@@ -82,6 +82,8 @@ public class ThirdPersonController : MonoBehaviour
     [HideInInspector] float IsArmedWeight;
     [HideInInspector] RaycastHit CrosshairHit;
 
+    
+
 
     //Hand IK Targets
     [HideInInspector] public Transform IKPositionRightHand;
@@ -199,6 +201,7 @@ public class ThirdPersonController : MonoBehaviour
         }
         if (IsDead == true)
         {
+            
             Health = 0;
             CanMove = false;
             IsRunning = false;
@@ -1335,7 +1338,7 @@ public class ThirdPersonController : MonoBehaviour
 
         if (other.gameObject.tag == "Bullet")
         {
-            Health -= 10;
+            Health -= 20;
             Debug.Log(Health);
 
             if (Health <= 0)

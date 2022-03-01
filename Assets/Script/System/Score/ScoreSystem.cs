@@ -8,6 +8,7 @@ public class ScoreSystem : MonoBehaviour
 {
     public Score score;
     public Text textScore;
+    public ThirdPersonController tps;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,15 @@ public class ScoreSystem : MonoBehaviour
     void Update()
     {
         textScore.text = "Score: " + score.value;
+
+        if (tps.IsDead == true)
+        {
+            score.value = score.value - 100;
+        }
+        if (score.value <= 0)
+        {
+            score.value = 0;
+        }
 
         //if (score.value >= 230)
         //{
