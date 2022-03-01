@@ -82,8 +82,8 @@ public class EnemyBase : MonoBehaviour
                 Shoot(); 
             } else if (isStun == true)
             {
-                
-                //will change to animation here
+                animator.SetBool("Dizzy", true);
+                navMeshAgent.speed = 0;
                 timeBetweenShot = 100000000;
                 Invoke(nameof(resetStun), stunCooldown);
             }
@@ -192,7 +192,9 @@ public class EnemyBase : MonoBehaviour
     }
     protected void resetStun()
     {
+        animator.SetBool("Dizzy", false);
         isStun = false;
+        navMeshAgent.speed = 2;
     }
     protected void Die()
     {
