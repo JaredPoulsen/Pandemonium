@@ -210,7 +210,7 @@ public class EnemyBase : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
             //obstructionMask = LayerMask.GetMask("Default");
-            takeDamage(10f);
+            takeDamage(40f);
             canSeePlayer = true;
             radius = 35f;
             bulletRecord = collision.transform.position;
