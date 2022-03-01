@@ -15,9 +15,9 @@ public class EnemyBase : MonoBehaviour
     [SerializeField]
     protected int scorePoint = 10;
     public Score score;
-    [HideInInspector]public float health;
+    [HideInInspector] public float health;
 
-    
+
     [Header("FOV")]
     public float radius;
     [Range(0, 360)]
@@ -73,27 +73,28 @@ public class EnemyBase : MonoBehaviour
     }
     protected virtual void Update()
     {
-        
+
 
         if (canSeePlayer && rgd.State != RagdollEnemyAdvanced.RagdollState.Ragdolled && rgd.State != RagdollEnemyAdvanced.RagdollState.WaitStablePosition)
-        { 
+        {
             transform.LookAt(playerRef.transform);
             if (isStun == false)
             {
                 timeBetweenShot = baseTimeBetweenShot;
-                Shoot(); 
-            } else if (isStun == true)
+                Shoot();
+            }
+            else if (isStun == true)
             {
                 animator.SetBool("Dizzy", true);
                 navMeshAgent.speed = 0;
                 timeBetweenShot = 100000000;
                 Invoke(nameof(resetStun), stunCooldown);
             }
-            
+
             if (health > 0)
             {
                 navMeshAgent.isStopped = true;
-            }     
+            }
         }
         else
         {
@@ -134,31 +135,31 @@ public class EnemyBase : MonoBehaviour
         {
             //for(int i = 0; i <= rangeChecks.Length; i++)
             //{
-                Transform target = rangeChecks[0].transform;
+            Transform target = rangeChecks[0].transform;
 
-                Vector3 directionToTarget = (target.position - transform.position).normalized;
+            Vector3 directionToTarget = (target.position - transform.position).normalized;
 
-                if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2)
-                {
-                    float distanceToTarget = Vector3.Distance(transform.position, target.position);
+            if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2)
+            {
+                float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
-                    if (Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
-                    {
-                        canSeePlayer = false;
-                    }
-                    else
-                    {
-                        canSeePlayer = true;
-                    }
-                }
-                else
+                if (Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
                 {
                     canSeePlayer = false;
                 }
+                else
+                {
+                    canSeePlayer = true;
+                }
+            }
+            else
+            {
+                canSeePlayer = false;
+            }
             //}
-           
+
             // If you want to check multiple objects inside the layer targetMask, do a for loop of rangeChecks
-            
+
         }
         else if (canSeePlayer)
         {
@@ -172,7 +173,7 @@ public class EnemyBase : MonoBehaviour
     #region Shooting
     public virtual void Shoot()
     {
-        
+
         float randomNumberX = Random.Range(-inaccuracy, inaccuracy);
         float randomNumberY = Random.Range(-inaccuracy, inaccuracy);
         float randomNumberZ = Random.Range(-inaccuracy, inaccuracy);
@@ -225,23 +226,20 @@ public class EnemyBase : MonoBehaviour
             canSeePlayer = true;
             radius = 35f;
             bulletRecord = collision.transform.position;
-            
-           
+
+
         }
         if (collision.gameObject.tag == "Enemy")
         {
             rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
             rgd.RagdollStatesController();
         }
-
-    }
-    private void OnCollisionExit(Collision collision)
-    {
         if (collision.gameObject.tag == "Throwing")
         {
             isStun = true;
             animator.SetTrigger("IsStun");
             Debug.Log("Throw hit");
         }
+
     }
 }
