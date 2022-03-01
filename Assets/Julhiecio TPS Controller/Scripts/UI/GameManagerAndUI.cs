@@ -154,7 +154,8 @@ public class GameManagerAndUI : MonoBehaviour
 			//Bullets counts
 			if (PlayerCharacter.WeaponInUse.TotalBullets > 0 || PlayerCharacter.WeaponInUse.BulletsAmounts > 0)
 			{
-				BulletsCount.text = PlayerCharacter.WeaponInUse.BulletsAmounts + "/" + PlayerCharacter.WeaponInUse.TotalBullets;
+				BulletsCount.text = PlayerCharacter.WeaponInUse.BulletsAmounts + ""; 
+				//+ "/" + PlayerCharacter.WeaponInUse.TotalBullets
 				BulletsCount.color = Color.white;
 			}
 			if (PlayerCharacter.WeaponInUse.TotalBullets <= 0 && PlayerCharacter.WeaponInUse.BulletsAmounts <= 0)
