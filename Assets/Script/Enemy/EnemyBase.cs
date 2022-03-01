@@ -82,6 +82,7 @@ public class EnemyBase : MonoBehaviour
                 Shoot(); 
             } else if (isStun == true)
             {
+                //will change to animation here
                 timeBetweenShot = 100000000;
                 Invoke(nameof(resetStun), stunCooldown);
             }
