@@ -87,6 +87,8 @@ public class Weapon : MonoBehaviour
 
 	private void Start()
 	{
+		TotalBullets = -BulletsPerMagazine;
+		Debug.Log(TotalBullets);
 		MyPivotCamera = FindObjectOfType<CamPivotController>();
 		MyCamera = MyPivotCamera.mCamera.transform;
 		WeaponAimPositions = FindObjectOfType<WeaponAimRotationCenter>();
@@ -100,11 +102,12 @@ public class Weapon : MonoBehaviour
 	}
     private void Update()
     {
+
 		WeaponControl();
 
 		if (GenerateProceduralAnimation == false) return;
 		ProceduralAnimation();
-    }
+	}
     // >>> Control
     private void WeaponControl()
 	{
@@ -294,7 +297,7 @@ public class Weapon : MonoBehaviour
 	public void Reload()
     {
 		//Reload
-		if (BulletsAmounts < BulletsPerMagazine)
+		if (BulletsAmounts < BulletsPerMagazine) // make it can't reload
 		{
 			if (TotalBullets >= BulletsPerMagazine)
 			{

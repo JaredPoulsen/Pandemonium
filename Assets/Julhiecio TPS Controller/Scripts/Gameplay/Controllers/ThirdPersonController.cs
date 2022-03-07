@@ -528,7 +528,7 @@ public class ThirdPersonController : MonoBehaviour
             }
 
             //Reload
-            if (JUInput.GetButtonDown(JUInput.Buttons.ReloadButton) && WeaponInUse.BulletsAmounts < WeaponInUse.BulletsPerMagazine && WeaponInUse.TotalBullets > 0 && IsReloading == false)
+            if (JUInput.GetButtonDown(JUInput.Buttons.ReloadButton) && WeaponInUse.BulletsAmounts > WeaponInUse.BulletsPerMagazine && WeaponInUse.TotalBullets > 0 && IsReloading == false) // change > to < to get back to normal
             {
                 anim.SetTrigger("reload");
                 IsReloading = true;

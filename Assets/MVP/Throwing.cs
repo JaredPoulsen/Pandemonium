@@ -22,7 +22,7 @@ public class Throwing : MonoBehaviour
     public float throwCooldown;
 
     [Header("Throwing")]
-    public KeyCode throwKey = KeyCode.Mouse0;
+    public KeyCode throwKey = KeyCode.T;
     public float throwForce;
     public float throwUpwardForce;
 
@@ -75,6 +75,8 @@ public class Throwing : MonoBehaviour
             {
                 if (i == tpc.WeaponID)
                 {
+                    tpc.Weapons[i].BulletsAmounts = tpc.Weapons[i].BulletsPerMagazine;
+                    tpc.Weapons[i].TotalBullets = 0;
                     tpc.Weapons[i].gameObject.SetActive(false);
                     tpc.Weapons[i].Unlocked = false;
                 }
