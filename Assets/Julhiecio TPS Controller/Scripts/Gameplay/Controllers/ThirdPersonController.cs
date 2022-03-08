@@ -921,13 +921,13 @@ public class ThirdPersonController : MonoBehaviour
                         if (Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].Unlocked == false)
                         {
                             Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].Unlocked = true;
-                            Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].TotalBullets += hitweapon.transform.GetComponent<Weapon>().BulletsAmounts;
+                            //Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].TotalBullets += hitweapon.transform.GetComponent<Weapon>().BulletsAmounts;
                             Destroy(hitweapon.transform.gameObject);
                             throwing.readyToThrow = true;
                         }
                         else
                         {
-                            Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].TotalBullets += hitweapon.transform.GetComponent<Weapon>().BulletsAmounts;
+                            //Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].TotalBullets += hitweapon.transform.GetComponent<Weapon>().BulletsAmounts;
                             Destroy(hitweapon.transform.gameObject);
                         }
                         
