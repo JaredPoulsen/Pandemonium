@@ -75,8 +75,8 @@ public class Throwing : MonoBehaviour
             {
                 if (i == tpc.WeaponID)
                 {
-                    tpc.Weapons[i].BulletsAmounts = tpc.Weapons[i].BulletsPerMagazine;
-                    tpc.Weapons[i].TotalBullets = 0;
+                    //tpc.Weapons[i].BulletsAmounts = tpc.Weapons[i].BulletsPerMagazine;
+                    //tpc.Weapons[i].TotalBullets = 0;
                     tpc.Weapons[i].gameObject.SetActive(false);
                     tpc.Weapons[i].Unlocked = false;
                 }

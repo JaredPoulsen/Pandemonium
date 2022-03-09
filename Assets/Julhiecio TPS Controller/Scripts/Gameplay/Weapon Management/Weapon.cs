@@ -18,9 +18,9 @@ public class Weapon : MonoBehaviour
 
 	//Bullets
 	[Range(1,200)]
-	public int BulletsPerMagazine = 10;
+	public int BulletsPerMagazine = 0;
 	public int TotalBullets = 0;
-	public int BulletsAmounts = 10;
+	public int BulletsAmounts = 0;
 
 	//Fire Rate
 	public float Fire_Rate = 0.3f;
