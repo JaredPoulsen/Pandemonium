@@ -917,19 +917,27 @@ public class ThirdPersonController : MonoBehaviour
                 if (JUInput.GetButtonDown(JUInput.Buttons.PickupButton))
                 {
                     if (Weapons.Length > 0)
-                    {
-                        if (Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].Unlocked == false)
+                    {   
+                        if(Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID] != WeaponInUse)
                         {
-                            Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].Unlocked = true;
-                            Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].BulletsAmounts = hitweapon.transform.GetComponent<Weapon>().BulletsPerMagazine;
-                            Destroy(hitweapon.transform.gameObject);
-                            throwing.readyToThrow = true;
-                        }
+                            if (Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].Unlocked == false)
+                            {
+                                Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].Unlocked = true;
+                                Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].BulletsAmounts = hitweapon.transform.GetComponent<Weapon>().BulletsPerMagazine;
+                                Destroy(hitweapon.transform.gameObject);
+                                throwing.readyToThrow = true;
+                            }
+                            else
+                            {
+                                Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].BulletsAmounts = hitweapon.transform.GetComponent<Weapon>().BulletsPerMagazine;
+                                Destroy(hitweapon.transform.gameObject);
+                            }
+                        } 
                         else
                         {
-                            Weapons[hitweapon.transform.GetComponent<Weapon>().WeaponSwitchID].BulletsAmounts = hitweapon.transform.GetComponent<Weapon>().BulletsPerMagazine;
-                            Destroy(hitweapon.transform.gameObject);
+                            Debug.Log("Can't pick up after you throw your current weapon");
                         }
+                        
                         
                     }
                     else

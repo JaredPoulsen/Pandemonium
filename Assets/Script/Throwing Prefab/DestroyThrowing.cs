@@ -24,7 +24,6 @@ public class DestroyThrowing : MonoBehaviour
     void changeCollider()
     {
         children.gameObject.SetActive(true);
-        Debug.Log("changed");
         collider = GetComponentInChildren<Collider>();
     }
 }
