@@ -2242,8 +2242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Boss
-  maxHealth: 100
-  scorePoint: 10
+  maxHealth: 300
+  scorePoint: 100
   score: {fileID: 11400000, guid: 5b64e4297309ca24aa9300160bbbe850, type: 2}
   health: 0
   radius: 20
@@ -2263,9 +2263,10 @@ MonoBehaviour:
   bullet: {fileID: 3163126826636465162, guid: 02e0e3a4e7ef532438a19a6e72cc7503, type: 3}
   inaccuracy: 0.21
   timeBetweenShot: 0.2
-  upward: 1.3
+  upward: 2
   forward: 0.4
   leftright: 0
+  stunCooldown: 6
 --- !u!114 &919132147891899020
 MonoBehaviour:
   m_ObjectHideFlags: 0
