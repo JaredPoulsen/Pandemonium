@@ -379,13 +379,13 @@ public class ThirdPersonController : MonoBehaviour
         DesiredCameraRotation = MyCamera.transform.rotation;
         DesiredCameraRotation.x = 0;
         DesiredCameraRotation.z = 0;
-
+/*
         //Crouch
         if (JUInput.GetButtonDown(JUInput.Buttons.CrouchButton) && IsGrounded == true && IsRunning == false && IsDriving == false)
         {
             IsCrouched = !IsCrouched;
         }
-
+*/
         //XBOX 360 CROUCH 
         if (JUInput.GetButton(JUInput.Buttons.CrouchButton) && IsGrounded == true && IsRunning == false && IsDriving == false)
         {
@@ -433,15 +433,18 @@ public class ThirdPersonController : MonoBehaviour
         //Jump
         if (JUInput.GetButtonDown(JUInput.Buttons.JumpButton) && IsGrounded == true && IsJumping == false && IsRolling == false && IsDriving == false)
         {
+            /*
             rb.AddForce(transform.up * 200 * JumpForce, ForceMode.Impulse);
             IsGrounded = false;
             IsJumping = true;
             IsCrouched = false;
             Invoke("_disablejump", .5f);
+            */
+            MyPivotCamera.DoSlowMotion(0.1f, 3f);
         }
 
         //Roll
-        if (JUInput.GetButtonDown(JUInput.Buttons.CrouchButton) && JUInput.GetButton(JUInput.Buttons.RunButton) && IsGrounded == true && IsRolling == false)
+        if (JUInput.GetButtonDown(JUInput.Buttons.CrouchButton) && IsGrounded == true && IsRolling == false)
         {
             anim.SetTrigger("roll");
             Invoke("_disableroll", 1f);

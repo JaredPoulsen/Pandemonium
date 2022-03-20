@@ -48,10 +48,12 @@ public class EnemyBase : MonoBehaviour
     public float forward;
     [Range(-1, 1)]
     public float leftright;
+    public AudioSource KillAudio;
 
     [Header("Stun")]
     protected bool isStun;
     public float stunCooldown = 5f;
+    public AudioSource StunAudio;
 
 
 
@@ -209,7 +211,7 @@ public class EnemyBase : MonoBehaviour
     }
     protected void Die()
     {
-
+        KillAudio.Play();
         timeBetweenShot = 1000000;
         score.value += scorePoint;
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
@@ -239,6 +241,8 @@ public class EnemyBase : MonoBehaviour
             isStun = true;
             animator.SetTrigger("IsStun");
             Debug.Log("Throw hit");
+            score.value += 10;
+            StunAudio.Play();
         }
 
     }
