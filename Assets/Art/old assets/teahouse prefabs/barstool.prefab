@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Strength: 0
-  FracturedObject: {fileID: 4448887668964297837, guid: 2b7274d8e9518514d9efb4d31f5695e3, type: 3}
+  FracturedObject: {fileID: 85423503421894942, guid: 1384d27fd78847747b7c4bd8a9f45f92, type: 3}
   PositionOffset: {x: 0, y: 0, z: 0}
   TimeToDestroy: 15
   DoSlowmotionWhenDestroy: 0
