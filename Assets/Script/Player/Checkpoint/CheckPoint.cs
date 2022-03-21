@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
-    /// <summary>
-    /// Check Point System
-    /// </summary>
-    /// 
+
     public AudioSource CPAudio;
    
     // Indicate if the checkpoint is activated
@@ -15,6 +12,8 @@ public class CheckPoint : MonoBehaviour
 
     // List with all checkpoints objects in the scene
     public static List<GameObject> CheckPointsList;
+
+    public EnemyBase[] enemies;
 
     // Get position of the last activated checkpoint
     public static Vector3 GetActiveCheckPointPosition()
@@ -54,8 +53,11 @@ public class CheckPoint : MonoBehaviour
     {
         // We search all the checkpoints in the current scene
         CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
-
-       
+        
+        for(int i = 0; i < enemies.Length; i++)
+        {
+            enemies[i].gameObject.SetActive(false);
+        }
     }
 
 
@@ -67,6 +69,10 @@ public class CheckPoint : MonoBehaviour
             ActivateCheckPoint();
             CPAudio.Play();
             
+        }
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            enemies[i].gameObject.SetActive(true);
         }
     }
 

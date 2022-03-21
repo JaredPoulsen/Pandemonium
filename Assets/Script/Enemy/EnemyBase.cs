@@ -16,6 +16,7 @@ public class EnemyBase : MonoBehaviour
     protected int scorePoint = 10;
     public Score score;
     [HideInInspector] public float health;
+    public int NAVspeed = 2;
 
 
     [Header("FOV")]
@@ -207,7 +208,7 @@ public class EnemyBase : MonoBehaviour
     {
         animator.SetBool("Dizzy", false);
         isStun = false;
-        navMeshAgent.speed = 2;
+        navMeshAgent.speed = NAVspeed;
     }
     protected void Die()
     {
