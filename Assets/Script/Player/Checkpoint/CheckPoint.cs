@@ -56,7 +56,7 @@ public class CheckPoint : MonoBehaviour
         
         for(int i = 0; i < enemies.Length; i++)
         {
-            enemies[i].gameObject.SetActive(false);
+            enemies[i].navMeshAgent.speed = 0;
         }
     }
 
@@ -72,7 +72,7 @@ public class CheckPoint : MonoBehaviour
         }
         for (int i = 0; i < enemies.Length; i++)
         {
-            enemies[i].gameObject.SetActive(true);
+            enemies[i].navMeshAgent.speed = enemies[i].NAVspeed;
         }
     }
 

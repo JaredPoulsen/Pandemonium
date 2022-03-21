@@ -247,4 +247,14 @@ public class EnemyBase : MonoBehaviour
         }
 
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            animator.SetBool("Dizzy", true);
+            navMeshAgent.speed = 0;
+            timeBetweenShot = 100000000;
+            Invoke(nameof(resetStun), stunCooldown);
+        }
+    }
 }

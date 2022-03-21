@@ -122,6 +122,7 @@ public class ThirdPersonController : MonoBehaviour
     [HideInInspector] public bool WallInFront;
     [HideInInspector] public bool InverseKinematics = true;
 
+    
     void Start()
     {
         throwing = GetComponent<Throwing>();
