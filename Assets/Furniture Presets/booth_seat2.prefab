@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Strength: 0
-  FracturedObject: {fileID: 7222052902773071567, guid: 6ffbe3640167a6c469ef996fb1df9313, type: 3}
+  FracturedObject: {fileID: 441137069758424133, guid: 4158faecb0ea02d408eec21a06e97f17, type: 3}
   PositionOffset: {x: 0, y: 0, z: 0}
   TimeToDestroy: 15
   DoSlowmotionWhenDestroy: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Strength: 0
-  FracturedObject: {fileID: 7222052902773071567, guid: 6ffbe3640167a6c469ef996fb1df9313, type: 3}
+  FracturedObject: {fileID: 441137069758424133, guid: 4158faecb0ea02d408eec21a06e97f17, type: 3}
   PositionOffset: {x: 0, y: 0, z: 0}
   TimeToDestroy: 15
   DoSlowmotionWhenDestroy: 0
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Strength: 0
-  FracturedObject: {fileID: 4823101254733473366, guid: a14cde1b782cb864eb41c806f0098141, type: 3}
+  FracturedObject: {fileID: 5799505345637326196, guid: 295bd08e837746040aabcfe4aef64a26, type: 3}
   PositionOffset: {x: 0, y: 0, z: 0}
   TimeToDestroy: 15
   DoSlowmotionWhenDestroy: 0

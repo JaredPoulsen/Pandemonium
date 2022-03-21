@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 306331033978269596}
   - component: {fileID: 2568381346902907734}
   - component: {fileID: 4366377749176769190}
+  - component: {fileID: 48013673425994015}
   m_Layer: 0
   m_Name: shelves
   m_TagString: Untagged
@@ -97,3 +98,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: f6d9f9a1ab89d1d478d05684bb080be0, type: 3}
+--- !u!114 &48013673425994015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4081463346758204035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 3341976843967346894, guid: 3e914e3ba2b2f704bbb79f7aca7a59cd, type: 3}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
