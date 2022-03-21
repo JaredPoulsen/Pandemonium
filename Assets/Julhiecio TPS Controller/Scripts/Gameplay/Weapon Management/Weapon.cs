@@ -88,7 +88,6 @@ public class Weapon : MonoBehaviour
 	private void Start()
 	{
 		TotalBullets = -BulletsPerMagazine;
-		Debug.Log(TotalBullets);
 		MyPivotCamera = FindObjectOfType<CamPivotController>();
 		MyCamera = MyPivotCamera.mCamera.transform;
 		WeaponAimPositions = FindObjectOfType<WeaponAimRotationCenter>();

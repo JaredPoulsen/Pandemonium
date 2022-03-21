@@ -40,6 +40,12 @@ public class GameManagerAndUI : MonoBehaviour
 	public bool DisplayHeatlhBar;
 	public Image HealthBar;
 
+	[Header("Weapon UI")]
+	public Image smg;
+	public Image pistol;
+	public Image shotgun;
+	private Image weaponUI;
+
 
 
 	void Start()
@@ -53,6 +59,10 @@ public class GameManagerAndUI : MonoBehaviour
 		Invoke("enable_mobile_panels_controll", 0.1f);
 		MobileTouchfield = GameObject.Find("Touch").GetComponent<Touchfield>();
 		MobileTouchfield.gameObject.SetActive(IsMobile);
+
+		smg.gameObject.SetActive(false);
+		pistol.gameObject.SetActive(false);
+		shotgun.gameObject.SetActive(false);
 	}
 
 	void Update()
@@ -151,20 +161,54 @@ public class GameManagerAndUI : MonoBehaviour
 			return;
 		if (PlayerCharacter.WeaponInUse != null && DisplayWeaponInformation)
 		{
+			if (PlayerCharacter.WeaponInUse.WeaponSwitchID == 0)
+			{
+				weaponUI = pistol;
+				pistol.gameObject.SetActive(true);
+				smg.gameObject.SetActive(false);
+				shotgun.gameObject.SetActive(false);
+			}
+			else if (PlayerCharacter.WeaponInUse.WeaponSwitchID == 1)
+			{
+				weaponUI = smg;
+				smg.gameObject.SetActive(true);
+				pistol.gameObject.SetActive(false);
+				shotgun.gameObject.SetActive(false);
+			}
+			else if (PlayerCharacter.WeaponInUse.WeaponSwitchID == 2)
+			{
+				weaponUI = shotgun;
+				shotgun.gameObject.SetActive(true);
+				smg.gameObject.SetActive(false);
+				pistol.gameObject.SetActive(false);
+			}
 			//Bullets counts
 			if (PlayerCharacter.WeaponInUse.TotalBullets > 0 || PlayerCharacter.WeaponInUse.BulletsAmounts > 0)
 			{
 				BulletsCount.text = PlayerCharacter.WeaponInUse.BulletsAmounts + ""; 
 				//+ "/" + PlayerCharacter.WeaponInUse.TotalBullets
 				BulletsCount.color = Color.white;
+				float rvalue = PlayerCharacter.WeaponInUse.BulletsAmounts * 0.12f;
+				float gvalue = PlayerCharacter.WeaponInUse.BulletsAmounts * 0.12f;
+                if (PlayerCharacter.Shot)
+                {
+					rvalue = rvalue + rvalue;
+					gvalue = gvalue + gvalue;
+				}
+				Color gunColor = new Color(1 - rvalue, 0 + gvalue, 0);
+				Debug.Log(gunColor.g);
+				weaponUI.color = gunColor;
 			}
 			if (PlayerCharacter.WeaponInUse.TotalBullets <= 0 && PlayerCharacter.WeaponInUse.BulletsAmounts <= 0)
 			{
 				BulletsCount.text = "No ammo";
 				BulletsCount.color = Color.red;
+				weaponUI.color = Color.red;
 			}
 			//Weapon name
 			WeaponName.text = PlayerCharacter.WeaponInUse.WeaponName;
+			
+			
 		}
 		else
 		{
@@ -173,6 +217,10 @@ public class GameManagerAndUI : MonoBehaviour
 
 			//Weapon name
 			WeaponName.text = "";
+
+			smg.gameObject.SetActive(false);
+			pistol.gameObject.SetActive(false);
+			shotgun.gameObject.SetActive(false);
 		}
 	}
 	public void DisplayHealth()
