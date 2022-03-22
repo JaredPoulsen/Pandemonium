@@ -222,16 +222,17 @@ public class EnemyBase : MonoBehaviour
         {
             score.value += scorePoint;
         }
-        else if (TPS.IsRoll == true || TPS.IsSlow == true)
-        {
-            PartialCombo.Play();
-            score.value += scorePoint * 2;
-        }
         else if (TPS.IsRoll == true && TPS.IsSlow == true)
         {
             FullCombo.Play();
             score.value += scorePoint * 4;
         }
+        else if (TPS.IsRoll == true || TPS.IsSlow == true)
+        {
+            PartialCombo.Play();
+            score.value += scorePoint * 2;
+        }
+        
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         Destroy(gameObject, 30f);

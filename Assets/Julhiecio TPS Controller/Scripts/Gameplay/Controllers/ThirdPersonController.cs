@@ -248,8 +248,8 @@ public class ThirdPersonController : MonoBehaviour
 
         if (IsSlow == true)
         {
-            MyPivotCamera.DoSlowMotion(0.1f, SlowedTime);
-            SlowedTime -= Time.deltaTime * 10;
+            MyPivotCamera.DoSlowMotion(0.3f, SlowedTime);
+            SlowedTime -= Time.deltaTime;
             
         }
         if (SlowedTime < 0)
