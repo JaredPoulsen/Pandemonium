@@ -34,7 +34,9 @@ public class EnemyBase : MonoBehaviour
     public AudioSource ShootAudio;
     public NavMeshAgent navMeshAgent;
     public Vector3 bulletRecord;
-    public ThirdPersonController TPS;
+    private ThirdPersonController TPS;
+    public GameObject FloatingTextPrefab;
+    private Quaternion rot;
 
     [Header("Shooting")]
     public GameObject bullet;
@@ -80,7 +82,8 @@ public class EnemyBase : MonoBehaviour
     }
     protected virtual void Update()
     {
-
+        rot = this.transform.rotation;
+        rot.y = rot.y * -180;
 
         if (canSeePlayer && rgd.State != RagdollEnemyAdvanced.RagdollState.Ragdolled && rgd.State != RagdollEnemyAdvanced.RagdollState.WaitStablePosition)
         {
@@ -203,11 +206,26 @@ public class EnemyBase : MonoBehaviour
     }
     protected void takeDamage(float amount)
     {
+        // Trigger Floating Text
+        if (FloatingTextPrefab && health > 0)
+        {
+            ShowFloatingText();
+        }
+        
+
         health -= amount;
         if (health <= 0)
         {
             Die();
         }
+    }
+    protected void ShowFloatingText()
+    {
+        //Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
+        Vector3 Offset = new Vector3(0, 15, 0);
+        GameObject go = Instantiate(FloatingTextPrefab, transform.localPosition, rot, transform);
+        go.GetComponent<TextMesh>().text = score.value.ToString(); //Change value of text in here
+        Debug.Log("text");
     }
     protected void resetStun()
     {
@@ -217,7 +235,6 @@ public class EnemyBase : MonoBehaviour
     }
     protected void Die()
     {
-        //GetComponent<CapsuleCollider>().gameObject.SetActive(false);
         KillAudio.Play();
         timeBetweenShot = 1000000;
         if (TPS.IsRoll == false && TPS.IsSlow == false)
