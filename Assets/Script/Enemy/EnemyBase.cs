@@ -69,6 +69,7 @@ public class EnemyBase : MonoBehaviour
         isStun = false;
 
         playerRef = GameObject.FindGameObjectWithTag("Player");
+        TPS = playerRef.GetComponent<ThirdPersonController>();
         StartCoroutine(FOVRoutine());
 
         baseTimeBetweenShot = timeBetweenShot;
@@ -216,6 +217,7 @@ public class EnemyBase : MonoBehaviour
     }
     protected void Die()
     {
+        //GetComponent<Collider>().gameObject.SetActive(false);
         KillAudio.Play();
         timeBetweenShot = 1000000;
         if (TPS.IsRoll == false && TPS.IsSlow == false)
@@ -265,14 +267,5 @@ public class EnemyBase : MonoBehaviour
         }
 
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "Player")
-        {
-            animator.SetBool("Dizzy", true);
-            navMeshAgent.speed = 0;
-            timeBetweenShot = 100000000;
-            Invoke(nameof(resetStun), stunCooldown);
-        }
-    }
+   
 }
