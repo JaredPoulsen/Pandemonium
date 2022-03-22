@@ -32,6 +32,7 @@ public class ThirdPersonController : MonoBehaviour
     public bool RootMotionRotation = true;
     public Vector3 RootMotionDeltaPosition;
 
+
     [HideInInspector] public Transform DirectionTransform;
 
     float VelocityMultiplier;
@@ -111,6 +112,8 @@ public class ThirdPersonController : MonoBehaviour
     public bool IsGrounded = true;
     public bool IsSlow;
     public bool IsRoll;
+    public bool SlowStop;
+    public bool SlowStart;
     [HideInInspector] public bool IsAttacking;
     [HideInInspector] public bool IsArmed;
     [HideInInspector] public bool IsAiming;
@@ -248,13 +251,16 @@ public class ThirdPersonController : MonoBehaviour
 
         if (IsSlow == true)
         {
+            
             MyPivotCamera.DoSlowMotion(0.3f, SlowedTime);
             SlowedTime -= Time.deltaTime * 2;
             
         }
         if (SlowedTime < 0)
         {
+            
             IsSlow = false;
+            SlowStop = true;
             SlowedTime = SlowedTime;
         }
 
@@ -475,9 +481,13 @@ public class ThirdPersonController : MonoBehaviour
             if (IsSlow == false)
             {
                 IsSlow = true;
+                SlowStart = true;
+                SlowStop = false;
             }
             else
             {
+                SlowStop = true;
+                SlowStart = false;
                 IsSlow = false;
                 MyPivotCamera.DoSlowMotion(0.1f, 0f);
             }
