@@ -113,6 +113,7 @@ public class EnemyBase : MonoBehaviour
             animator.SetBool("Dizzy", true);
             navMeshAgent.speed = 0;
             Invoke(nameof(resetStun), stunCooldown);
+            TPS.SlowedTime = TPS.SlowedTime + 1;
         }
 
         if (health <= 0)

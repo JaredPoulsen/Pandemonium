@@ -124,8 +124,8 @@ public class ThirdPersonController : MonoBehaviour
     [HideInInspector] public bool WallInFront;
     [HideInInspector] public bool InverseKinematics = true;
 
-    public float ComboTime = 3f;
-    public float SlowedTime = 3f;
+    public float ComboTime;
+    public float SlowedTime;
     
     void Start()
     {
@@ -143,6 +143,8 @@ public class ThirdPersonController : MonoBehaviour
         MyCamera = Camera.allCameras[0];
         MyPivotCamera = FindObjectOfType<CamPivotController>();
 
+        SlowedTime = 5f;
+        ComboTime = 3f;
 
         if (HumanoidSpine == null)
         {
@@ -246,12 +248,14 @@ public class ThirdPersonController : MonoBehaviour
 
         if (IsSlow == true)
         {
-            SlowedTime -= Time.deltaTime;
+            MyPivotCamera.DoSlowMotion(0.1f, SlowedTime);
+            SlowedTime -= Time.deltaTime * 10;
+            
         }
         if (SlowedTime < 0)
         {
             IsSlow = false;
-            SlowedTime = 3f;
+            SlowedTime = SlowedTime;
         }
 
 
@@ -466,17 +470,24 @@ public class ThirdPersonController : MonoBehaviour
             IsCrouched = false;
             Invoke("_disablejump", .5f);
             */
-            IsSlow = true;
-            MyPivotCamera.DoSlowMotion(0.1f, 3f);
-            if (IsSlow == true)
+            //IsSlow = true;
+            Debug.Log(SlowedTime);
+            if (IsSlow == false)
             {
-                SlowedTime -= Time.deltaTime;
+                IsSlow = true;
             }
+            else
+            {
+                IsSlow = false;
+                MyPivotCamera.DoSlowMotion(0.1f, 0f);
+            }
+            /*
             if (SlowedTime < 0)
             {
                 IsSlow = false;
                 SlowedTime = 3f;
             }
+            */
         }
 
 
