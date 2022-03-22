@@ -224,7 +224,7 @@ public class EnemyBase : MonoBehaviour
         //Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
         Vector3 Offset = new Vector3(0, 15, 0);
         GameObject go = Instantiate(FloatingTextPrefab, transform.localPosition, rot, transform);
-        go.GetComponent<TextMesh>().text = score.value.ToString(); //Change value of text in here
+        go.GetComponent<TextMesh>().text = score.value.ToString(); //health.ToString();  //Change value of text in here
         Debug.Log("text");
     }
     protected void resetStun()

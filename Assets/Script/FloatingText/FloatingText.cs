@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class FloatingText : MonoBehaviour
 {
-    public int DestroyTime = 2;
-    public Vector3 Offset = new Vector3(0, 15, 0);
-    public Vector3 randomizeIntensity = new Vector3(0.5f, 0, 0);
+    private int DestroyTime = 15;
+    private Vector3 Offset = new Vector3(0, 15, 0);
+    private Vector3 randomizeIntensity = new Vector3(0.5f, 0, 0);
 
     void Start()
     {
