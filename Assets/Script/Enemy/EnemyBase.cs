@@ -217,7 +217,7 @@ public class EnemyBase : MonoBehaviour
     }
     protected void Die()
     {
-        //GetComponent<Collider>().gameObject.SetActive(false);
+        //GetComponent<CapsuleCollider>().gameObject.SetActive(false);
         KillAudio.Play();
         timeBetweenShot = 1000000;
         if (TPS.IsRoll == false && TPS.IsSlow == false)

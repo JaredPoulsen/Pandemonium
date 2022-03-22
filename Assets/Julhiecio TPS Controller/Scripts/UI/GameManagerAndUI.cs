@@ -196,7 +196,6 @@ public class GameManagerAndUI : MonoBehaviour
 					gvalue = gvalue + gvalue;
 				}
 				Color gunColor = new Color(1 - rvalue, 0 + gvalue, 0);
-				Debug.Log(gunColor.g);
 				weaponUI.color = gunColor;
 			}
 			if (PlayerCharacter.WeaponInUse.TotalBullets <= 0 && PlayerCharacter.WeaponInUse.BulletsAmounts <= 0)
