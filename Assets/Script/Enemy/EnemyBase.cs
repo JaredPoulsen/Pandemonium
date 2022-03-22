@@ -230,6 +230,7 @@ public class EnemyBase : MonoBehaviour
         animator.SetBool("Dizzy", false);
         isStun = false;
         navMeshAgent.speed = NAVspeed;
+        scorePoint = scorePoint - 5;
     }
     protected void Die()
     {
@@ -238,16 +239,19 @@ public class EnemyBase : MonoBehaviour
         if (TPS.IsRoll == false && TPS.IsSlow == false)
         {
             score.value += scorePoint;
+            TPS.Health = TPS.Health + 20;
         }
         else if (TPS.IsRoll == true && TPS.IsSlow == true)
         {
             FullCombo.Play();
             score.value += scorePoint * 4;
+            TPS.Health = TPS.Health + 40;
         }
         else if (TPS.IsRoll == true || TPS.IsSlow == true)
         {
             PartialCombo.Play();
             score.value += scorePoint * 2;
+            TPS.Health = TPS.Health + 30;
         }
         
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
@@ -278,12 +282,15 @@ public class EnemyBase : MonoBehaviour
             animator.SetTrigger("IsStun");
             Debug.Log("Throw hit");
             score.value += 10;
+            scorePoint = scorePoint + 5;
             StunAudio.Play();
             TPS.SlowedTime = TPS.SlowedTime + 2.5f;
             if (TPS.SlowedTime > 5f)
             {
                 TPS.SlowedTime = 5f;
             }
+
+            TPS.Health = TPS.Health + 20;
         }
 
     }

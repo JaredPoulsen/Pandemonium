@@ -263,6 +263,10 @@ public class ThirdPersonController : MonoBehaviour
             SlowStop = true;
             SlowedTime = SlowedTime;
         }
+        if (Health > 250)
+        {
+            Health = 250;
+        }
 
 
         if (IsDead == false && DisableAllMove == false)

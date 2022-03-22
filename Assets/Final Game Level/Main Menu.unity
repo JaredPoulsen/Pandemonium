@@ -3110,10 +3110,10 @@ RectTransform:
   m_Father: {fileID: 527378835}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.20700002, y: 0.326}
-  m_AnchorMax: {x: 0.20700002, y: 0.326}
-  m_AnchoredPosition: {x: 4.048004, y: -5.229004}
-  m_SizeDelta: {x: 283.237, y: 229.899}
+  m_AnchorMin: {x: 0.20582204, y: 0.38114733}
+  m_AnchorMax: {x: 0.20582204, y: 0.38114733}
+  m_AnchoredPosition: {x: 16.112, y: -2}
+  m_SizeDelta: {x: 283.237, y: 287.461}
   m_Pivot: {x: 0.5, y: 0.4668423}
 --- !u!114 &2072353964
 MonoBehaviour:
@@ -3168,7 +3168,11 @@ MonoBehaviour:
     New Exterior Assets
 
 
-    - Revised level objects and placement'
+    - Revised level objects and placement
+
+
+    - Health
+    regen on kills and stuns (MORE FOR COMBOS)'
 --- !u!222 &2072353965
 CanvasRenderer:
   m_ObjectHideFlags: 0
