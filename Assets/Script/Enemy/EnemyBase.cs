@@ -34,6 +34,7 @@ public class EnemyBase : MonoBehaviour
     public AudioSource ShootAudio;
     public NavMeshAgent navMeshAgent;
     public Vector3 bulletRecord;
+    public ThirdPersonController TPS;
 
     [Header("Shooting")]
     public GameObject bullet;
@@ -50,6 +51,8 @@ public class EnemyBase : MonoBehaviour
     [Range(-1, 1)]
     public float leftright;
     public AudioSource KillAudio;
+    public AudioSource PartialCombo;
+    public AudioSource FullCombo;
 
     [Header("Stun")]
     protected bool isStun;
@@ -214,7 +217,20 @@ public class EnemyBase : MonoBehaviour
     {
         KillAudio.Play();
         timeBetweenShot = 1000000;
-        score.value += scorePoint;
+        if (TPS.IsRoll == false && TPS.IsSlow == false)
+        {
+            score.value += scorePoint;
+        }
+        else if (TPS.IsRoll == true || TPS.IsSlow == true)
+        {
+            PartialCombo.Play();
+            score.value += scorePoint * 2;
+        }
+        else if (TPS.IsRoll == true && TPS.IsSlow == true)
+        {
+            FullCombo.Play();
+            score.value += scorePoint * 4;
+        }
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         Destroy(gameObject, 30f);
