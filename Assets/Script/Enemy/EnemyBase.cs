@@ -117,7 +117,8 @@ public class EnemyBase : MonoBehaviour
             animator.SetBool("Dizzy", true);
             navMeshAgent.speed = 0;
             Invoke(nameof(resetStun), stunCooldown);
-            TPS.SlowedTime = TPS.SlowedTime + 1;
+            
+            
         }
 
         if (health <= 0)
@@ -278,6 +279,11 @@ public class EnemyBase : MonoBehaviour
             Debug.Log("Throw hit");
             score.value += 10;
             StunAudio.Play();
+            TPS.SlowedTime = TPS.SlowedTime + 2.5f;
+            if (TPS.SlowedTime > 5f)
+            {
+                TPS.SlowedTime = 5f;
+            }
         }
 
     }

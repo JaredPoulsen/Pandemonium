@@ -147,7 +147,7 @@ public class ThirdPersonController : MonoBehaviour
         MyPivotCamera = FindObjectOfType<CamPivotController>();
 
         SlowedTime = 5f;
-        ComboTime = 3f;
+        ComboTime = 4f;
 
         if (HumanoidSpine == null)
         {
@@ -252,11 +252,11 @@ public class ThirdPersonController : MonoBehaviour
         if (IsSlow == true)
         {
             
-            MyPivotCamera.DoSlowMotion(0.3f, SlowedTime);
+            MyPivotCamera.DoSlowMotion(0.4f, SlowedTime);
             SlowedTime -= Time.deltaTime * 2;
             
         }
-        if (SlowedTime < 0)
+        if (SlowedTime <= 0)
         {
             
             IsSlow = false;
@@ -489,7 +489,7 @@ public class ThirdPersonController : MonoBehaviour
                 SlowStop = true;
                 SlowStart = false;
                 IsSlow = false;
-                MyPivotCamera.DoSlowMotion(0.1f, 0f);
+                MyPivotCamera.DoSlowMotion(0.3f, 0f);
             }
             /*
             if (SlowedTime < 0)
