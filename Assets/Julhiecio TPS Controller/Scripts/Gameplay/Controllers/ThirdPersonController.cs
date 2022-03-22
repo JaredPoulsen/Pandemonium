@@ -109,8 +109,6 @@ public class ThirdPersonController : MonoBehaviour
     public bool IsCrouched;
     public bool IsJumping;
     public bool IsGrounded = true;
-    public bool IsSlow;
-    public bool IsRoll;
     [HideInInspector] public bool IsAttacking;
     [HideInInspector] public bool IsArmed;
     [HideInInspector] public bool IsAiming;
@@ -124,8 +122,6 @@ public class ThirdPersonController : MonoBehaviour
     [HideInInspector] public bool WallInFront;
     [HideInInspector] public bool InverseKinematics = true;
 
-    public float ComboTime = 3f;
-    public float SlowedTime = 3f;
     
     void Start()
     {
@@ -216,8 +212,6 @@ public class ThirdPersonController : MonoBehaviour
             IsArmed = false;
             IsRolling = false;
             IsDriving = false;
-            IsRoll = false;
-            IsSlow = false;
             Shot = false;
             WallInFront = false;
             InverseKinematics = false;
@@ -233,25 +227,6 @@ public class ThirdPersonController : MonoBehaviour
             rb.velocity = transform.up * rb.velocity.y;
 
             return;
-        }
-        if (IsRoll == true)
-        {
-            ComboTime -= Time.deltaTime;
-        }
-        if (ComboTime < 0)
-        {
-            IsRoll = false;
-            ComboTime = 3f;
-        }
-
-        if (IsSlow == true)
-        {
-            SlowedTime -= Time.deltaTime;
-        }
-        if (SlowedTime < 0)
-        {
-            IsSlow = false;
-            SlowedTime = 3f;
         }
 
 
@@ -462,34 +437,19 @@ public class ThirdPersonController : MonoBehaviour
             /*
             rb.AddForce(transform.up * 200 * JumpForce, ForceMode.Impulse);
             IsGrounded = false;
-            
+            IsJumping = true;
             IsCrouched = false;
             Invoke("_disablejump", .5f);
             */
-            IsSlow = true;
             MyPivotCamera.DoSlowMotion(0.1f, 3f);
-            if (IsSlow == true)
-            {
-                SlowedTime -= Time.deltaTime;
-            }
-            if (SlowedTime < 0)
-            {
-                IsSlow = false;
-                SlowedTime = 3f;
-            }
         }
-
 
         //Roll
         if (JUInput.GetButtonDown(JUInput.Buttons.CrouchButton) && IsGrounded == true && IsRolling == false)
         {
-            IsRoll = true;
             anim.SetTrigger("roll");
             Invoke("_disableroll", 1f);
-            
-
         }
-
         //Running
         if (JUInput.GetButton(JUInput.Buttons.RunButton))
         {
