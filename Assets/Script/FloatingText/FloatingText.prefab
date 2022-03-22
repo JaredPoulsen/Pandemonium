@@ -109,9 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5acde5b2af38548bccaa53cbd41e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyTime: 3
-  Offset: {x: 0, y: 4, z: 0}
-  randomizeIntensity: {x: 1, y: 0.2, z: 0}
 --- !u!95 &8393753677091192745
 Animator:
   serializedVersion: 3
