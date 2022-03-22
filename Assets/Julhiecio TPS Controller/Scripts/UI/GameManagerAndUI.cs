@@ -188,14 +188,16 @@ public class GameManagerAndUI : MonoBehaviour
 				BulletsCount.text = PlayerCharacter.WeaponInUse.BulletsAmounts + ""; 
 				//+ "/" + PlayerCharacter.WeaponInUse.TotalBullets
 				BulletsCount.color = Color.white;
-				float rvalue = PlayerCharacter.WeaponInUse.BulletsAmounts * 0.12f;
-				float gvalue = PlayerCharacter.WeaponInUse.BulletsAmounts * 0.12f;
+				float rvalue = PlayerCharacter.WeaponInUse.BulletsAmounts/10f;
+				float gvalue = PlayerCharacter.WeaponInUse.BulletsAmounts/10f;
+				
                 if (PlayerCharacter.Shot)
                 {
-					rvalue = rvalue + rvalue;
-					gvalue = gvalue + gvalue;
+					rvalue = rvalue * 4f;
+					gvalue = gvalue * 4f;
 				}
 				Color gunColor = new Color(1 - rvalue, 0 + gvalue, 0);
+				//Debug.Log(rvalue);
 				weaponUI.color = gunColor;
 			}
 			if (PlayerCharacter.WeaponInUse.TotalBullets <= 0 && PlayerCharacter.WeaponInUse.BulletsAmounts <= 0)
