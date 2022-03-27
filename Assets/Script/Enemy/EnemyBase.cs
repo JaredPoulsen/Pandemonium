@@ -17,6 +17,7 @@ public class EnemyBase : MonoBehaviour
     public Score score;
     [HideInInspector] public float health;
     public int NAVspeed = 2;
+    public float TimeToDelete;
 
 
     [Header("FOV")]
@@ -256,7 +257,7 @@ public class EnemyBase : MonoBehaviour
         
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        Destroy(gameObject, 30f);
+        Destroy(gameObject, TimeToDelete);
 
     }
     private void OnCollisionEnter(Collision collision)
