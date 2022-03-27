@@ -223,7 +223,7 @@ public class EnemyBase : MonoBehaviour
     protected void ShowFloatingText()
     {
         GameObject go = Instantiate(FloatingTextPrefab, transform.position, rot, transform);
-        go.GetComponent<TextMesh>().text = health.ToString();  //Change value of text in here: score.value.ToString();
+        go.GetComponent<TextMesh>().text = scorePoint.ToString();  //Change value of text in here: score.value.ToString();
     }
     protected void resetStun()
     {
@@ -238,19 +238,19 @@ public class EnemyBase : MonoBehaviour
         timeBetweenShot = 1000000;
         if (TPS.IsRoll == false && TPS.IsSlow == false)
         {
-            score.value += scorePoint;
+            //score.value += scorePoint;
             TPS.Health = TPS.Health + 20;
         }
         else if (TPS.IsRoll == true && TPS.IsSlow == true)
         {
-            FullCombo.Play();
-            score.value += scorePoint * 4;
+            //FullCombo.Play();
+            //score.value += scorePoint * 4;
             TPS.Health = TPS.Health + 40;
         }
         else if (TPS.IsRoll == true || TPS.IsSlow == true)
         {
-            PartialCombo.Play();
-            score.value += scorePoint * 2;
+            //PartialCombo.Play();
+            //score.value += scorePoint * 2;
             TPS.Health = TPS.Health + 30;
         }
         
@@ -269,6 +269,20 @@ public class EnemyBase : MonoBehaviour
             radius = 35f;
             bulletRecord = collision.transform.position;
 
+            if (TPS.IsRoll == false && TPS.IsSlow == false)
+            {
+                score.value += scorePoint;
+            }
+            else if (TPS.IsRoll == true && TPS.IsSlow == true)
+            {
+                FullCombo.Play();
+                score.value += scorePoint * 4;
+            }
+            else if (TPS.IsRoll == true || TPS.IsSlow == true)
+            {
+                PartialCombo.Play();
+                score.value += scorePoint * 2;
+            }
 
         }
         if (collision.gameObject.tag == "Enemy")
