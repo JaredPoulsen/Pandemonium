@@ -1281,6 +1281,7 @@ MonoBehaviour:
   - {fileID: 8699110692700996824}
   - {fileID: 9010215159908736368}
   WeaponInUse: {fileID: 0}
+  WeaponID: -1
   IKPositionRightHand: {fileID: 0}
   IKPositionLeftHand: {fileID: 0}
   HumanoidSpine: {fileID: 6265907829942566539}
@@ -1294,6 +1295,10 @@ MonoBehaviour:
   IsCrouched: 0
   IsJumping: 0
   IsGrounded: 1
+  IsSlow: 0
+  IsRoll: 0
+  SlowStop: 0
+  SlowStart: 0
   IsAttacking: 0
   IsArmed: 0
   IsAiming: 0
@@ -1306,6 +1311,8 @@ MonoBehaviour:
   IsReloading: 0
   WallInFront: 0
   InverseKinematics: 1
+  ComboTime: 0
+  SlowedTime: 0
   IsSliding: 0
 --- !u!114 &6043852248100695788
 MonoBehaviour:
@@ -1356,6 +1363,7 @@ MonoBehaviour:
   throwKey: 116
   throwForce: 70
   throwUpwardForce: 10
+  readyToThrow: 0
 --- !u!1 &7003507321241276019
 GameObject:
   m_ObjectHideFlags: 0
