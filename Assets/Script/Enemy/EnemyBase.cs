@@ -239,19 +239,19 @@ public class EnemyBase : MonoBehaviour
         if (TPS.IsRoll == false && TPS.IsSlow == false)
         {
             //score.value += scorePoint;
-            TPS.Health = TPS.Health + 20;
+            TPS.Health = TPS.Health + 10;
         }
         else if (TPS.IsRoll == true && TPS.IsSlow == true)
         {
             //FullCombo.Play();
             //score.value += scorePoint * 4;
-            TPS.Health = TPS.Health + 40;
+            TPS.Health = TPS.Health + 20;
         }
         else if (TPS.IsRoll == true || TPS.IsSlow == true)
         {
             //PartialCombo.Play();
             //score.value += scorePoint * 2;
-            TPS.Health = TPS.Health + 30;
+            TPS.Health = TPS.Health + 15;
         }
         
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
@@ -304,7 +304,7 @@ public class EnemyBase : MonoBehaviour
                 TPS.SlowedTime = 5f;
             }
 
-            TPS.Health = TPS.Health + 20;
+            TPS.Health = TPS.Health + 5;
         }
 
     }
