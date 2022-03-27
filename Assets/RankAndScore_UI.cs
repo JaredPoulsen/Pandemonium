@@ -23,23 +23,23 @@ public class RankAndScore_UI : MonoBehaviour
         {
             RankText.text = "Your Rank: F";
         }
-        if (PlayerScore >= 1  && PlayerScore < 51)
+        if (PlayerScore >= 1  && PlayerScore < 251)
         {
             RankText.text = "Your Rank: D";
         }
-        if (PlayerScore > 50 && PlayerScore < 101)
+        if (PlayerScore > 250 && PlayerScore < 301)
         {
             RankText.text = "Your Rank: C";
         }
-        if (PlayerScore > 100 && PlayerScore < 151)
+        if (PlayerScore > 300 && PlayerScore < 451)
         {
             RankText.text = "Your Rank: B";
         }
-        if (PlayerScore > 150 && PlayerScore < 201)
+        if (PlayerScore > 450 && PlayerScore < 601)
         {
             RankText.text = "Your Rank: A";
         }
-        if (PlayerScore > 200)
+        if (PlayerScore > 600)
         {
             RankText.text = "Your Rank: S";
         }
