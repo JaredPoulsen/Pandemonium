@@ -2267,9 +2267,9 @@ MonoBehaviour:
   navMeshAgent: {fileID: 8375832502170295681}
   bulletRecord: {x: 0, y: 0, z: 0}
   FloatingTextPrefab: {fileID: 1221796056944967306, guid: a0dbbd984b130b741a805f366596f9d6, type: 3}
-  bullet: {fileID: 3163126826636465162, guid: 02e0e3a4e7ef532438a19a6e72cc7503, type: 3}
+  bullet: {fileID: 309664015520396096, guid: 1ec0d53fd37b72d4f8339857be300ecf, type: 3}
   inaccuracy: 0.21
-  timeBetweenShot: 0.2
+  timeBetweenShot: 0.6
   upward: 2
   forward: 0.4
   leftright: 0
