@@ -85,8 +85,11 @@ public class Weapon : MonoBehaviour
 	public enum WeaponFireMode { Auto, SemiAuto, BoltAction, Shotgun }
 	public enum WeaponAimMode { None,CameraApproach, Scope}
 
+
 	private void Start()
 	{
+
+
 		TotalBullets = -BulletsPerMagazine;
 		MyPivotCamera = FindObjectOfType<CamPivotController>();
 		MyCamera = MyPivotCamera.mCamera.transform;
@@ -101,7 +104,6 @@ public class Weapon : MonoBehaviour
 	}
     private void Update()
     {
-
 		WeaponControl();
 
 		if (GenerateProceduralAnimation == false) return;

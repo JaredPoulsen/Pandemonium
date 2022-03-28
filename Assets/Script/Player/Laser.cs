@@ -13,17 +13,21 @@ public class Laser : MonoBehaviour
     public CamPivotController MyPivotCamera;
     public Transform MyCamera;
 
+    public ThirdPersonController tpc;
+
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         lr = GetComponent<LineRenderer>();
+        lr.useWorldSpace = false;
         MyPivotCamera = FindObjectOfType<CamPivotController>();
         MyCamera = MyPivotCamera.mCamera.transform;
+        tpc = FindObjectOfType<ThirdPersonController>();
         CrosshairHitMask = FindObjectOfType<ThirdPersonController>().CrosshairHitMask;
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         RaycastHit CrosshairHit;
 

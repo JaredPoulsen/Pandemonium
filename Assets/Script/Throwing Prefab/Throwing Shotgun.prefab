@@ -349,7 +349,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ff516d936c121438299b964fb5b23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  children: {fileID: 2205631468565814602}
+  pickUpCollider: {fileID: 2205631468565814602}
+  waitTime: 3
+  destroyTime: 30
 --- !u!82 &6512860915090774536
 AudioSource:
   m_ObjectHideFlags: 0

@@ -5,14 +5,14 @@ using UnityEngine;
 public class DestroyThrowing : MonoBehaviour
 {
     private Collider collider;
-    public GameObject children;
+    public GameObject pickUpCollider;
     public float waitTime = 3;
     public float destroyTime = 30;
     // Start is called before the first frame update
     void Start()
     {
         collider = GetComponent<Collider>();
-        children.gameObject.SetActive(false);
+        pickUpCollider.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class DestroyThrowing : MonoBehaviour
     }
     void changeCollider()
     {
-        children.gameObject.SetActive(true);
+        pickUpCollider.gameObject.SetActive(true);
         collider = GetComponentInChildren<Collider>();
     }
 }
