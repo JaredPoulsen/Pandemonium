@@ -752,10 +752,10 @@ RectTransform:
   m_Father: {fileID: 527378835}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.13535596, y: 0.90060186}
-  m_AnchorMax: {x: 0.13535596, y: 0.90060186}
-  m_AnchoredPosition: {x: -3, y: 1}
-  m_SizeDelta: {x: 147.142, y: 21.251}
+  m_AnchorMin: {x: 0.17546606, y: 0.9006176}
+  m_AnchorMax: {x: 0.17546606, y: 0.9006176}
+  m_AnchoredPosition: {x: 1.25, y: -1.2600098}
+  m_SizeDelta: {x: 193.125, y: 21.251}
   m_Pivot: {x: 0.5, y: 0.4668423}
 --- !u!114 &684492746
 MonoBehaviour:
@@ -790,7 +790,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Version 1.1.5
+  m_Text: Version 1.2.0 (Midterm Build)
 --- !u!222 &684492747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3112,8 +3112,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20582204, y: 0.38114733}
   m_AnchorMax: {x: 0.20582204, y: 0.38114733}
-  m_AnchoredPosition: {x: 16.112, y: -2}
-  m_SizeDelta: {x: 283.237, y: 287.461}
+  m_AnchoredPosition: {x: 0, y: -5.5026016}
+  m_SizeDelta: {x: 239.586, y: 165.951}
   m_Pivot: {x: 0.5, y: 0.4668423}
 --- !u!114 &2072353964
 MonoBehaviour:
@@ -3148,31 +3148,24 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'NEW STUFF!
+  m_Text: 'Changes from Playtest 2
 
 
-    - Pop-Up Assets
+    - Laser on guns
 
+    - Health and damage
+    adjustments
 
-    - Slow Motion (REGAINED BY THROWING
-    WEAPONS)
+    - Nerfed Health regen
 
-
-    - Score combos with rolling and slow motion
-
-
-    - New UI changes
-
+    -Rank and score adjustments
 
     -
-    New Exterior Assets
+    Spawning fixes
 
+    - Bug fixes
 
-    - Revised level objects and placement
-
-
-    - Health
-    regen on kills and stuns (MORE FOR COMBOS)'
+    - Shooting system changes'
 --- !u!222 &2072353965
 CanvasRenderer:
   m_ObjectHideFlags: 0
