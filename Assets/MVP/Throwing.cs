@@ -6,8 +6,6 @@ using TMPro;
 
 public class Throwing : MonoBehaviour
 {
-    public ThirdPersonController tpc;
-
     [Header("References")]
     public Transform cam;
     public Transform attackPoint;
@@ -15,17 +13,15 @@ public class Throwing : MonoBehaviour
     public GameObject handgun;
     public GameObject shotgun;
     public GameObject smg;
-
+    public ThirdPersonController tpc;
 
     [Header("Settings")]
-    public int totalThrows;
     public float throwCooldown;
 
     [Header("Throwing")]
     public KeyCode throwKey = KeyCode.T;
     public float throwForce;
     public float throwUpwardForce;
-
     public bool readyToThrow;
 
     private void Start()
@@ -64,10 +60,8 @@ public class Throwing : MonoBehaviour
         {
             Console.WriteLine($"Hand: '{e}'");
         }
-        
-        
 
-        if (Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
+        if (Input.GetKeyDown(throwKey) && readyToThrow)
         {
             Throw();
             // after throw, turn off that weapon's visibility and lock it
@@ -75,8 +69,6 @@ public class Throwing : MonoBehaviour
             {
                 if (i == tpc.WeaponID)
                 {
-                    //tpc.Weapons[i].BulletsAmounts = tpc.Weapons[i].BulletsPerMagazine;
-                    //tpc.Weapons[i].TotalBullets = 0;
                     tpc.Weapons[i].gameObject.SetActive(false);
                     tpc.Weapons[i].Unlocked = false;
                 }
@@ -111,18 +103,7 @@ public class Throwing : MonoBehaviour
         // add force
         Vector3 forceToAdd = forceDirection * throwForce + transform.up * throwUpwardForce;
 
-        projectileRb.AddForce(forceToAdd, ForceMode.Impulse);
-
-        totalThrows--;
-
-        // implement throwCooldown
-        //Invoke(nameof(ResetThrow), throwCooldown);
-
-       
+        projectileRb.AddForce(forceToAdd, ForceMode.Impulse); 
     }
 
-   /* private void ResetThrow()
-    {
-        readyToThrow = true;
-    }*/
 }

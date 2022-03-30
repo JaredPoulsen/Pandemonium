@@ -20,6 +20,7 @@ public class Laser : MonoBehaviour
     {
         lr = GetComponent<LineRenderer>();
         lr.useWorldSpace = false;
+
         MyPivotCamera = FindObjectOfType<CamPivotController>();
         MyCamera = MyPivotCamera.mCamera.transform;
         tpc = FindObjectOfType<ThirdPersonController>();
