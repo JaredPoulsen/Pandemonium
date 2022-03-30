@@ -17,6 +17,7 @@ public class UIMenssengerTrigger : MonoBehaviour
         TextPanel = GameObject.Find(MessageFieldName);
         TextTarget = TextPanel.GetComponentInChildren<Text>();
         GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<Collider>().isTrigger = true;
     }
 
     public void ShowMenssage()
