@@ -22,12 +22,10 @@ public class GameStateManager
     public delegate void GameStateChangeHandler(GameState newGameState);
     public event GameStateChangeHandler OnGameStateChanged;
 
-    //constructor
     private GameStateManager()
     {
 
     }
-    // set game state
     public void SetState(GameState newGameState)
     {
         if (newGameState == CurrentGameState)
@@ -35,7 +33,6 @@ public class GameStateManager
             return;
         }
         CurrentGameState = newGameState;
-        // check if this function null or not
         OnGameStateChanged?.Invoke(newGameState);
     }
 }
