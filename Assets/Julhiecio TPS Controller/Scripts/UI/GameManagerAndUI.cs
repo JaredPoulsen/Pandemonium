@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [AddComponentMenu("JU TPS/Gameplay/Game/Game Manager")]
 public class GameManagerAndUI : MonoBehaviour
@@ -238,4 +239,8 @@ public class GameManagerAndUI : MonoBehaviour
     {
 		ControlMobilePanels = true;
     }
+	public void Menu()
+	{
+		SceneManager.LoadScene("Main Menu");
+	}
 }

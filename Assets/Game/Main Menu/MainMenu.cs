@@ -41,6 +41,7 @@ public class MainMenu : MonoBehaviour
         InstrutionPanel.gameObject.SetActive(false);
         CreditPanel.gameObject.SetActive(true);
     }
+ 
     public void QuitGame()
     {
         Application.Quit();
