@@ -16,6 +16,10 @@ public class EnemyStunCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Enemy.stun == true)
+        {
+            isStunned = true;
+        }
         if (isStunned == true)
         {
             Wall.SetActive(false);

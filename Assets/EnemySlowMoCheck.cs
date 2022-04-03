@@ -16,6 +16,10 @@ public class EnemySlowMoCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Enemy.slow == true)
+        {
+            isSlowed = true;
+        }
         if (isSlowed == true)
         {
             Wall.SetActive(false);

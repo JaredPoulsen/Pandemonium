@@ -16,6 +16,10 @@ public class EnemyDeadCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Enemy.dead == true)
+        {
+            isDead = true;
+        }
         if(isDead == true)
         {
             Wall.SetActive(false);

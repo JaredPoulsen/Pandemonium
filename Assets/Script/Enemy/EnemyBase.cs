@@ -18,6 +18,10 @@ public class EnemyBase : MonoBehaviour
     [HideInInspector] public float health;
     public int NAVspeed = 2;
     public float TimeToDelete;
+    public bool dead;
+    public bool roll;
+    public bool slow;
+    public bool full;
 
 
     [Header("FOV")]
@@ -27,6 +31,7 @@ public class EnemyBase : MonoBehaviour
     public LayerMask targetMask;
     public LayerMask obstructionMask;
     public bool canSeePlayer;
+    
 
     [Header("References")]
     public GameObject playerRef; // DO NOT DEFINE / DRAG ANYTHING TO THIS
@@ -61,6 +66,8 @@ public class EnemyBase : MonoBehaviour
     protected bool isStun;
     public float stunCooldown = 5f;
     public AudioSource StunAudio;
+    public bool stun;
+    
 
 
 
@@ -69,6 +76,7 @@ public class EnemyBase : MonoBehaviour
 
     protected virtual void Start()
     {
+        dead = false;
         isStun = false;
 
         playerRef = GameObject.FindGameObjectWithTag("Player");
@@ -237,9 +245,11 @@ public class EnemyBase : MonoBehaviour
         isStun = false;
         navMeshAgent.speed = NAVspeed;
         scorePoint = scorePoint - 5;
+        
     }
     protected void Die()
     {
+        dead = true;
         KillAudio.Play();
         timeBetweenShot = 1000000;
         if (TPS.IsRoll == false && TPS.IsSlow == false)
@@ -249,6 +259,7 @@ public class EnemyBase : MonoBehaviour
         }
         else if (TPS.IsRoll == true && TPS.IsSlow == true)
         {
+            full = true;
             FullCombo.Play();
             score.value += scorePoint * 4;
             TPS.Health = TPS.Health + 20;
@@ -259,8 +270,17 @@ public class EnemyBase : MonoBehaviour
             score.value += scorePoint * 2;
             TPS.Health = TPS.Health + 15;
         }
-
         
+        if (TPS.IsRoll == true)
+        {
+            roll = true;
+        }
+        if (TPS.IsSlow == true)
+        {
+            slow = true;
+        }
+
+
 
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
@@ -303,9 +323,11 @@ public class EnemyBase : MonoBehaviour
         }
         if (collision.gameObject.tag == "Throwing")
         {
+            
             isStun = true;
             animator.SetTrigger("IsStun");
             Debug.Log("Throw hit");
+            stun = true;
             score.value += 10;
             scorePoint = scorePoint + 5;
             StunAudio.Play();
