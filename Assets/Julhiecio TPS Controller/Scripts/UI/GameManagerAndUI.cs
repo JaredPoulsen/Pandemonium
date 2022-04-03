@@ -46,7 +46,7 @@ public class GameManagerAndUI : MonoBehaviour
 	public Image shotgun;
 	private Image weaponUI;
 
-
+	// addition
 
 	void Start()
 	{
@@ -104,6 +104,7 @@ public class GameManagerAndUI : MonoBehaviour
 		}
 
 	}
+	
 	public void MobileUI()
     {
 		if (ControlMobilePanels == true)
@@ -155,6 +156,7 @@ public class GameManagerAndUI : MonoBehaviour
 			Crosshair.gameObject.SetActive(false);
 		}
 	}
+	
 	public void DisplayWeaponInfo()
     {
 		if (DisplayWeaponInformation == false)

@@ -205,6 +205,7 @@ public class EnemyBase : MonoBehaviour
     private void Awake()
     {
         health = maxHealth;
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
     }
     protected void takeDamage(float amount)
     {
@@ -220,6 +221,10 @@ public class EnemyBase : MonoBehaviour
         {
             Die();
         }
+    }
+    protected void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
     }
     protected void ShowFloatingText()
     {
@@ -254,7 +259,9 @@ public class EnemyBase : MonoBehaviour
             score.value += scorePoint * 2;
             TPS.Health = TPS.Health + 15;
         }
+
         
+
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         Destroy(gameObject, TimeToDelete);

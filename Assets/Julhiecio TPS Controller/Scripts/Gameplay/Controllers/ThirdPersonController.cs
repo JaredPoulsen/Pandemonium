@@ -129,7 +129,11 @@ public class ThirdPersonController : MonoBehaviour
 
     public float ComboTime;
     public float SlowedTime;
-    
+
+    void Awake()
+    {
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
     void Start()
     {
         throwing = GetComponent<Throwing>();
@@ -407,6 +411,7 @@ public class ThirdPersonController : MonoBehaviour
                 advancedRagdollController.TimeToGetUp = 900;
             }
             IsDead = true;
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
         }
 
         HorizontalX = JUInput.GetAxis(JUInput.Axis.MoveHorizontal);
@@ -1437,6 +1442,10 @@ public class ThirdPersonController : MonoBehaviour
 
     #endregion
 
+    private void OnGameStateChanged (GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+    }
     void OnAnimatorIK(int layerIndex)
     {
         if (layerIndex == 0 && DisableAllMove == false)

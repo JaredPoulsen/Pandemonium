@@ -244,7 +244,7 @@ public class CamPivotController : MonoBehaviour
 			Time.timeScale += (1f / SlowDownLenght) * Time.unscaledDeltaTime;
 			Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
 
-			if (Input.GetKeyUp(KeyCode.L)) DoSlowMotion(0.1f,10f);
+			//if (Input.GetKeyUp(KeyCode.L)) DoSlowMotion(0.1f,10f);
 		}
 	}
 	void FixedUpdate()
