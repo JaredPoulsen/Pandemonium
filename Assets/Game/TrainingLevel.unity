@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -674285348381081395, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 17ca0339e2f63fe4f8e34881bb9b4293, type: 3}
     - target: {fileID: 5721906212050714177, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
       propertyPath: CPAudio
       value: 
@@ -382,6 +386,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -674285348381081395, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a19e9979eb0edd4a8021780cefcb3cc, type: 3}
     - target: {fileID: 5721906212050714177, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
       propertyPath: CPAudio
       value: 
@@ -5915,8 +5923,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 6e5057ca1ad3e9a4bb073ee4aa2892d3, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -6024,6 +6032,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -674285348381081395, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4a094a2dd69ccc349bb74d3fb4b58a4d, type: 3}
     - target: {fileID: 5721906212050714177, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
       propertyPath: CPAudio
       value: 
@@ -8307,6 +8319,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -674285348381081395, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ce9ed0a66b3c2ff4ea0079912aa8d366, type: 3}
     - target: {fileID: 5721906212050714177, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
       propertyPath: CPAudio
       value: 
@@ -9188,7 +9204,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh47522
+  m_Name: pb_Mesh18240
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10676,6 +10692,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -674285348381081395, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ffc98dfc50097ea468098779972b70fe, type: 3}
     - target: {fileID: 5721906212050714177, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
       propertyPath: CPAudio
       value: 
