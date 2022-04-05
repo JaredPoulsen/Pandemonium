@@ -3175,7 +3175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5447592886571854867, guid: 4419d729e4290c84ebb2cc3ba39d9eb6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.8160152
+      value: 73.1
       objectReference: {fileID: 0}
     - target: {fileID: 5447592886571854867, guid: 4419d729e4290c84ebb2cc3ba39d9eb6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3183,7 +3183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5447592886571854867, guid: 4419d729e4290c84ebb2cc3ba39d9eb6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.8241787
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5447592886571854867, guid: 4419d729e4290c84ebb2cc3ba39d9eb6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6024,7 +6024,7 @@ MonoBehaviour:
   Enemy: {fileID: 43938857}
   isFull: 0
   SuccessAudio: {fileID: 1027325770}
-  EndTime: 5
+  EndTime: 12
 --- !u!1001 &1049491088
 PrefabInstance:
   m_ObjectHideFlags: 0
