@@ -8,29 +8,37 @@ public class EnemyFullCheck : MonoBehaviour
 {
     public EnemyBase Enemy;
     public bool isFull;
-    public AudioSource SuccessAudio;
-    public float EndTime;
+    public GameObject endSound;
+    public float EndTime = 15;
     // Start is called before the first frame update
     void Start()
     {
-        isFull = false;
+        endSound.gameObject.SetActive(false);
+
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        Debug.Log(isFull);
         if (Enemy.full == true)
         {
             isFull = true;
+            Debug.Log("haha");
+            
         }
         if (isFull == true)
         {
-            SuccessAudio.Play();
-            EndTime -= Time.deltaTime;
+            endSound.gameObject.SetActive(true);
+            Invoke(nameof(changeLevel), 12);
         }
-        if (EndTime < 0)
-        {
-            SceneManager.LoadScene("GameLevel_v3");
-        }
+        
+        
     }
+ 
+    void changeLevel()
+    {
+        SceneManager.LoadScene("GameLevel_v3");
+    }
+
 }
