@@ -11,7 +11,7 @@ public class slomoBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        slider.maxValue = 5;
+        slider.maxValue = 10;
         slider.value = player.SlowedTime;
 
     }

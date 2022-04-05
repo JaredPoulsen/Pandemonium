@@ -150,7 +150,7 @@ public class ThirdPersonController : MonoBehaviour
         MyCamera = Camera.allCameras[0];
         MyPivotCamera = FindObjectOfType<CamPivotController>();
 
-        SlowedTime = 5f;
+        SlowedTime = 10f;
         ComboTime = 4f;
 
         if (HumanoidSpine == null)
