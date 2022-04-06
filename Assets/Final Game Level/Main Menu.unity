@@ -790,7 +790,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Version 1.2.0 (Midterm Build)
+  m_Text: Version 1.3.0
 --- !u!222 &684492747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3148,24 +3148,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Changes from Playtest 2
+  m_Text: 'Changes from Playtest 3
 
 
-    - Laser on guns
+    - New Tutorial
 
-    - Health and damage
-    adjustments
-
-    - Nerfed Health regen
-
-    -Rank and score adjustments
+    - New Voices
 
     -
-    Spawning fixes
+    Pause Menu
 
-    - Bug fixes
+    - Pup Up Text Instructions
 
-    - Shooting system changes'
+    - Some More Bug Fixes'
 --- !u!222 &2072353965
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -46,6 +46,7 @@ public class CheckPoint : MonoBehaviour
 
         // We activated the current checkpoint
         Activated = true;
+        CPAudio.Play();
         Debug.Log("Active New Check Point");
     }
 
@@ -64,10 +65,10 @@ public class CheckPoint : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // If the player passes through the checkpoint, we activate it
-        if (other.tag == "Player")
+        if (other.tag == "Player" && Activated == false)
         {
             ActivateCheckPoint();
-            CPAudio.Play();
+            
             
         }
         for (int i = 0; i < enemies.Length; i++)
