@@ -30,7 +30,7 @@ public class EnemyFullCheck : MonoBehaviour
         if (isFull == true)
         {
             endSound.gameObject.SetActive(true);
-            Invoke(nameof(changeLevel), 12  );
+            Invoke(nameof(changeLevel), 10);
         }
         else
         {
