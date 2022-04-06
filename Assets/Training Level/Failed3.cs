@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Failed4 : MonoBehaviour
+public class Failed3 : MonoBehaviour
 {
     public EnemyBase enemy;
     public ThirdPersonController player;
@@ -18,7 +18,7 @@ public class Failed4 : MonoBehaviour
         if (enemy == null)
         {
 
-            if (enemy.dead == true && enemy.slow == false)
+            if (enemy.dead == true && enemy.roll == false)
             {
                 player.Health -= 100;
             }
