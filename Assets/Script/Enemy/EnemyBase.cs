@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(Rigidbody), typeof(AudioSource), typeof(CapsuleCollider))]
+[RequireComponent(typeof(Rigidbody), typeof(AudioSource))]
 public class EnemyBase : MonoBehaviour
 {
     // Calling variable here
@@ -88,6 +88,7 @@ public class EnemyBase : MonoBehaviour
         rgd = GetComponent<RagdollEnemyAdvanced>();
 
         bulletRecord = Vector3.zero;
+        rgd.State = RagdollEnemyAdvanced.RagdollState.Animated;
     }
     protected virtual void Update()
     {
@@ -215,7 +216,7 @@ public class EnemyBase : MonoBehaviour
         health = maxHealth;
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
     }
-    protected void takeDamage(float amount)
+    public void takeDamage(float amount)
     {
         // Trigger Floating Text
         if (FloatingTextPrefab && health > 0)
@@ -297,23 +298,6 @@ public class EnemyBase : MonoBehaviour
             radius = 35f;
             bulletRecord = collision.transform.position;
 
-            /*
-
-            if (TPS.IsRoll == false && TPS.IsSlow == false)
-            {
-                score.value += scorePoint;
-            }
-            else if (TPS.IsRoll == true && TPS.IsSlow == true)
-            {
-                FullCombo.Play();
-                score.value += scorePoint * 4;
-            }
-            else if (TPS.IsRoll == true || TPS.IsSlow == true)
-            {
-                PartialCombo.Play();
-                score.value += scorePoint * 2;
-            }
-            */
 
         }
         if (collision.gameObject.tag == "Enemy")

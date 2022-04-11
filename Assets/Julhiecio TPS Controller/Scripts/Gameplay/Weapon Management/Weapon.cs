@@ -185,6 +185,27 @@ public class Weapon : MonoBehaviour
 				Shoot_Position.LookAt(CrosshairHit.point);
 				Debug.DrawLine(MyCamera.transform.position + MyCamera.transform.forward * MyPivotCamera.Distance, CrosshairHit.point, Color.red);
 				ShotErrorProbability = ShotErrorProbability + LossOfAccuracyPerShot;
+
+				/*if (CrosshairHit.transform.root.GetComponent<EnemyBase>() != null)
+				{
+					EnemyBase enemy = CrosshairHit.transform.root.GetComponent<EnemyBase>();
+
+					if (CrosshairHit.transform.GetComponent<CapsuleCollider>() != null)
+					{
+						Debug.Log("Limb");
+						enemy.takeDamage(20f);
+					}
+					else if (CrosshairHit.transform.GetComponent<BoxCollider>() != null)
+					{
+						Debug.Log("Body");
+						enemy.takeDamage(40f);
+					}
+					else if (CrosshairHit.transform.GetComponent<SphereCollider>() != null)
+					{
+						Debug.Log("Head");
+						enemy.takeDamage(100f);
+					}
+				}*/
 			}
 			else
 			{
@@ -200,6 +221,7 @@ public class Weapon : MonoBehaviour
 			{
 				EmitBulletCasing();
 			}
+			
 		}
 		else
 		{
