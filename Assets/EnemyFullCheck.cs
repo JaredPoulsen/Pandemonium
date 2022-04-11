@@ -6,26 +6,40 @@ using UnityEngine.SceneManagement;
 
 public class EnemyFullCheck : MonoBehaviour
 {
-    public EnemyBase Enemy;
+    public EnemyBase enemy;
     public bool isFull;
     public GameObject endSound;
     public float EndTime = 15;
+
+    private GameObject enemyorigin;
+    private Vector3 enemyPos;
+    private Quaternion enemyRot;
+
+    public GameObject enemyprefab;
+    bool isSpawn = false;
+
     // Start is called before the first frame update
     void Start()
     {
         endSound.gameObject.SetActive(false);
-
+        isFull = false;
+        enemyorigin = GameObject.FindGameObjectWithTag("enemy5");
+        enemyPos = enemyorigin.gameObject.transform.position;
+        enemyRot = enemyorigin.gameObject.transform.rotation;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(isFull);
-        if (Enemy.full == true)
+        if (enemyorigin == null && isSpawn == false && enemy.full == false)
+        {
+            isSpawn = true;
+            StartCoroutine(RespawnEnemy());
+        }
+        if (enemy.full == true)
         {
             isFull = true;
-            Debug.Log("haha");
-            
+        
         }
         if (isFull == true)
         {
@@ -44,5 +58,18 @@ public class EnemyFullCheck : MonoBehaviour
     {
         SceneManager.LoadScene("GameLevel_v3");
     }
+    IEnumerator RespawnEnemy()
+    {
+        if (isSpawn)
+        {
+            int respawnTime = 2;
+            yield return new WaitForSeconds(respawnTime);
+            GameObject pb = Instantiate(enemyprefab, enemyPos, enemyRot);
+            pb.tag = "enemy4";
+            enemyorigin = pb;
+            enemy = enemyorigin.GetComponent<EnemyBase>();
 
+        }
+        isSpawn = false;
+    }
 }

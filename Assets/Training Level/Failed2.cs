@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Failed2 : MonoBehaviour
 {
-    public EnemyBase enemy;
     public ThirdPersonController player;
 
     private GameObject gun;
     private Vector3 gunPos;
     private Quaternion gunRot;
-    public GameObject prefab;
+
+
+    public GameObject gunprefab;
+
     bool isSpawn = false;
 
     // Start is called before the first frame update
@@ -21,10 +23,6 @@ public class Failed2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemy == null)
-        {
-            player.Health -= 100;
-        }
 
         gun = GameObject.FindGameObjectWithTag("2ndgun");
         gunPos = gameObject.transform.position;
@@ -43,10 +41,12 @@ public class Failed2 : MonoBehaviour
         {
             int respawnTime = 2;
             yield return new WaitForSeconds(respawnTime);
-            GameObject pb = Instantiate(prefab, gunPos, gunRot);
+            GameObject pb = Instantiate(gunprefab, gunPos, gunRot);
             pb.tag = "2ndgun";
 
         }
         isSpawn = false;
     }
+    
+
 }

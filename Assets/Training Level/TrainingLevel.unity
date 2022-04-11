@@ -788,6 +788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[GOON] (3)'
       objectReference: {fileID: 0}
+    - target: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: m_TagString
+      value: enemy5
+      objectReference: {fileID: 0}
     - target: {fileID: 5353834715509298601, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -923,6 +927,10 @@ PrefabInstance:
     - target: {fileID: 5604198894890551971, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: timeBetweenShot
       value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604198894890551973, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: m_Speed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5604198895255361714, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -1846,9 +1854,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f51b2f43e20aeb40bb464fa38116abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 1443510432}
+  enemy: {fileID: 1443510432}
   Wall: {fileID: 217583004}
   isRolled: 0
+  enemyprefab: {fileID: 4685842452633243411, guid: f0a8ee179938aab4696279959f796565, type: 3}
 --- !u!43 &232560314
 Mesh:
   m_ObjectHideFlags: 0
@@ -2120,7 +2129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh472376
+  m_Name: pb_Mesh701086
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2307,7 +2316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ede809285ea4e49aa796bab59d00bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1802807138}
   player: {fileID: 548075791}
   prefab: {fileID: 1138685957108929341, guid: 0b07e0c0fffdd514e81a82017985be8a, type: 3}
 --- !u!4 &286632861
@@ -3218,9 +3226,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77a4d7847fd467409b4db0da448f6e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 1802807138}
+  enemy: {fileID: 1802807138}
   Wall: {fileID: 506186495}
   isSlowed: 0
+  enemyprefab: {fileID: 4685842452633243411, guid: f0a8ee179938aab4696279959f796565, type: 3}
 --- !u!4 &510373024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6774352848214725601, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
@@ -3882,9 +3891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e09428fac0b0046ba1b2a29ff6110e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1531900516}
   player: {fileID: 548075791}
-  prefab: {fileID: 1138685957108929341, guid: 0b07e0c0fffdd514e81a82017985be8a, type: 3}
+  gunprefab: {fileID: 0}
 --- !u!1 &677594796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3988,6 +3996,10 @@ PrefabInstance:
     - target: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_Name
       value: '[GOON] (4)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: m_TagString
+      value: enemy4
       objectReference: {fileID: 0}
     - target: {fileID: 5353834715509298601, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_RootOrder
@@ -4124,6 +4136,10 @@ PrefabInstance:
     - target: {fileID: 5604198894890551971, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: timeBetweenShot
       value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604198894890551973, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: m_Speed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5604198895255361714, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -4983,6 +4999,10 @@ PrefabInstance:
     - target: {fileID: 5604198894890551971, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: timeBetweenShot
       value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604198894890551973, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: m_Speed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5604198895255361714, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -6237,10 +6257,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34060647bf64c144f99b282ba9460cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 43938857}
+  enemy: {fileID: 43938857}
   isFull: 0
   endSound: {fileID: 1684305757}
   EndTime: 10
+  enemyprefab: {fileID: 4685842452633243411, guid: f0a8ee179938aab4696279959f796565, type: 3}
 --- !u!1001 &1049491088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6640,6 +6661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[GOON] (1)'
       objectReference: {fileID: 0}
+    - target: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: m_TagString
+      value: enemy2
+      objectReference: {fileID: 0}
     - target: {fileID: 5353834715509298601, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6775,6 +6800,10 @@ PrefabInstance:
     - target: {fileID: 5604198894890551971, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: timeBetweenShot
       value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604198894890551973, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: m_Speed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5604198895255361714, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -7419,7 +7448,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f91efef54eddd44a06ae66520d23e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1443510432}
   player: {fileID: 548075791}
   prefab: {fileID: 1138685957108929341, guid: 0b07e0c0fffdd514e81a82017985be8a, type: 3}
 --- !u!1 &1268891646
@@ -7465,7 +7493,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ede6da9eaaefd64d9997eac162389af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 43938857}
   player: {fileID: 548075791}
   prefab: {fileID: 1138685957108929341, guid: 0b07e0c0fffdd514e81a82017985be8a, type: 3}
 --- !u!1 &1303497807
@@ -7920,7 +7947,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh472564
+  m_Name: pb_Mesh701288
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8084,7 +8111,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh472580
+  m_Name: pb_Mesh701308
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8507,7 +8534,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh472218
+  m_Name: pb_Mesh700906
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9310,7 +9337,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh472268
+  m_Name: pb_Mesh785958
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9638,7 +9665,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22610
+  m_Name: pb_Mesh786094
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10802,9 +10829,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf84cf99d6548134a9ae6743eeb8072f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 1531900516}
+  enemy: {fileID: 1531900516}
   Wall: {fileID: 1969790588}
   isStunned: 0
+  enemyprefab: {fileID: 4685842452633243411, guid: f0a8ee179938aab4696279959f796565, type: 3}
 --- !u!82 &1974106412 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: -674285348381081395, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
@@ -11409,6 +11437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[GOON] (2)'
       objectReference: {fileID: 0}
+    - target: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: m_TagString
+      value: enemy3
+      objectReference: {fileID: 0}
     - target: {fileID: 5353834715509298601, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -11544,6 +11576,10 @@ PrefabInstance:
     - target: {fileID: 5604198894890551971, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: timeBetweenShot
       value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604198894890551973, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: m_Speed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5604198895255361714, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_ConnectedAnchor.x

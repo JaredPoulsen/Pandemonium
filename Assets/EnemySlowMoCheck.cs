@@ -4,19 +4,34 @@ using UnityEngine;
 
 public class EnemySlowMoCheck : MonoBehaviour
 {
-    public EnemyBase Enemy;
+    public EnemyBase enemy;
     public GameObject Wall;
     public bool isSlowed;
+
+    private GameObject enemyorigin;
+    private Vector3 enemyPos;
+    private Quaternion enemyRot;
+
+    public GameObject enemyprefab;
+    bool isSpawn = false;
     // Start is called before the first frame update
     void Start()
     {
         isSlowed = false;
+        enemyorigin = GameObject.FindGameObjectWithTag("enemy4");
+        enemyPos = enemyorigin.gameObject.transform.position;
+        enemyRot = enemyorigin.gameObject.transform.rotation;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Enemy.slow == true)
+        if (enemyorigin == null && isSpawn == false && enemy.slow == false)
+        {
+            isSpawn = true;
+            StartCoroutine(RespawnEnemy());
+        }
+        if (enemy.slow == true)
         {
             isSlowed = true;
         }
@@ -24,5 +39,19 @@ public class EnemySlowMoCheck : MonoBehaviour
         {
             Wall.SetActive(false);
         }
+    }
+    IEnumerator RespawnEnemy()
+    {
+        if (isSpawn)
+        {
+            int respawnTime = 2;
+            yield return new WaitForSeconds(respawnTime);
+            GameObject pb = Instantiate(enemyprefab, enemyPos, enemyRot);
+            pb.tag = "enemy4";
+            enemyorigin = pb;
+            enemy = enemyorigin.GetComponent<EnemyBase>();
+
+        }
+        isSpawn = false;
     }
 }

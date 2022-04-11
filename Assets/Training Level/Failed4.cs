@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Failed4 : MonoBehaviour
 {
-    public EnemyBase enemy;
     public ThirdPersonController player;
 
     private GameObject gun;
@@ -21,14 +20,7 @@ public class Failed4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemy == null)
-        {
 
-            if (enemy.dead == true && enemy.slow == false)
-            {
-                player.Health -= 100;
-            }
-        }
         gun = GameObject.FindGameObjectWithTag("4thgun");
         gunPos = gameObject.transform.position;
         gunRot = gameObject.transform.rotation;
@@ -37,7 +29,6 @@ public class Failed4 : MonoBehaviour
         {
             isSpawn = true;
             StartCoroutine(RespawnItem());
-
         }
 
     }
