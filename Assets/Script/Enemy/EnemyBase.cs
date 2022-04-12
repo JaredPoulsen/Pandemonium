@@ -67,12 +67,16 @@ public class EnemyBase : MonoBehaviour
     public float stunCooldown = 5f;
     public AudioSource StunAudio;
     public bool stun;
-    
+
 
 
 
     #endregion //Calling Var 
-
+    private void Awake()
+    {
+        health = maxHealth;
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
 
     protected virtual void Start()
     {
@@ -92,6 +96,8 @@ public class EnemyBase : MonoBehaviour
     }
     protected virtual void Update()
     {
+       
+
         rot = this.transform.rotation;
         rot.y = rot.y * -180;
 
@@ -211,11 +217,7 @@ public class EnemyBase : MonoBehaviour
     }
     #endregion
 
-    private void Awake()
-    {
-        health = maxHealth;
-        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
-    }
+
     public void takeDamage(float amount)
     {
         // Trigger Floating Text
@@ -234,6 +236,7 @@ public class EnemyBase : MonoBehaviour
     protected void OnGameStateChanged(GameState newGameState)
     {
         enabled = newGameState == GameState.Gameplay;
+        
     }
     protected void ShowFloatingText()
     {

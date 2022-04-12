@@ -14,7 +14,7 @@ public class PauseController : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             GameState currentGameState = GameStateManager.Instance.CurrentGameState;
             GameState newGameState = currentGameState == GameState.Gameplay
@@ -25,10 +25,23 @@ public class PauseController : MonoBehaviour
             if(newGameState == GameState.Paused)
             {
                 pausePanel.SetActive(true);
+                GameObject[] arr = GameObject.FindGameObjectsWithTag("Enemy");
+                foreach(GameObject enemy in arr)
+                {
+                    Debug.Log(enemy.name);
+                    enemy.GetComponent<EnemyBase>().navMeshAgent.speed = 0;
+
+                }
                 Cursor.lockState = CursorLockMode.Confined;
             }
             else
             {
+                GameObject[] arr = GameObject.FindGameObjectsWithTag("Enemy");
+                foreach (GameObject enemy in arr)
+                {
+                    enemy.GetComponent<EnemyBase>().navMeshAgent.speed = 2;
+
+                }
                 pausePanel.SetActive(false);
             }
             
