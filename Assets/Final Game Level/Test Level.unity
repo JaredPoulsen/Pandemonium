@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: c0e63a5065d0406438a77d5e7c183f37, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: a91dafdfac47f2d4382bcfe9c465ea74, type: 2}
 --- !u!1001 &59821752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -385,7 +385,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122515504}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.83, y: -3.0088286, z: -0.67}
+  m_LocalPosition: {x: 9.65, y: -3.0088286, z: -1.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1865811597}
@@ -2748,6 +2748,25 @@ PrefabInstance:
       objectReference: {fileID: 1865811595}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+--- !u!1 &1936578182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+  m_PrefabInstance: {fileID: 1936578181}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1936578183
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936578182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.24254885
+  m_Height: 1.9592874
+  m_Direction: 1
+  m_Center: {x: 0.014603463, y: 2.882442, z: 0.01664942}
 --- !u!1 &2003238734
 GameObject:
   m_ObjectHideFlags: 0
