@@ -273,7 +273,7 @@ public class RagdollEnemyAdvanced : MonoBehaviour
 			rigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
 		}
 
-		enemy.GetComponent<CapsuleCollider>().enabled = enabled;
+		//enemy.GetComponent<CapsuleCollider>().enabled = !Enabled;
 		//rigidbody.isKinematic = Enabled;
 		//rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0, rigidbody.velocity.y);
 	}
