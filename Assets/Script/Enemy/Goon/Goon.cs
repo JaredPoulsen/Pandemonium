@@ -23,7 +23,7 @@ public class Goon : EnemyBase
         {
             animator.SetBool("Shoot", false);
         }
-
+        Physics.IgnoreCollision(GameObject.FindGameObjectWithTag("Bullet").GetComponent<Collider>(), GetComponent<CapsuleCollider>());
     }
     
 }
