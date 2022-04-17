@@ -7,6 +7,7 @@ public class EnemyStunCheck : MonoBehaviour
     public EnemyBase enemy;
     public GameObject Wall;
     public bool isStunned;
+ 
 
     private GameObject enemyorigin;
     private Vector3 enemyPos;

@@ -395,7 +395,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8633089881775160645, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: DoSlowmotionWhenDestroy
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8633089881775160666, guid: 98407e07abb97c3409572f27cf4ff4b9, type: 3}
       propertyPath: m_Name
