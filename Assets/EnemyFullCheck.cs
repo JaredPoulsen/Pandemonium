@@ -18,6 +18,8 @@ public class EnemyFullCheck : MonoBehaviour
     public GameObject enemyprefab;
     bool isSpawn = false;
 
+    public GameObject Point;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,7 @@ public class EnemyFullCheck : MonoBehaviour
         }
         if (isFull == true)
         {
+            Point.SetActive(true);
             endSound.gameObject.SetActive(true);
             Invoke(nameof(changeLevel), 10);
         }

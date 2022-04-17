@@ -15,6 +15,8 @@ public class EnemyRollCheck : MonoBehaviour
     public GameObject enemyprefab;
     bool isSpawn = false;
 
+    public GameObject Point;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,7 @@ public class EnemyRollCheck : MonoBehaviour
         }
         if (isRolled == true)
         {
+            Point.SetActive(true);
             Wall.SetActive(false);
         }
     }

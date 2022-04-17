@@ -16,6 +16,8 @@ public class EnemyStunCheck : MonoBehaviour
     public GameObject enemyprefab;
     bool isSpawn = false;
 
+    public GameObject Point;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,7 @@ public class EnemyStunCheck : MonoBehaviour
         }
         if (isStunned == true)
         {
+            Point.SetActive(true);
             Wall.SetActive(false);
         }
     }

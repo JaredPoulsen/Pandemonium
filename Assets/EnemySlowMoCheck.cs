@@ -14,6 +14,8 @@ public class EnemySlowMoCheck : MonoBehaviour
 
     public GameObject enemyprefab;
     bool isSpawn = false;
+
+    public GameObject Point;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,7 @@ public class EnemySlowMoCheck : MonoBehaviour
         }
         if (isSlowed == true)
         {
+            Point.SetActive(true);
             Wall.SetActive(false);
         }
     }

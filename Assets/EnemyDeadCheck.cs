@@ -7,6 +7,7 @@ public class EnemyDeadCheck : MonoBehaviour
     public EnemyBase Enemy;
     public GameObject Wall;
     public bool isDead;
+    public GameObject Point;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class EnemyDeadCheck : MonoBehaviour
         }
         if(isDead == true)
         {
+            Point.SetActive(true);
             Wall.SetActive(false);
         }
     }
